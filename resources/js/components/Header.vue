@@ -2,16 +2,22 @@
   <header class="bg-ipkoRed text-white py-4 shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center px-4">
       <!-- Logo -->
-      <h1 class="text-2xl font-bold">Ipko.ai</h1>
+      <h1 class="text-2xl font-bold">IPKO.ai</h1>
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex md:space-x-6">
-        <router-link to="/" class="hover:text-gray-200">Home</router-link>
-        <router-link to="/about" class="hover:text-gray-200">About</router-link>
-        <router-link to="/contact" class="hover:text-gray-200"
-          >Contact</router-link
-        >
-        <router-link to="/faq" class="hover:text-gray-200">FAQ</router-link>
+        <router-link to="/" class="hover:text-gray-200">
+          {{ $translations[$root.$currentLang]?.header?.home || "Home" }}
+        </router-link>
+        <router-link to="/about" class="hover:text-gray-200">
+          {{ $translations[$root.$currentLang]?.header?.about || "About" }}
+        </router-link>
+        <router-link to="/contact" class="hover:text-gray-200">
+          {{ $translations[$root.$currentLang]?.header?.contact || "Contact" }}
+        </router-link>
+        <router-link to="/faq" class="hover:text-gray-200">
+          {{ $translations[$root.$currentLang]?.header?.faq || "FAQ" }}
+        </router-link>
       </nav>
 
       <!-- Language Selector -->
@@ -69,52 +75,68 @@
     </div>
 
     <!-- Mobile Navigation -->
-    <div v-if="isMenuOpen" class="md:hidden bg-ipkoRed text-white py-4">
-      <nav class="flex flex-col space-y-2 text-center">
-        <router-link
-          @click="toggleMenu"
-          to="/"
-          class="block hover:bg-ipkoRed py-2"
-          >Home</router-link
-        >
-        <router-link
-          @click="toggleMenu"
-          to="/about"
-          class="block hover:bg-ipkoLight py-2"
-          >About</router-link
-        >
-        <router-link
-          @click="toggleMenu"
-          to="/contact"
-          class="block hover:bg-ipkoLight py-2"
-          >Contact</router-link
-        >
-        <router-link
-          @click="toggleMenu"
-          to="/faq"
-          class="block hover:bg-ipkoLight py-2"
-          >FAQ</router-link
-        >
-        <div class="flex justify-center space-x-4 mt-4">
+    <nav
+      v-if="isMenuOpen"
+      class="md:hidden bg-ipkoDark text-white absolute top-16 left-0 w-full z-50"
+    >
+      <ul class="flex flex-col items-center space-y-4 py-4">
+        <li>
+          <router-link to="/" @click="toggleMenu" class="hover:text-gray-200">
+            {{ $translations[$root.$currentLang]?.header?.home || "Home" }}
+          </router-link>
+        </li>
+        <li>
+          <router-link
+            to="/about"
+            @click="toggleMenu"
+            class="hover:text-gray-200"
+          >
+            {{ $translations[$root.$currentLang]?.header?.about || "About" }}
+          </router-link>
+        </li>
+        <li>
+          <router-link
+            to="/contact"
+            @click="toggleMenu"
+            class="hover:text-gray-200"
+          >
+            {{
+              $translations[$root.$currentLang]?.header?.contact || "Contact"
+            }}
+          </router-link>
+        </li>
+        <li>
+          <router-link
+            to="/faq"
+            @click="toggleMenu"
+            class="hover:text-gray-200"
+          >
+            {{ $translations[$root.$currentLang]?.header?.faq || "FAQ" }}
+          </router-link>
+        </li>
+        <!-- Language Selector -->
+        <li class="flex space-x-4">
           <button
-            @click="$root.$currentLang = 'sq'"
-            class="bg-white text-ipkoRed px-2 py-1 rounded-md"
+            @click="changeLanguage('sq')"
+            :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'sq' }"
+            class="px-2 py-1 rounded-md"
           >
             SQ
           </button>
           <button
-            @click="$root.$currentLang = 'en'"
-            class="bg-white text-ipkoRed px-2 py-1 rounded-md"
+            @click="changeLanguage('en')"
+            :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'en' }"
+            class="px-2 py-1 rounded-md"
           >
             EN
           </button>
-        </div>
-      </nav>
-    </div>
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>
   
-<script>
+  <script>
 export default {
   name: "Header",
   data() {
@@ -129,6 +151,10 @@ export default {
     changeLanguage(lang) {
       this.$root.$currentLang = lang;
       localStorage.setItem("currentLang", lang);
+      window.location.reload(); // Rifresko për përkthime të plota
+    },
+    getTranslation(key) {
+      return this.$translations[this.$root.$currentLang]?.header[key] || key;
     },
   },
   mounted() {
@@ -143,6 +169,10 @@ export default {
   <style scoped>
 header {
   z-index: 1000;
+}
+
+nav.md\\:hidden {
+  transition: all 0.3s ease-in-out;
 }
 </style>
   
