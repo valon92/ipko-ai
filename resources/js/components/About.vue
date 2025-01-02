@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header />
     <section class="about bg-ipkoLight py-12">
       <div
         class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
@@ -22,7 +21,6 @@
         </div>
       </div>
     </section>
-    <Footer />
   </div>
 </template>
   

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header />
     <section class="contact bg-ipkoDark text-white py-12">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">
@@ -54,7 +53,6 @@
         </form>
       </div>
     </section>
-    <Footer />
   </div>
 </template>
   

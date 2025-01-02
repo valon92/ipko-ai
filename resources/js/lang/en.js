@@ -1,6 +1,6 @@
 export default {
     home: {
-        heroTitle: "Welcome to IPKO.ai",
+        heroTitle: "Welcome to Ipko AI",
         heroSubtitle: "Empowering the future with AI-driven solutions.",
         heroButton: "Get Started",
     },
