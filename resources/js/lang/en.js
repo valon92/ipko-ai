@@ -6,7 +6,16 @@ export default {
         faq: "FAQ",
     },
     footer: {
-        copyright: "© 2024 IPKO.ai. All Rights Reserved.",
+        quickLinks: "Quick Links",
+        home: "Home",
+        about: "About",
+        contact: "Contact",
+        faq: "FAQ",
+        contactUs: "Contact Us",
+        email: "Email",
+        phone: "Phone",
+        followUs: "Follow Us",
+        copyright: "IPKO.ai. All Rights Reserved.",
     },
     home: {
         heroTitle: "Welcome to IPKO.ai",

@@ -2,7 +2,7 @@
   <header class="bg-ipkoRed text-white py-4 shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center px-4">
       <!-- Logo -->
-      <h1 class="text-2xl font-bold">IPKO.ai</h1>
+      <h1 class="text-2xl font-bold">Ipko.ai</h1>
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex md:space-x-6">

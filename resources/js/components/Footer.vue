@@ -4,47 +4,73 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
         <!-- Quick Links -->
         <div>
-          <h3 class="text-lg font-bold mb-2">Quick Links</h3>
+          <h3 class="text-lg font-bold mb-2">
+            {{
+              $translations[$root.$currentLang]?.footer?.quickLinks ||
+              "Quick Links"
+            }}
+          </h3>
           <ul>
             <li>
-              <router-link to="/" class="hover:underline">Home</router-link>
+              <router-link to="/" class="hover:underline">
+                {{ $translations[$root.$currentLang]?.footer?.home || "Home" }}
+              </router-link>
             </li>
             <li>
-              <router-link to="/about" class="hover:underline"
-                >About</router-link
-              >
+              <router-link to="/about" class="hover:underline">
+                {{
+                  $translations[$root.$currentLang]?.footer?.about || "About"
+                }}
+              </router-link>
             </li>
             <li>
-              <router-link to="/contact" class="hover:underline"
-                >Contact</router-link
-              >
+              <router-link to="/contact" class="hover:underline">
+                {{
+                  $translations[$root.$currentLang]?.footer?.contact ||
+                  "Contact"
+                }}
+              </router-link>
             </li>
             <li>
-              <router-link to="/faq" class="hover:underline">FAQ</router-link>
+              <router-link to="/faq" class="hover:underline">
+                {{ $translations[$root.$currentLang]?.footer?.faq || "FAQ" }}
+              </router-link>
             </li>
           </ul>
         </div>
 
         <!-- Contact Information -->
         <div>
-          <h3 class="text-lg font-bold mb-2">Contact Us</h3>
+          <h3 class="text-lg font-bold mb-2">
+            {{
+              $translations[$root.$currentLang]?.footer?.contactUs ||
+              "Contact Us"
+            }}
+          </h3>
           <p>
-            Email:
-            <a href="mailto:support@ipko.ai" class="hover:underline"
-              >support@ipko.ai</a
-            >
+            {{ $translations[$root.$currentLang]?.footer?.email || "Email" }}:
+
+            <a href="mailto:support@ipko.ai" class="hover:underline">
+              support@ipko.ai
+            </a>
           </p>
           <p>
-            Phone:
-            <a href="tel:+38344123456" class="hover:underline"
-              >+383 44 123 456</a
-            >
+            {{ $translations[$root.$currentLang]?.footer?.phone || "Phone" }}:
+
+            <a href="tel:+38344123456" class="hover:underline">
+              +383 44 123 456
+            </a>
           </p>
         </div>
 
         <!-- Social Media Links -->
         <div>
-          <h3 class="text-lg font-bold mb-2">Follow Us</h3>
+          <h3 class="text-lg font-bold mb-2">
+            {{
+              $translations[$root.$currentLang]?.footer?.followUs ||
+              "Follow Us"
+            }}:
+          </h3>
           <div class="flex justify-center space-x-4">
             <a href="#" class="hover:text-gray-200">Facebook</a>
             <a href="#" class="hover:text-gray-200">Twitter</a>
@@ -53,11 +79,25 @@
         </div>
       </div>
       <p class="text-sm mt-4">
-        &copy; {{ new Date().getFullYear() }} IPKO.ai. All Rights Reserved.
+        &copy; {{ new Date().getFullYear() }}
+        {{
+          $translations[$root.$currentLang]?.footer?.copyright || "copyright"
+        }}
       </p>
     </div>
   </footer>
 </template>
+  
+  <script>
+export default {
+  name: "Footer",
+  methods: {
+    getTranslation(key) {
+      return this.$translations[this.$root.$currentLang]?.footer[key] || key;
+    },
+  },
+};
+</script>
   
   <style scoped>
 footer {

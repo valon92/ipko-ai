@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="about bg-ipkoLight py-12">
+    <section class="about bg-ipkoDark py-12">
       <div
         class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
       >
@@ -12,10 +12,10 @@
           />
         </div>
         <div>
-          <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-4">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
             {{ $translations[$currentLang].about.title }}
           </h2>
-          <p class="text-lg text-gray-700 mb-4">
+          <p class="text-lg text-white mb-4">
             {{ $translations[$currentLang].about.description }}
           </p>
         </div>

@@ -6,7 +6,16 @@ export default {
         faq: "Pyetje të Shpeshta",
     },
     footer: {
-        copyright: "© 2024 IPKO.ai. Të gjitha të drejtat e rezervuara.",
+        quickLinks: "Lidhje të Shpejta",
+        home: "Ballina",
+        about: "Rreth Nesh",
+        contact: "Kontakt",
+        faq: "Pyetje të Shpeshta",
+        contactUs: "Na Kontaktoni",
+        email: "Email",
+        phone: "Telefoni",
+        followUs: "Na Ndiqni",
+        copyright: "IPKO.ai. Të gjitha të drejtat e rezervuara.",
     },
     home: {
         heroTitle: "Mirësevini në IPKO.ai",
