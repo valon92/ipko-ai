@@ -12,6 +12,11 @@
         <router-link to="/about" class="hover:text-gray-200">
           {{ $translations[$root.$currentLang]?.header?.about || "About" }}
         </router-link>
+        <router-link to="/services" class="hover:text-gray-200">
+          {{
+            $translations[$root.$currentLang]?.header?.services || "Services"
+          }}
+        </router-link>
         <router-link to="/contact" class="hover:text-gray-200">
           {{ $translations[$root.$currentLang]?.header?.contact || "Contact" }}
         </router-link>
