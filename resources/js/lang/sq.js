@@ -1,4 +1,13 @@
 export default {
+    header: {
+        home: "Ballina",
+        about: "Rreth Nesh",
+        contact: "Kontakt",
+        faq: "Pyetje të Shpeshta",
+    },
+    footer: {
+        copyright: "© 2024 IPKO.ai. Të gjitha të drejtat e rezervuara.",
+    },
     home: {
         heroTitle: "Mirësevini në IPKO.ai",
         heroSubtitle: "Fuqizimi i së ardhmes me zgjidhje të drejtuara nga AI.",

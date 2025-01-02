@@ -17,14 +17,16 @@
       <!-- Language Selector -->
       <div class="hidden md:flex space-x-2">
         <button
-          @click="$root.$currentLang = 'sq'"
-          class="bg-white text-ipkoRed px-2 py-1 rounded-md"
+          @click="changeLanguage('sq')"
+          :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'sq' }"
+          class="px-2 py-1 rounded-md"
         >
           SQ
         </button>
         <button
-          @click="$root.$currentLang = 'en'"
-          class="bg-white text-ipkoRed px-2 py-1 rounded-md"
+          @click="changeLanguage('en')"
+          :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'en' }"
+          class="px-2 py-1 rounded-md"
         >
           EN
         </button>
@@ -112,7 +114,7 @@
   </header>
 </template>
   
-  <script>
+<script>
 export default {
   name: "Header",
   data() {
@@ -124,6 +126,16 @@ export default {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
+    changeLanguage(lang) {
+      this.$root.$currentLang = lang;
+      localStorage.setItem("currentLang", lang);
+    },
+  },
+  mounted() {
+    const savedLang = localStorage.getItem("currentLang");
+    if (savedLang) {
+      this.$root.$currentLang = savedLang;
+    }
   },
 };
 </script>

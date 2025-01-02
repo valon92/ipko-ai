@@ -1,4 +1,13 @@
 export default {
+    header: {
+        home: "Home",
+        about: "About",
+        contact: "Contact",
+        faq: "FAQ",
+    },
+    footer: {
+        copyright: "© 2024 IPKO.ai. All Rights Reserved.",
+    },
     home: {
         heroTitle: "Welcome to IPKO.ai",
         heroSubtitle: "Empowering the future with AI-driven solutions.",
