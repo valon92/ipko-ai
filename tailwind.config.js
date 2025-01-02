@@ -15,7 +15,7 @@ export default {
             colors: {
                 ipkoRed: "#E30613",
                 ipkoDark: "#8C1A1A",
-                ipkoLight: "#F5F5F5",
+                ipkoLight: "#FFD700" /* Ngjyra ari për efektet */,
             },
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],

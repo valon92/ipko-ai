@@ -15,5 +15,33 @@
       </a>
     </div>
   </section>
+
+  <section class="features bg-gray-100 py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-6">
+        {{ $translations[$currentLang].home.featuresTitle }}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">
+            {{ $translations[$currentLang].home.feature1 }}
+          </h3>
+          <p>{{ $translations[$currentLang].home.feature1Description }}</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">
+            {{ $translations[$currentLang].home.feature2 }}
+          </h3>
+          <p>{{ $translations[$currentLang].home.feature2Description }}</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">
+            {{ $translations[$currentLang].home.feature3 }}
+          </h3>
+          <p>{{ $translations[$currentLang].home.feature3Description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
   
