@@ -7,16 +7,18 @@
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex md:space-x-6">
         <router-link to="/" class="hover:text-gray-200">
-          {{ getTranslation("header.home") }}
+          {{ $translations[$root.$currentLang]?.footer?.home || "Home" }}
         </router-link>
         <router-link to="/about" class="hover:text-gray-200">
-          {{ getTranslation("header.about") }}
+          {{ $translations[$root.$currentLang]?.footer?.about || "About" }}
         </router-link>
         <router-link to="/contact" class="hover:text-gray-200">
-          {{ getTranslation("header.contact") }}
+          {{ $translations[$root.$currentLang]?.footer?.contact || "Contact" }}
         </router-link>
-        <router-link to="/faq" class="hover:text-gray-200">
-          {{ getTranslation("header.faq") }}
+        <router-link to="/services" class="hover:text-gray-200">
+          {{
+            $translations[$root.$currentLang]?.footer?.services || "Services"
+          }}
         </router-link>
       </nav>
 
@@ -78,23 +80,21 @@
     <nav v-if="isMenuOpen" class="md:hidden bg-ipkoDark text-white py-4">
       <ul class="flex flex-col space-y-2 text-center">
         <li>
-          <router-link @click="toggleMenu" to="/">
-            {{ getTranslation("header.home") }}
+          <router-link to="/" class="hover:text-gray-200">
+            {{ $translations[$root.$currentLang]?.footer?.home || "Home" }}
           </router-link>
-        </li>
-        <li>
-          <router-link @click="toggleMenu" to="/about">
-            {{ getTranslation("header.about") }}
+          <router-link to="/about" class="hover:text-gray-200">
+            {{ $translations[$root.$currentLang]?.footer?.about || "About" }}
           </router-link>
-        </li>
-        <li>
-          <router-link @click="toggleMenu" to="/contact">
-            {{ getTranslation("header.contact") }}
+          <router-link to="/contact" class="hover:text-gray-200">
+            {{
+              $translations[$root.$currentLang]?.footer?.contact || "Contact"
+            }}
           </router-link>
-        </li>
-        <li>
-          <router-link @click="toggleMenu" to="/faq">
-            {{ getTranslation("header.faq") }}
+          <router-link to="/services" class="hover:text-gray-200">
+            {{
+              $translations[$root.$currentLang]?.footer?.services || "Services"
+            }}
           </router-link>
         </li>
         <li class="flex justify-center space-x-4 mt-4">

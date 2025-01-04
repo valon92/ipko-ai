@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <Header />
+  <div class="flex min-h-screen">
     <section class="py-12 bg-gray-100">
       <div class="container mx-auto px-4 text-center">
         <h1 class="text-4xl font-bold mb-6">
@@ -41,7 +40,6 @@
         </div>
       </div>
     </section>
-    <Footer />
   </div>
 </template>
   
