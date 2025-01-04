@@ -8,16 +8,16 @@
         <!-- Text Content -->
         <div class="text-center md:text-left">
           <h1 class="text-4xl md:text-6xl font-bold mb-4">
-            {{ getTranslation("home.heroTitle") }}
+            {{ $translations[$currentLang].home.heroTitle }}
           </h1>
           <p class="text-lg md:text-xl mb-6">
-            {{ getTranslation("home.heroSubtitle") }}
+            {{ $translations[$currentLang].home.heroSubtitle }}
           </p>
           <router-link
             to="/contact"
             class="inline-block bg-white text-ipkoRed font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
           >
-            {{ getTranslation("home.getStarted") }}
+            {{ $translations[$currentLang].home.getStarted }}
           </router-link>
         </div>
 
