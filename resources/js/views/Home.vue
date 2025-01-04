@@ -31,6 +31,48 @@
         </div>
       </div>
     </section>
+
+    <!-- Idea Section -->
+    <section class="idea-section bg-gray-100 py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-6">
+          {{ $translations[$currentLang].home.ideaTitle }}
+        </h2>
+        <p class="text-lg text-gray-700 mb-8">
+          {{ $translations[$currentLang].home.ideaDescription }}
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Column 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-xl font-semibold mb-2">
+              {{ $translations[$currentLang].home.ideaPoint1Title }}
+            </h3>
+            <p class="text-gray-700">
+              {{ $translations[$currentLang].home.ideaPoint1Description }}
+            </p>
+          </div>
+          <!-- Column 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-xl font-semibold mb-2">
+              {{ $translations[$currentLang].home.ideaPoint2Title }}
+            </h3>
+            <p class="text-gray-700">
+              {{ $translations[$currentLang].home.ideaPoint2Description }}
+            </p>
+          </div>
+          <!-- Column 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-xl font-semibold mb-2">
+              {{ $translations[$currentLang].home.ideaPoint3Title }}
+            </h3>
+            <p class="text-gray-700">
+              <!-- {{ getTranslation("home.ideaPoint3Description") }} -->
+              {{ $translations[$currentLang].home.ideaPoint3Description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -60,5 +102,17 @@ export default {
 
 .hero p {
   font-size: 1.25rem;
+}
+.idea-section {
+  background: #f8fafc;
+}
+
+.idea-section h2 {
+  font-size: 2rem;
+  color: #e30613;
+}
+
+.idea-section p {
+  font-size: 1rem;
 }
 </style>

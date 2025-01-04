@@ -18,9 +18,21 @@ export default {
         copyright: "IPKO.ai. Të gjitha të drejtat e rezervuara.",
     },
     home: {
-        heroTitle: "Mirësevini në IPKO.ai",
+        heroTitle: "Mirësevini në IPKO AI",
         heroSubtitle: "Fuqizimi i së ardhmes me zgjidhje të drejtuara nga AI.",
         getStarted: "Fillo Tani",
+        ideaTitle: "Vizioni Pas IPKO AI",
+        ideaDescription:
+            "Zbuloni se si IPKO.ai po revolucionon peizazhin dixhital me zgjidhje inovative të AI.",
+        ideaPoint1Title: "Zgjidhje Inovative",
+        ideaPoint1Description:
+            "Ofrimi i mjeteve të fuqizuara nga AI për biznesin tuaj.",
+        ideaPoint2Title: "Qasje e Përqendruar te Përdoruesi",
+        ideaPoint2Description:
+            "Fokusimi në përvojën dhe kënaqësinë e klientit.",
+        ideaPoint3Title: "E Ardhmja e Sigurt",
+        ideaPoint3Description:
+            "Ndërtimi i zgjidhjeve që përballen me sfidat e së nesërmes.",
     },
     about: {
         title: "Rreth Nesh",

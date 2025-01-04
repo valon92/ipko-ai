@@ -18,9 +18,21 @@ export default {
         copyright: "IPKO.ai. All Rights Reserved.",
     },
     home: {
-        heroTitle: "Welcome to IPKO.ai",
+        heroTitle: "Welcome to IPKO AI",
         heroSubtitle: "Empowering the future with AI-driven solutions.",
         getStarted: "Get Started",
+        ideaTitle: "The Vision Behind IPKO AI",
+        ideaDescription:
+            "Discover how IPKO.ai is revolutionizing the digital landscape with cutting-edge AI solutions.",
+        ideaPoint1Title: "Innovative Solutions",
+        ideaPoint1Description:
+            "Providing AI-powered tools tailored for your business.",
+        ideaPoint2Title: "User-Centric Approach",
+        ideaPoint2Description:
+            "Focusing on customer experience and satisfaction.",
+        ideaPoint3Title: "Future-Ready",
+        ideaPoint3Description:
+            "Building solutions that are ready for tomorrow's challenges.",
     },
 
     about: {
