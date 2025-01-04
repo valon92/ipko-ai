@@ -100,8 +100,7 @@ export default {
     },
   },
 };
-</script>
-  
+</script>  
   <style scoped>
 footer {
   background-color: #e30613; /* Ngjyra kryesore e IPKO */
