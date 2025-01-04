@@ -7,21 +7,16 @@
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex md:space-x-6">
         <router-link to="/" class="hover:text-gray-200">
-          {{ $translations[$root.$currentLang]?.header?.home || "Home" }}
+          {{ getTranslation("header.home") }}
         </router-link>
         <router-link to="/about" class="hover:text-gray-200">
-          {{ $translations[$root.$currentLang]?.header?.about || "About" }}
-        </router-link>
-        <router-link to="/services" class="hover:text-gray-200">
-          {{
-            $translations[$root.$currentLang]?.header?.services || "Services"
-          }}
+          {{ getTranslation("header.about") }}
         </router-link>
         <router-link to="/contact" class="hover:text-gray-200">
-          {{ $translations[$root.$currentLang]?.header?.contact || "Contact" }}
+          {{ getTranslation("header.contact") }}
         </router-link>
         <router-link to="/faq" class="hover:text-gray-200">
-          {{ $translations[$root.$currentLang]?.header?.faq || "FAQ" }}
+          {{ getTranslation("header.faq") }}
         </router-link>
       </nav>
 
@@ -43,7 +38,7 @@
         </button>
       </div>
 
-      <!-- Mobile Menu Button (Hamburger) -->
+      <!-- Mobile Menu Button -->
       <button
         @click="toggleMenu"
         class="md:hidden text-white focus:outline-none"
@@ -79,48 +74,30 @@
       </button>
     </div>
 
-    <!-- Mobile Navigation -->
-    <nav
-      v-if="isMenuOpen"
-      class="md:hidden bg-ipkoDark text-white absolute top-16 left-0 w-full z-50"
-    >
-      <ul class="flex flex-col items-center space-y-4 py-4">
+    <!-- Mobile Navigation Menu -->
+    <nav v-if="isMenuOpen" class="md:hidden bg-ipkoDark text-white py-4">
+      <ul class="flex flex-col space-y-2 text-center">
         <li>
-          <router-link to="/" @click="toggleMenu" class="hover:text-gray-200">
-            {{ $translations[$root.$currentLang]?.header?.home || "Home" }}
+          <router-link @click="toggleMenu" to="/">
+            {{ getTranslation("header.home") }}
           </router-link>
         </li>
         <li>
-          <router-link
-            to="/about"
-            @click="toggleMenu"
-            class="hover:text-gray-200"
-          >
-            {{ $translations[$root.$currentLang]?.header?.about || "About" }}
+          <router-link @click="toggleMenu" to="/about">
+            {{ getTranslation("header.about") }}
           </router-link>
         </li>
         <li>
-          <router-link
-            to="/contact"
-            @click="toggleMenu"
-            class="hover:text-gray-200"
-          >
-            {{
-              $translations[$root.$currentLang]?.header?.contact || "Contact"
-            }}
+          <router-link @click="toggleMenu" to="/contact">
+            {{ getTranslation("header.contact") }}
           </router-link>
         </li>
         <li>
-          <router-link
-            to="/faq"
-            @click="toggleMenu"
-            class="hover:text-gray-200"
-          >
-            {{ $translations[$root.$currentLang]?.header?.faq || "FAQ" }}
+          <router-link @click="toggleMenu" to="/faq">
+            {{ getTranslation("header.faq") }}
           </router-link>
         </li>
-        <!-- Language Selector -->
-        <li class="flex space-x-4">
+        <li class="flex justify-center space-x-4 mt-4">
           <button
             @click="changeLanguage('sq')"
             :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'sq' }"
@@ -156,10 +133,10 @@ export default {
     changeLanguage(lang) {
       this.$root.$currentLang = lang;
       localStorage.setItem("currentLang", lang);
-      window.location.reload(); // Rifresko për përkthime të plota
+      window.location.reload();
     },
     getTranslation(key) {
-      return this.$translations[this.$root.$currentLang]?.header[key] || key;
+      return this.$translations[this.$root.$currentLang]?.[key] || key;
     },
   },
   mounted() {
@@ -176,8 +153,13 @@ header {
   z-index: 1000;
 }
 
-nav.md\\:hidden {
-  transition: all 0.3s ease-in-out;
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  background-color: #e30613;
 }
 </style>
   

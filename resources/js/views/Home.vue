@@ -1,11 +1,9 @@
 <template>
   <div>
-    <Header />
     <section class="py-12 text-center">
       <h1 class="text-4xl font-bold">{{ getTranslation("home.title") }}</h1>
       <p class="text-lg mt-4">{{ getTranslation("home.description") }}</p>
     </section>
-    <Footer />
   </div>
 </template>
 

@@ -9,21 +9,20 @@ const app = createApp(App);
 // Përkthime Globale
 app.config.globalProperties.$translations = { en, sq };
 
-// Gjuha e Parazgjedhur
+// Gjuha e parazgjedhur nga LocalStorage ose 'en'
 app.config.globalProperties.$currentLang =
     localStorage.getItem("currentLang") || "en";
 
-// Mixin për përkthime dhe ndërrim gjuhe
+// Mixin për përkthime dhe ndërrimin e gjuhës
 app.mixin({
     methods: {
         changeLanguage(lang) {
             this.$root.$currentLang = lang;
             localStorage.setItem("currentLang", lang);
-            window.location.reload();
+            window.location.reload(); // Rifresko për përditësim
         },
         getTranslation(key) {
-            const lang = this.$root?.$currentLang || "en";
-            return this.$translations[lang]?.[key] || key;
+            return this.$translations[this.$root.$currentLang]?.[key] || key;
         },
     },
 });

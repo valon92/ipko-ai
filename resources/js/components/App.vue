@@ -1,10 +1,16 @@
 <template>
   <div>
+    <!-- Header -->
     <Header />
+
+    <!-- Main Content -->
     <router-view />
+
+    <!-- Footer -->
     <Footer />
   </div>
 </template>
+  
   
   <script>
 import Header from "./Header.vue";
