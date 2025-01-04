@@ -1,8 +1,35 @@
 <template>
-  <div class="flex min-h-screen">
-    <section class="py-12 text-center">
-      <h1 class="text-4xl font-bold">{{ getTranslation("home.title") }}</h1>
-      <p class="text-lg mt-4">{{ getTranslation("home.description") }}</p>
+  <div class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="hero text-white py-20">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 items-center gap-8"
+      >
+        <!-- Text Content -->
+        <div class="text-center md:text-left">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            {{ getTranslation("home.heroTitle") }}
+          </h1>
+          <p class="text-lg md:text-xl mb-6">
+            {{ getTranslation("home.heroSubtitle") }}
+          </p>
+          <router-link
+            to="/contact"
+            class="inline-block bg-white text-ipkoRed font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
+          >
+            {{ getTranslation("home.getStarted") }}
+          </router-link>
+        </div>
+
+        <!-- Image Content -->
+        <div class="flex justify-center">
+          <img
+            src="https://via.placeholder.com/500x300"
+            alt="Hero Image"
+            class="rounded-lg shadow-md"
+          />
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -21,3 +48,17 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.hero {
+  background: linear-gradient(to right, #e30613, #8c1a1a);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+</style>

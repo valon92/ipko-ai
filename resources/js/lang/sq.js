@@ -20,16 +20,7 @@ export default {
     home: {
         heroTitle: "Mirësevini në IPKO.ai",
         heroSubtitle: "Fuqizimi i së ardhmes me zgjidhje të drejtuara nga AI.",
-        heroButton: "Fillo Tani",
-        featuresTitle: "Karakteristikat Tona Kryesore",
-        feature1: "Analiza AI",
-        feature1Description:
-            "Mjete të avancuara analitike të fuqizuara nga AI.",
-        feature2: "Mjetet e Automatizimit",
-        feature2Description:
-            "Optimizoni operacionet me automatizim inteligjent.",
-        feature3: "Shërbimet e Mbështetjes",
-        feature3Description: "Mbështetje 24/7 për nevojat tuaja.",
+        getStarted: "Fillo Tani",
     },
     about: {
         title: "Rreth Nesh",
