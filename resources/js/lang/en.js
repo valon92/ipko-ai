@@ -33,6 +33,17 @@ export default {
         ideaPoint3Title: "Future-Ready",
         ideaPoint3Description:
             "Building solutions that are ready for tomorrow's challenges.",
+        servicesTitle: "Our Services",
+        servicesDescription: "Explore our wide range of AI-powered solutions.",
+        service1Title: "AI Consulting",
+        service1Description:
+            "Strategic guidance to implement AI solutions effectively.",
+        service2Title: "Automation Solutions",
+        service2Description:
+            "Automate tasks and enhance operational efficiency.",
+        service3Title: "Data Analytics",
+        service3Description:
+            "Gain insights with advanced data analytics tools.",
     },
 
     about: {

@@ -33,6 +33,17 @@ export default {
         ideaPoint3Title: "E Ardhmja e Sigurt",
         ideaPoint3Description:
             "Ndërtimi i zgjidhjeve që përballen me sfidat e së nesërmes.",
+        servicesTitle: "Shërbimet Tona",
+        servicesDescription:
+            "Eksploroni gamën tonë të shërbimeve të fuqizuara nga AI.",
+        service1Title: "Konsulencë AI",
+        service1Description: "Udhëzime strategjike për zbatimin efektiv të AI.",
+        service2Title: "Zgjidhje Automatizimi",
+        service2Description:
+            "Automatizoni detyrat dhe përmirësoni efikasitetin.",
+        service3Title: "Analiza të Dhënash",
+        service3Description:
+            "Fitoni njohuri përmes mjeteve të avancuara analitike.",
     },
     about: {
         title: "Rreth Nesh",
