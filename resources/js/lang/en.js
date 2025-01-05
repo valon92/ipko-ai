@@ -62,6 +62,18 @@ export default {
         partnersTitle: "Our Trusted Partners",
         partnersDescription:
             "We collaborate with industry-leading companies to deliver exceptional AI solutions.",
+        featuresTitle: "Our Key Features",
+        featuresDescription:
+            "Discover the unique features that set IPKO.ai apart.",
+        feature1Title: "AI-Driven Analytics",
+        feature1Description:
+            "Gain deep insights through advanced AI analytics tools.",
+        feature2Title: "Seamless Automation",
+        feature2Description:
+            "Automate tasks efficiently with our AI solutions.",
+        feature3Title: "24/7 Support",
+        feature3Description:
+            "Get assistance anytime with our dedicated support team.",
     },
 
     about: {

@@ -61,6 +61,16 @@ export default {
         partnersTitle: "Partnerët Tanë të Besuar",
         partnersDescription:
             "Ne bashkëpunojmë me kompani lidere për të ofruar zgjidhje të jashtëzakonshme AI.",
+        featuresTitle: "Veçoritë Kryesore",
+        featuresDescription: "Zbuloni veçoritë unike që e veçojnë IPKO.ai.",
+        feature1Title: "Analiza e Drejtuar nga AI",
+        feature1Description:
+            "Fitoni njohuri të thella përmes mjeteve të avancuara analitike.",
+        feature2Title: "Automatizim i Pandërprerë",
+        feature2Description: "Automatizoni detyrat në mënyrë efikase.",
+        feature3Title: "Mbështetje 24/7",
+        feature3Description:
+            "Merrni ndihmë në çdo kohë me ekipin tonë të dedikuar.",
     },
     about: {
         title: "Rreth Nesh",
