@@ -59,6 +59,9 @@ export default {
             "Cutting-edge AI technology tailored for your needs.",
         whyPoint3Title: "Support",
         whyPoint3Description: "24/7 dedicated customer support.",
+        partnersTitle: "Our Trusted Partners",
+        partnersDescription:
+            "We collaborate with industry-leading companies to deliver exceptional AI solutions.",
     },
 
     about: {

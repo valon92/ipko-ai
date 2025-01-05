@@ -58,6 +58,9 @@ export default {
             "Teknologji moderne AI e përshtatur për nevojat tuaja.",
         whyPoint3Title: "Mbështetje",
         whyPoint3Description: "Mbështetje e dedikuar 24/7.",
+        partnersTitle: "Partnerët Tanë të Besuar",
+        partnersDescription:
+            "Ne bashkëpunojmë me kompani lidere për të ofruar zgjidhje të jashtëzakonshme AI.",
     },
     about: {
         title: "Rreth Nesh",

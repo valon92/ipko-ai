@@ -281,6 +281,50 @@
         </div>
       </div>
     </section>
+
+    <!-- Our Partners Section -->
+    <section class="partners py-16 bg-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-6">
+          {{ $translations[$currentLang].home.partnersTitle }}
+
+        </h2>
+        <p class="text-lg text-gray-700 mb-8">
+          {{ $translations[$currentLang].home.partnersDescription }}
+
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+          <div>
+            <img
+              src="https://via.placeholder.com/150x50"
+              alt="Partner 1"
+              class="mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/150x50"
+              alt="Partner 2"
+              class="mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/150x50"
+              alt="Partner 3"
+              class="mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/150x50"
+              alt="Partner 4"
+              class="mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -329,5 +373,23 @@ export default {
 
 .about p {
   font-size: 1rem;
+}
+.partners h2 {
+  font-size: 2rem;
+}
+
+.partners p {
+  font-size: 1rem;
+}
+
+.partners img {
+  max-width: 150px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.partners img:hover {
+  filter: grayscale(0%);
 }
 </style>
