@@ -44,6 +44,10 @@ export default {
         service3Title: "Analiza të Dhënash",
         service3Description:
             "Fitoni njohuri përmes mjeteve të avancuara analitike.",
+        aboutTitle: "Rreth Nesh",
+        aboutDescription:
+            "Mësoni më shumë rreth mënyrës se si IPKO.ai po sjell inovacion përmes teknologjisë AI.",
+        learnMore: "Mëso Më Shumë",
     },
     about: {
         title: "Rreth Nesh",

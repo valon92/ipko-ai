@@ -162,6 +162,37 @@
         </div>
       </div>
     </section>
+
+    <!-- About Us Section -->
+    <section class="about py-16 bg-white">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+      >
+        <!-- About Image -->
+        <div>
+          <img
+            src="https://via.placeholder.com/500x300"
+            alt="About Us"
+            class="rounded-lg shadow-md"
+          />
+        </div>
+        <!-- About Content -->
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-4">
+            {{ $translations[$currentLang].home.aboutTitle }}
+          </h2>
+          <p class="text-lg text-gray-700 mb-4">
+            {{ $translations[$currentLang].home.aboutDescription }}
+          </p>
+          <router-link
+            to="/about"
+            class="inline-block bg-ipkoRed text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-ipkoDark transition duration-300"
+          >
+            {{ $translations[$currentLang].home.learnMore }}
+          </router-link>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -202,6 +233,13 @@ export default {
 }
 
 .idea-section p {
+  font-size: 1rem;
+}
+.about h2 {
+  font-size: 2rem;
+}
+
+.about p {
   font-size: 1rem;
 }
 </style>

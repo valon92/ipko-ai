@@ -44,6 +44,9 @@ export default {
         service3Title: "Data Analytics",
         service3Description:
             "Gain insights with advanced data analytics tools.",
+            aboutTitle: "About Us",
+            aboutDescription: "Learn more about how IPKO.ai is driving innovation through AI technology.",
+            learnMore: "Learn More",
     },
 
     about: {
