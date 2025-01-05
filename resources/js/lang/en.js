@@ -44,9 +44,21 @@ export default {
         service3Title: "Data Analytics",
         service3Description:
             "Gain insights with advanced data analytics tools.",
-            aboutTitle: "About Us",
-            aboutDescription: "Learn more about how IPKO.ai is driving innovation through AI technology.",
-            learnMore: "Learn More",
+        aboutTitle: "About Us",
+        aboutDescription:
+            "Learn more about how IPKO.ai is driving innovation through AI technology.",
+        learnMore: "Learn More",
+        whyChooseUsTitle: "Why Choose Us?",
+        whyChooseUsDescription:
+            "Discover why IPKO.ai stands out in AI innovation.",
+        whyPoint1Title: "Expertise",
+        whyPoint1Description:
+            "Industry-leading AI professionals with proven results.",
+        whyPoint2Title: "Innovation",
+        whyPoint2Description:
+            "Cutting-edge AI technology tailored for your needs.",
+        whyPoint3Title: "Support",
+        whyPoint3Description: "24/7 dedicated customer support.",
     },
 
     about: {

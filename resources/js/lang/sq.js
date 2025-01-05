@@ -48,6 +48,16 @@ export default {
         aboutDescription:
             "Mësoni më shumë rreth mënyrës se si IPKO.ai po sjell inovacion përmes teknologjisë AI.",
         learnMore: "Mëso Më Shumë",
+        whyChooseUsTitle: "Pse të na zgjidhni?",
+        whyChooseUsDescription:
+            "Zbuloni pse IPKO.ai është lider në inovacionin AI.",
+        whyPoint1Title: "Ekspertizë",
+        whyPoint1Description: "Profesionalizëm i dëshmuar në industrinë AI.",
+        whyPoint2Title: "Inovacion",
+        whyPoint2Description:
+            "Teknologji moderne AI e përshtatur për nevojat tuaja.",
+        whyPoint3Title: "Mbështetje",
+        whyPoint3Description: "Mbështetje e dedikuar 24/7.",
     },
     about: {
         title: "Rreth Nesh",
