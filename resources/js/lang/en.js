@@ -77,8 +77,16 @@ export default {
     },
 
     about: {
-        title: "About Us",
-        description: "Learn more about our mission and values.",
+        title: "About IPKO.ai",
+        subtitle: "Empowering businesses with AI-driven solutions.",
+        missionTitle: "Our Mission",
+        missionDescription:
+            "To deliver cutting-edge AI technologies to our partners.",
+        teamTitle: "Meet Our Team",
+        teamDescription: "Experts dedicated to innovation and excellence.",
+        ctaTitle: "Join Us Today!",
+        ctaDescription: "Start your journey with IPKO.ai now.",
+        ctaButton: "Contact Us",
     },
     services: {
         title: "Our Services",

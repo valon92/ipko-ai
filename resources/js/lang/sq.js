@@ -73,8 +73,17 @@ export default {
             "Merrni ndihmë në çdo kohë me ekipin tonë të dedikuar.",
     },
     about: {
-        title: "Rreth Nesh",
-        description: "Mësoni më shumë rreth misionit dhe vlerave tona.",
+        title: "Rreth IPKO.ai",
+        subtitle: "Fuqizimi i bizneseve me zgjidhje të drejtuara nga AI.",
+        missionTitle: "Misioni Ynë",
+        missionDescription:
+            "Të ofrojmë teknologji të avancuara AI për partnerët tanë.",
+        teamTitle: "Ekipi Ynë",
+        teamDescription:
+            "Ekspertë të përkushtuar për inovacion dhe përsosmëri.",
+        ctaTitle: "Bashkohuni me Ne Sot!",
+        ctaDescription: "Filloni rrugëtimin tuaj me IPKO.ai tani.",
+        ctaButton: "Na Kontaktoni",
     },
     services: {
         title: "Shërbimet Tona",

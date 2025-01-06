@@ -15,7 +15,7 @@
           </p>
           <router-link
             to="/contact"
-            class="inline-block bg-white text-ipkoRed font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
+            class="inline-block bg-white text-ipkoRed font-semibold md:mx-24 py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
           >
             {{ $translations[$currentLang].home.getStarted }}
           </router-link>
@@ -409,20 +409,6 @@
   </div>
 </template>
 
-<script>
-import Header from "../components/Header.vue";
-import Footer from "../components/Footer.vue";
-
-export default {
-  name: "Home",
-  components: { Header, Footer },
-  methods: {
-    getTranslation(key) {
-      return this.$translations[this.$root.$currentLang]?.home[key] || key;
-    },
-  },
-};
-</script>
 
 <style scoped>
 .hero {
