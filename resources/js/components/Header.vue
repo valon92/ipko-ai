@@ -7,17 +7,20 @@
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex md:space-x-6">
         <router-link to="/" class="hover:text-gray-200">
-          {{ $translations[$root.$currentLang]?.footer?.home || "Home" }}
+          {{ $translations[$root.$currentLang]?.header?.home || "Home" }}
         </router-link>
         <router-link to="/about" class="hover:text-gray-200">
-          {{ $translations[$root.$currentLang]?.footer?.about || "About" }}
+          {{ $translations[$root.$currentLang]?.header?.about || "About" }}
         </router-link>
         <router-link to="/contact" class="hover:text-gray-200">
-          {{ $translations[$root.$currentLang]?.footer?.contact || "Contact" }}
+          {{ $translations[$root.$currentLang]?.header?.contact || "Contact" }}
+        </router-link>
+        <router-link to="/faq" class="hover:text-gray-200">
+          {{ $translations[$root.$currentLang]?.header?.faq || "FAQ" }}
         </router-link>
         <router-link to="/services" class="hover:text-gray-200">
           {{
-            $translations[$root.$currentLang]?.footer?.services || "Services"
+            $translations[$root.$currentLang]?.header?.services || "Services"
           }}
         </router-link>
       </nav>
@@ -81,19 +84,22 @@
       <ul class="flex flex-col space-y-2 text-center">
         <li>
           <router-link to="/" class="hover:text-gray-200">
-            {{ $translations[$root.$currentLang]?.footer?.home || "Home" }}
+            {{ $translations[$root.$currentLang]?.header?.home || "Home" }}
           </router-link>
           <router-link to="/about" class="hover:text-gray-200">
-            {{ $translations[$root.$currentLang]?.footer?.about || "About" }}
+            {{ $translations[$root.$currentLang]?.header?.about || "About" }}
           </router-link>
           <router-link to="/contact" class="hover:text-gray-200">
             {{
-              $translations[$root.$currentLang]?.footer?.contact || "Contact"
+              $translations[$root.$currentLang]?.header?.contact || "Contact"
             }}
+          </router-link>
+          <router-link to="/faq" class="hover:text-gray-200">
+            {{ $translations[$root.$currentLang]?.header?.faq || "FAQ" }}
           </router-link>
           <router-link to="/services" class="hover:text-gray-200">
             {{
-              $translations[$root.$currentLang]?.footer?.services || "Services"
+              $translations[$root.$currentLang]?.header?.services || "Services"
             }}
           </router-link>
         </li>

@@ -122,9 +122,18 @@ export default {
         send: "Send Message",
         successMessage: "Your message was successfully sent!",
     },
-
     faq: {
         title: "Frequently Asked Questions",
-        description: "Find answers to common questions.",
+        subtitle: "Find answers to the most common questions.",
+        heading: "Common Questions",
+        q1: "What services does IPKO.ai offer?",
+        a1: "IPKO.ai offers AI consulting, automation tools, and data analytics services.",
+        q2: "How can I contact support?",
+        a2: "You can contact us via email at support@ipko.ai.",
+        q3: "Is there a free trial available?",
+        a3: "Yes, we offer a 14-day free trial for our premium services.",
+        ctaTitle: "Still have questions?",
+        ctaDescription: "Feel free to contact us directly!",
+        ctaButton: "Contact Us",
     },
 };

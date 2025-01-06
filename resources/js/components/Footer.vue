@@ -33,6 +33,11 @@
             </li>
             <li>
               <router-link to="/faq" class="hover:underline">
+                {{ $translations[$root.$currentLang]?.footer?.faq || "FAQ" }}
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/faq" class="hover:underline">
                 {{
                   $translations[$root.$currentLang]?.footer?.services ||
                   "Services"
