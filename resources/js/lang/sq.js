@@ -87,26 +87,24 @@ export default {
     },
     services: {
         title: "Shërbimet Tona",
-        subtitle: "Eksploroni gamën tonë të gjerë të shërbimeve me AI.",
+        subtitle: "Eksploroni zgjidhjet inovative që ofrojmë.",
+        offersTitle: "Çfarë Ofron IPKO.ai",
         service1: {
-            title: "Asistent Virtual AI",
-            description:
-                "Automatizoni mbështetjen për klientët me chatbot inteligjent.",
+            title: "Konsulencë AI",
+            description: "Udhëzime strategjike për AI.",
         },
         service2: {
-            title: "Analiza e të Dhënave",
-            description:
-                "Fitoni njohuri të vlefshme përmes analitikës së avancuar.",
+            title: "Mjetet e Automatizimit",
+            description: "Proceset më efikase dhe të automatizuara.",
         },
         service3: {
-            title: "Zgjidhje Automatizimi",
-            description: "Optimizoni operacionet me mjete të AI.",
+            title: "Analiza e të Dhënave",
+            description:
+                "Analiza të thelluara të të dhënave për vendime më të mira.",
         },
-        ctaTitle: "Gati për të filluar?",
-        ctaSubtitle:
-            "Na kontaktoni sot për të mësuar më shumë rreth shërbimeve tona.",
-        contactUs: "Na Kontaktoni",
-        learnMore: "Mëso Më Shumë",
+        ctaTitle: "Të Interesuar për Shërbimet Tona?",
+        ctaDescription: "Kontaktoni ekspertët tanë sot për më shumë detaje!",
+        ctaButton: "Na Kontaktoni",
     },
     contact: {
         title: "Na Kontaktoni",

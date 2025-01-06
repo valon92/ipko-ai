@@ -90,27 +90,25 @@ export default {
     },
     services: {
         title: "Our Services",
-        subtitle: "Explore our wide range of AI-powered services.",
+        subtitle: "Explore the innovative solutions we offer.",
+        offersTitle: "What We Offer",
         service1: {
-            title: "AI Virtual Assistant",
-            description:
-                "Automate customer support with our intelligent chatbot.",
+            title: "AI Consulting",
+            description: "Strategic AI guidance.",
         },
         service2: {
-            title: "Data Analytics",
-            description:
-                "Gain valuable insights through advanced data analytics.",
+            title: "Automation Tools",
+            description: "Efficient workflows.",
         },
         service3: {
-            title: "Automation Solutions",
-            description:
-                "Optimize operations with AI-powered automation tools.",
+            title: "Data Analytics",
+            description: "Insightful analytics.",
         },
-        ctaTitle: "Ready to Get Started?",
-        ctaSubtitle: "Contact us today to learn more about our services.",
-        contactUs: "Contact Us",
-        learnMore: "Learn More",
+        ctaTitle: "Interested in Our Services?",
+        ctaDescription: "Get in touch with our experts today!",
+        ctaButton: "Contact Us",
     },
+
     contact: {
         title: "Contact Us",
         description: "Reach out to us for inquiries or support.",
