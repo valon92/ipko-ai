@@ -110,13 +110,19 @@ export default {
     },
 
     contact: {
-        title: "Contact Us",
-        description: "Reach out to us for inquiries or support.",
-        name: "Name",
+        title: "Get in Touch",
+        subtitle: "We'd love to hear from you.",
         email: "Email",
-        message: "Message",
-        button: "Send Message",
+        phone: "Phone",
+        address: "Address",
+        formTitle: "Send Us a Message",
+        name: "Your Name",
+        email: "Your Email",
+        message: "Your Message",
+        send: "Send Message",
+        successMessage: "Your message was successfully sent!",
     },
+
     faq: {
         title: "Frequently Asked Questions",
         description: "Find answers to common questions.",
