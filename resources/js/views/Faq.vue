@@ -30,7 +30,8 @@
               @click="toggleFAQ(index)"
               class="w-full flex justify-between items-center text-left font-semibold text-lg"
             >
-              {{ faq.question }}
+              <!-- {{ faq.question }} -->
+              {{ $translations[$currentLang].faq.q1 }}
               <span>
                 <svg
                   v-if="!faq.open"
@@ -63,7 +64,7 @@
               </span>
             </button>
             <div v-if="faq.open" class="mt-2 text-gray-700">
-              {{ faq.answer }}
+              {{ $translations[$currentLang].faq.a1 }}
             </div>
           </div>
         </div>
