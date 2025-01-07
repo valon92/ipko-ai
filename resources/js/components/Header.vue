@@ -1,6 +1,6 @@
 <template>
   <header class="bg-ipkoRed text-white py-4 shadow-md sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center px-4">
+    <div class="flex justify-between items-center px-4">
       <!-- Logo -->
       <h1 class="text-2xl font-bold">Ipko.ai</h1>
 
@@ -24,6 +24,11 @@
           }}
         </router-link>
       </nav>
+
+      <!-- Search Component -->
+      <div class="hidden md:block w-1/3">
+        <SearchBar />
+      </div>
 
       <!-- Language Selector -->
       <div class="hidden md:flex space-x-2">
@@ -120,13 +125,19 @@
           </button>
         </li>
       </ul>
+      <!-- SearchBar për Mobile -->
+      <div class="px-4 mt-4">
+        <SearchBar />
+      </div>
     </nav>
   </header>
 </template>
   
   <script>
+import SearchBar from "./SearchBar.vue";
 export default {
   name: "Header",
+  components: { SearchBar },
   data() {
     return {
       isMenuOpen: false,
