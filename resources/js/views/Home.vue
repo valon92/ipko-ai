@@ -43,14 +43,19 @@
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Column 1 -->
-          <div class="bg-white p-6 rounded-lg shadow-md text-center">
+
+          <a
+            href="/innovative-solutions"
+            class="bg-white p-6 rounded-lg shadow-md text-center py-3 px-6 rou nded-lg shadow-md hover:bg-ipkoLight transition duration-300"
+          >
             <h3 class="text-xl font-semibold mb-2">
               {{ $translations[$currentLang].home.ideaPoint1Title }}
             </h3>
             <p class="text-gray-700">
               {{ $translations[$currentLang].home.ideaPoint1Description }}
             </p>
-          </div>
+          </a>
+
           <!-- Column 2 -->
           <div class="bg-white p-6 rounded-lg shadow-md text-center">
             <h3 class="text-xl font-semibold mb-2">

@@ -4,6 +4,7 @@ import About from "@/views/About.vue";
 import Contact from "@/views/Contact.vue";
 import Faq from "@/views/Faq.vue";
 import Services from "@/views/Services.vue";
+import InnovativeSolutions from "../views/InnovativeSolutions.vue";
 
 const routes = [
     { path: "/", name: "Home", component: Home },
@@ -11,6 +12,7 @@ const routes = [
     { path: "/contact", name: "Contact", component: Contact },
     { path: "/faq", name: "Faq", component: Faq },
     { path: "/services", name: "Services", component: Services },
+    { path: "/innovative-solutions", component: InnovativeSolutions },
 ];
 
 const router = createRouter({

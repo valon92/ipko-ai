@@ -72,6 +72,15 @@ export default {
         feature3Description:
             "Merrni ndihmë në çdo kohë me ekipin tonë të dedikuar.",
     },
+    innovative: {
+        title: "Zgjidhje Inovative",
+        subtitle: "Fuqizimi i bizneseve me mjete të avancuara AI.",
+        heading: "Drejtimi i Inovacionit përmes AI",
+        description:
+            "Eksploroni si zgjidhjet tona AI mund të optimizojnë punën tuaj, të përmirësojnë efikasitetin dhe të nxisin rritjen.",
+        cta: "Na Kontaktoni",
+    },
+
     about: {
         title: "Rreth IPKO.ai",
         subtitle: "Fuqizimi i bizneseve me zgjidhje të drejtuara nga AI.",

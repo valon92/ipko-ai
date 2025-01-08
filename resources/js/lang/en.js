@@ -75,6 +75,14 @@ export default {
         feature3Description:
             "Get assistance anytime with our dedicated support team.",
     },
+    innovative: {
+        title: "Innovative Solutions",
+        subtitle: "Empowering businesses with cutting-edge AI tools.",
+        heading: "Driving Innovation Through AI",
+        description:
+            "Explore how our AI solutions can optimize your workflows, improve efficiency, and drive growth.",
+        cta: "Get in Touch",
+    },
 
     about: {
         title: "About IPKO.ai",
