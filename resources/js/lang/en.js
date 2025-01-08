@@ -5,6 +5,13 @@ export default {
         contact: "Contact",
         services: "Services",
     },
+    meta: {
+        startup: "Startup",
+        myBusiness: "My Business",
+        login: "Login",
+        signup: "Sign Up",
+    },
+
     footer: {
         quickLinks: "Quick Links",
         home: "Home",

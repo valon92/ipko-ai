@@ -1,4 +1,7 @@
 <template>
+  <!-- MetaHeader -->
+  <MetaHeader />
+
   <header class="bg-ipkoRed text-white py-4 shadow-md sticky top-0 z-50">
     <div class="flex justify-between items-center px-4">
       <!-- Logo -->
@@ -134,10 +137,12 @@
 </template>
   
   <script>
+import MetaHeader from "./MetaHeader.vue";
 import SearchBar from "./SearchBar.vue";
+
 export default {
   name: "Header",
-  components: { SearchBar },
+  components: { SearchBar, MetaHeader },
   data() {
     return {
       isMenuOpen: false,

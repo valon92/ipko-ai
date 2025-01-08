@@ -1,0 +1,61 @@
+<template>
+  <div class="meta-header bg-fixed bg-ipkoDark text-white text-sm py-2">
+    <div class="mx-auto flex justify-between items-center px-4">
+      <!-- Lidhjet Kryesore -->
+      <div class="flex space-x-6">
+        <a href="/startup" class="hover:text-gray-300">
+          {{ $translations[$currentLang].meta.startup }}
+        </a>
+        <a href="/my-business" class="hover:text-gray-300">
+          {{ $translations[$currentLang].meta.myBusiness }}
+        </a>
+      </div>
+
+      <!-- Butonat për Autentifikim -->
+      <div class="flex space-x-4">
+        <a
+          href="/login"
+          class="px-4 py-1 border border-white rounded-md hover:bg-white hover:text-ipkoDark transition"
+        >
+          {{ $translations[$currentLang].meta.login }}
+        </a>
+        <a
+          href="/signup"
+          class="px-4 py-1 bg-white text-ipkoDark rounded-md hover:bg-gray-200 transition"
+        >
+          {{ $translations[$currentLang].meta.signup }}
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+  
+  <script>
+export default {
+  name: "MetaHeader",
+  data() {
+    return {
+      isAuthMenuOpen: false,
+    };
+  },
+  methods: {
+    toggleAuthMenu() {
+      this.isAuthMenuOpen = !this.isAuthMenuOpen;
+    },
+    getTranslation(key) {
+      return (
+        this.$translations[this.$root.$currentLang]?.[key] ||
+        `Missing Translation: ${key}`
+      );
+    },
+  },
+};
+</script>
+  
+  <style scoped>
+.meta-header {
+  background-color: ipkoDark;
+  font-size: 0.875rem;
+}
+</style>
+  

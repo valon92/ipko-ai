@@ -5,6 +5,12 @@ export default {
         contact: "Kontakt",
         services: "Shërbimet",
     },
+    meta: {
+        startup: "Startup",
+        myBusiness: "Biznesi Im",
+        login: "Hyrje",
+        signup: "Regjistrohu",
+    },
     footer: {
         quickLinks: "Lidhje të Shpejta",
         home: "Ballina",
