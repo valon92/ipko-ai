@@ -21,7 +21,7 @@
         </a>
         <a
           href="/signup"
-          class="px-4 py-1 bg-white text-ipkoDark rounded-md hover:bg-gray-200 transition"
+          class="hidden sm:block px-4 py-1 bg-white text-ipkoDark rounded-md hover:bg-gray-200 transition"
         >
           {{ $translations[$currentLang].meta.signup }}
         </a>

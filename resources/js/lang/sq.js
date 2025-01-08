@@ -23,6 +23,16 @@ export default {
         login: "Hyr këtu",
         passwordMismatch: "Fjalëkalimet nuk përputhen!",
     },
+    login: {
+        title: "Hyrje",
+        subtitle: "Hyni në llogarinë tuaj për të eksploruar veçoritë.",
+        email: "Email",
+        password: "Fjalëkalimi",
+        button: "Hyr",
+        noAccount: "Nuk keni llogari?",
+        signup: "Regjistrohu këtu",
+        missingFields: "Ju lutemi plotësoni fushat për email dhe fjalëkalim.",
+    },
 
     footer: {
         quickLinks: "Lidhje të Shpejta",

@@ -23,6 +23,16 @@ export default {
         login: "Login here",
         passwordMismatch: "Passwords do not match!",
     },
+    login: {
+        title: "Login",
+        subtitle: "Access your account to explore features.",
+        email: "Email",
+        password: "Password",
+        button: "Login",
+        noAccount: "Don't have an account?",
+        signup: "Sign Up here",
+        missingFields: "Please fill in both email and password fields.",
+    },
 
     footer: {
         quickLinks: "Quick Links",

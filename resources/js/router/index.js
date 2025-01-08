@@ -6,6 +6,7 @@ import Faq from "@/views/Faq.vue";
 import Services from "@/views/Services.vue";
 import InnovativeSolutions from "../views/InnovativeSolutions.vue";
 import SignUp from "../views/SignUp.vue";
+import Login from "../views/Login.vue";
 
 const routes = [
     { path: "/", name: "Home", component: Home },
@@ -15,6 +16,7 @@ const routes = [
     { path: "/services", name: "Services", component: Services },
     { path: "/innovative-solutions", component: InnovativeSolutions },
     { path: "/signup", component: SignUp },
+    { path: "/login", component: Login },
 ];
 
 const router = createRouter({

@@ -5,7 +5,9 @@
   <header class="bg-ipkoRed text-white py-4 shadow-md sticky top-0 z-50">
     <div class="flex justify-between items-center px-4">
       <!-- Logo -->
-      <h1 class="text-2xl font-bold">Ipko.ai</h1>
+      <a href="/">
+        <h1 class="text-2xl font-extralight font-bold">Ipko.ai</h1>
+      </a>
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex md:space-x-6">
@@ -31,7 +33,7 @@
       <!-- Search Component -->
 
       <!-- SearchBar për Mobile -->
-      <div class="px-3 mt-1 mb-1 w-full md:w-1/3">
+      <div class="px-3 mt-1 mb-1 w-full md:w-1/2">
         <SearchBar />
       </div>
 
@@ -129,6 +131,12 @@
             EN
           </button>
         </li>
+        <router-link
+          to="signup"
+          class="px-4 py-1 text-white font-bold border border-white 1px solid mx-28 hover:bg-white hover:text-ipkoRed"
+        >
+          {{ $translations[$currentLang].meta.signup }}
+        </router-link>
       </ul>
     </nav>
   </header>
