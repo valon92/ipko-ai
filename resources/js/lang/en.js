@@ -11,6 +11,18 @@ export default {
         login: "Login",
         signup: "Sign Up",
     },
+    signup: {
+        title: "Sign Up",
+        subtitle: "Create your account to access all features.",
+        fullName: "Full Name",
+        email: "Email",
+        password: "Password",
+        confirmPassword: "Confirm Password",
+        button: "Sign Up",
+        haveAccount: "Already have an account?",
+        login: "Login here",
+        passwordMismatch: "Passwords do not match!",
+    },
 
     footer: {
         quickLinks: "Quick Links",

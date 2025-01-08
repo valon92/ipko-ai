@@ -11,6 +11,19 @@ export default {
         login: "Hyrje",
         signup: "Regjistrohu",
     },
+    signup: {
+        title: "Regjistrohu",
+        subtitle: "Krijo llogarinë tënde për të aksesuar të gjitha veçoritë.",
+        fullName: "Emri i Plotë",
+        email: "Email",
+        password: "Fjalëkalimi",
+        confirmPassword: "Konfirmo Fjalëkalimin",
+        button: "Regjistrohu",
+        haveAccount: "Tashmë ke një llogari?",
+        login: "Hyr këtu",
+        passwordMismatch: "Fjalëkalimet nuk përputhen!",
+    },
+
     footer: {
         quickLinks: "Lidhje të Shpejta",
         home: "Ballina",

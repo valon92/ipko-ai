@@ -29,7 +29,9 @@
       </nav>
 
       <!-- Search Component -->
-      <div class="hidden md:block w-1/3">
+
+      <!-- SearchBar për Mobile -->
+      <div class="px-3 mt-1 mb-1 w-full md:w-1/3">
         <SearchBar />
       </div>
 
@@ -128,10 +130,6 @@
           </button>
         </li>
       </ul>
-      <!-- SearchBar për Mobile -->
-      <div class="px-4 mt-4">
-        <SearchBar />
-      </div>
     </nav>
   </header>
 </template>
