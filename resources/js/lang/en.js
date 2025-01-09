@@ -33,6 +33,23 @@ export default {
         signup: "Sign Up here",
         missingFields: "Please fill in both email and password fields.",
     },
+    startup: {
+        title: "Empower Your Startup with IPKO.ai",
+        subtitle: "Innovative AI solutions tailored for growing businesses.",
+        feature1: {
+            title: "AI-Powered Tools",
+            description: "Leverage advanced AI tools to grow your business.",
+        },
+        feature2: {
+            title: "Scalable Solutions",
+            description: "Solutions that grow with your startup.",
+        },
+        feature3: {
+            title: "Expert Support",
+            description: "Get support from our AI and business experts.",
+        },
+        cta: "Get Started Today",
+    },
 
     footer: {
         quickLinks: "Quick Links",

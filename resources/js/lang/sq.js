@@ -33,6 +33,26 @@ export default {
         signup: "Regjistrohu këtu",
         missingFields: "Ju lutemi plotësoni fushat për email dhe fjalëkalim.",
     },
+    startup: {
+        title: "Fuqizoni Startup-in tuaj me IPKO.ai",
+        subtitle:
+            "Zgjidhje inovative të AI të përshtatura për bizneset në rritje.",
+        feature1: {
+            title: "Mjete të Fuqizuara nga AI",
+            description:
+                "Shfrytëzoni mjetet e avancuara AI për të rritur biznesin tuaj.",
+        },
+        feature2: {
+            title: "Zgjidhje të Shkallëzueshme",
+            description: "Zgjidhje që rriten së bashku me startup-in tuaj.",
+        },
+        feature3: {
+            title: "Mbështetje nga Ekspertët",
+            description:
+                "Merrni mbështetje nga ekspertët tanë të AI dhe biznesit.",
+        },
+        cta: "Filloni Sot",
+    },
 
     footer: {
         quickLinks: "Lidhje të Shpejta",

@@ -7,6 +7,7 @@ import Services from "@/views/Services.vue";
 import InnovativeSolutions from "../views/InnovativeSolutions.vue";
 import SignUp from "../views/SignUp.vue";
 import Login from "../views/Login.vue";
+import Startup from "../views/Startup.vue";
 
 const routes = [
     { path: "/", name: "Home", component: Home },
@@ -17,6 +18,7 @@ const routes = [
     { path: "/innovative-solutions", component: InnovativeSolutions },
     { path: "/signup", component: SignUp },
     { path: "/login", component: Login },
+    { path: "/startup", component: Startup },
 ];
 
 const router = createRouter({
