@@ -8,6 +8,7 @@ import InnovativeSolutions from "../views/InnovativeSolutions.vue";
 import SignUp from "../views/SignUp.vue";
 import Login from "../views/Login.vue";
 import Startup from "../views/Startup.vue";
+import MyBusiness from "../views/MyBusiness.vue";
 
 const routes = [
     { path: "/", name: "Home", component: Home },
@@ -19,6 +20,7 @@ const routes = [
     { path: "/signup", component: SignUp },
     { path: "/login", component: Login },
     { path: "/startup", component: Startup },
+    { path: "/my-business", component: MyBusiness },
 ];
 
 const router = createRouter({

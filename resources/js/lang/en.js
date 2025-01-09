@@ -50,6 +50,23 @@ export default {
         },
         cta: "Get Started Today",
     },
+    myBusiness: {
+        title: "Empowering Your Business with IPKO.ai",
+        subtitle: "Tailored AI solutions to streamline your operations.",
+        feature1: {
+            title: "Automated Processes",
+            description: "Optimize workflows and reduce manual tasks.",
+        },
+        feature2: {
+            title: "Enhanced Customer Engagement",
+            description: "AI-powered tools to connect with your customers.",
+        },
+        feature3: {
+            title: "Business Insights",
+            description: "Actionable insights to drive business decisions.",
+        },
+        cta: "Contact Us for Business Solutions",
+    },
 
     footer: {
         quickLinks: "Quick Links",

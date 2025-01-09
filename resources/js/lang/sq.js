@@ -53,6 +53,26 @@ export default {
         },
         cta: "Filloni Sot",
     },
+    myBusiness: {
+        title: "Fuqizoni Biznesin tuaj me IPKO.ai",
+        subtitle:
+            "Zgjidhje të personalizuara të AI për të optimizuar operacionet tuaja.",
+        feature1: {
+            title: "Proceset e Automatizuara",
+            description: "Optimizoni proceset dhe reduktoni detyrat manuale.",
+        },
+        feature2: {
+            title: "Angazhimi i Përmirësuar i Klientëve",
+            description:
+                "Mjete të fuqizuara nga AI për t'u lidhur me klientët tuaj.",
+        },
+        feature3: {
+            title: "Njohuri për Biznesin",
+            description:
+                "Njohuri të vlefshme për të marrë vendime të drejta për biznesin.",
+        },
+        cta: "Na Kontaktoni për Zgjidhje të Biznesit",
+    },
 
     footer: {
         quickLinks: "Lidhje të Shpejta",
