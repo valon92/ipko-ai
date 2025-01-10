@@ -88,6 +88,22 @@ export default {
                 "Dive into neural networks and deep learning algorithms.",
         },
     },
+    solutions: {
+        title: "Tailored Solutions for Every Sector",
+        subtitle: "Explore how IPKO.ai can transform your industry.",
+        telecom: {
+            title: "Telecommunications",
+            description: "Optimize operations with AI-powered tools.",
+        },
+        smallBusiness: {
+            title: "Small Businesses",
+            description: "Scalable AI solutions for growing businesses.",
+        },
+        education: {
+            title: "Education",
+            description: "Enhance learning experiences with AI-driven tools.",
+        },
+    },
 
     footer: {
         quickLinks: "Quick Links",

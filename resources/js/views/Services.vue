@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="services-hero bg-ipkoRed text-white py-20">
+    <section class="services-hero py-20">
       <div class="container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-4">
           <!-- Our Services -->
@@ -140,7 +140,8 @@ export default {
   
   <style scoped>
 .services-hero {
-  background: linear-gradient(to right, #e30613, #8c1a1a);
+  /* background: linear-gradient(to right, #e30613, #8c1a1a); */
+  background: white;
 }
 
 .services-list .rounded-lg {

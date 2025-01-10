@@ -95,6 +95,26 @@ export default {
         },
     },
 
+    solutions: {
+        title: "Zgjidhje të Përshtatura për Çdo Sektor",
+        subtitle:
+            "Eksploroni se si IPKO.ai mund të transformojë industrinë tuaj.",
+        telecom: {
+            title: "Telekomunikacioni",
+            description: "Optimizoni operacionet me mjete të fuqizuara nga AI.",
+        },
+        smallBusiness: {
+            title: "Bizneset e Vogla",
+            description:
+                "Zgjidhje të shkallëzueshme të AI për bizneset në rritje.",
+        },
+        education: {
+            title: "Arsimi",
+            description:
+                "Përmirësoni përvojat e të nxënit me mjete të drejtuara nga AI.",
+        },
+    },
+
     footer: {
         quickLinks: "Lidhje të Shpejta",
         home: "Ballina",
