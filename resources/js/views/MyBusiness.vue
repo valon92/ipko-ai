@@ -29,7 +29,6 @@
         </div>
         <div class="p-6 rounded-lg shadow-md bg-gray-100">
           <h3 class="text-xl font-semibold text-ipkoDark mb-2">
-            {{ getTranslation("myBusiness.feature3.title") }}
             {{ $translations[$currentLang].myBusiness.feature3.title }}
           </h3>
           <p class="text-gray-600">

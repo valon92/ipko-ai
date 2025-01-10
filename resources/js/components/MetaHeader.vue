@@ -9,6 +9,9 @@
         <a href="/my-business" class="hover:text-gray-300">
           {{ $translations[$currentLang].meta.myBusiness }}
         </a>
+        <a href="/tutorials" class="hover:text-gray-300">
+          {{ $translations[$currentLang].meta.tutorials }}
+        </a>
       </div>
 
       <!-- Butonat për Autentifikim -->
@@ -25,6 +28,23 @@
         >
           {{ $translations[$currentLang].meta.signup }}
         </a>
+
+        <li class="block sm:hidden">
+          <button
+            @click="changeLanguage('sq')"
+            :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'sq' }"
+            class="px-2 py-1 rounded-md"
+          >
+            SQ
+          </button>
+          <button
+            @click="changeLanguage('en')"
+            :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'en' }"
+            class="px-2 py-1 rounded-md"
+          >
+            EN
+          </button>
+        </li>
       </div>
     </div>
   </div>

@@ -10,6 +10,7 @@ export default {
         myBusiness: "My Business",
         login: "Login",
         signup: "Sign Up",
+        tutorials: "Tutorials AI",
     },
     signup: {
         title: "Sign Up",
@@ -66,6 +67,26 @@ export default {
             description: "Actionable insights to drive business decisions.",
         },
         cta: "Contact Us for Business Solutions",
+    },
+    tutorials: {
+        title: "AI Tutorials",
+        subtitle: "Explore our curated tutorials to master AI concepts.",
+        learnMore: "Learn More",
+        course1: {
+            title: "Introduction to AI",
+            description:
+                "Learn the basics of Artificial Intelligence and its applications.",
+        },
+        course2: {
+            title: "Machine Learning Basics",
+            description:
+                "Understand the fundamentals of machine learning techniques.",
+        },
+        course3: {
+            title: "Deep Learning Fundamentals",
+            description:
+                "Dive into neural networks and deep learning algorithms.",
+        },
     },
 
     footer: {

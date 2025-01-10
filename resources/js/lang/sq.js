@@ -10,6 +10,7 @@ export default {
         myBusiness: "Biznesi Im",
         login: "Hyrje",
         signup: "Regjistrohu",
+        tutorials: "Mësime AI",
     },
     signup: {
         title: "Regjistrohu",
@@ -72,6 +73,26 @@ export default {
                 "Njohuri të vlefshme për të marrë vendime të drejta për biznesin.",
         },
         cta: "Na Kontaktoni për Zgjidhje të Biznesit",
+    },
+    tutorials: {
+        title: "Mësime për Inteligjencën Artificiale",
+        subtitle:
+            "Eksploroni mësimet tona të kuruara për të zotëruar konceptet e AI.",
+        learnMore: "Mëso më shumë",
+        course1: {
+            title: "Hyrje në AI",
+            description:
+                "Mësoni bazat e Inteligjencës Artificiale dhe aplikimet e saj.",
+        },
+        course2: {
+            title: "Bazat e Mësimit të Makinerive",
+            description: "Kuptoni bazat e teknikave të mësimit të makinerive.",
+        },
+        course3: {
+            title: "Bazat e Mësimit të Thellë",
+            description:
+                "Zhytuni në rrjetet nervore dhe algoritmet e mësimit të thellë.",
+        },
     },
 
     footer: {

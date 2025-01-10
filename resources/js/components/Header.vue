@@ -115,25 +115,10 @@
             }}
           </router-link>
         </li>
-        <li class="flex justify-center space-x-4 mt-4">
-          <button
-            @click="changeLanguage('sq')"
-            :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'sq' }"
-            class="px-2 py-1 rounded-md"
-          >
-            SQ
-          </button>
-          <button
-            @click="changeLanguage('en')"
-            :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'en' }"
-            class="px-2 py-1 rounded-md"
-          >
-            EN
-          </button>
-        </li>
+        <hr />
         <router-link
           to="signup"
-          class="px-4 py-1 text-white font-bold border border-white 1px solid mx-28 hover:bg-white hover:text-ipkoRed"
+          class="px-4 py-1 text-white font-bold mx-28 hover:bg-white hover:text-ipkoRed"
         >
           {{ $translations[$currentLang].meta.signup }}
         </router-link>
