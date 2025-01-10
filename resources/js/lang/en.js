@@ -50,6 +50,19 @@ export default {
             description: "Get support from our AI and business experts.",
         },
         cta: "Get Started Today",
+        registrationTitle: "Register Your Startup",
+        registrationSubtitle:
+            "Join the IPKO.ai platform and grow your business.",
+        form: {
+            name: "Startup Name",
+            email: "Email Address",
+            website: "Website (optional)",
+            industry: "Industry",
+            selectIndustry: "Select your industry",
+            description: "Brief Description",
+            submit: "Submit",
+            successMessage: "Your startup has been successfully registered!",
+        },
     },
     myBusiness: {
         title: "Empowering Your Business with IPKO.ai",

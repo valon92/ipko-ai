@@ -40,7 +40,7 @@
       <!-- CTA (Call to Action) -->
       <div class="mt-12">
         <a
-          href="/contact"
+          href="#registerstartup"
           class="inline-block bg-ipkoRed text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-ipkoLight transition duration-300"
         >
           {{ $translations[$currentLang].startup.cta }}
@@ -48,11 +48,130 @@
       </div>
     </div>
   </section>
+  <section id="registerstartup" class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-ipkoRed text-center mb-6">
+        {{ $translations[$currentLang].startup.registrationTitle }}
+      </h1>
+      <p class="text-lg text-gray-600 text-center mb-8">
+        {{ $translations[$currentLang].startup.registrationSubtitle }}
+      </p>
+
+      <!-- Form për Regjistrimin e Startup-it -->
+      <form
+        @submit.prevent="submitForm"
+        class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md"
+      >
+        <!-- Startup Name -->
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-semibold mb-2">
+            {{ $translations[$currentLang].startup.form.name }}
+          </label>
+          <input
+            v-model="form.name"
+            type="text"
+            id="name"
+            placeholder="Startup Name"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none"
+            required
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-semibold mb-2">
+            {{ $translations[$currentLang].startup.form.email }}
+          </label>
+          <input
+            v-model="form.email"
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none"
+            required
+          />
+        </div>
+
+        <!-- Website -->
+        <div class="mb-4">
+          <label for="website" class="block text-gray-700 font-semibold mb-2">
+            {{ $translations[$currentLang].startup.form.website }}
+          </label>
+          <input
+            v-model="form.website"
+            type="url"
+            id="website"
+            placeholder="Website URL (optional)"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none"
+          />
+        </div>
+
+        <!-- Industry -->
+        <div class="mb-4">
+          <label for="industry" class="block text-gray-700 font-semibold mb-2">
+            {{ $translations[$currentLang].startup.form.industry }}
+          </label>
+          <select
+            v-model="form.industry"
+            id="industry"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none"
+            required
+          >
+            <option value="" disabled>
+              {{ $translations[$currentLang].startup.form.selectIndustry }}
+            </option>
+            <option value="tech">Technology</option>
+            <option value="finance">Finance</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="education">Education</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Description -->
+        <div class="mb-4">
+          <label
+            for="description"
+            class="block text-gray-700 font-semibold mb-2"
+          >
+            {{ $translations[$currentLang].startup.form.description }}
+          </label>
+          <textarea
+            v-model="form.description"
+            id="description"
+            rows="4"
+            placeholder="Brief description of your startup"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="w-full bg-ipkoRed text-white font-semibold py-2 px-4 rounded-lg hover:bg-ipkoLight transition"
+        >
+          {{ $translations[$currentLang].startup.form.submit }}
+        </button>
+      </form>
+    </div>
+  </section>
 </template>
-  
-  <script>
+
+<script>
 export default {
   name: "Startup",
+  data() {
+    return {
+      form: {
+        name: "",
+        email: "",
+        website: "",
+        industry: "",
+        description: "",
+      },
+    };
+  },
   methods: {
     getTranslation(key) {
       return (
@@ -60,9 +179,17 @@ export default {
         `Missing Translation: ${key}`
       );
     },
+    submitForm() {
+      // Logika për dërgimin e të dhënave
+      console.log("Form Submitted", this.form);
+      alert(this.getTranslation("startup.form.successMessage"));
+    },
   },
 };
 </script>
+  
+
+
   
   <style scoped>
 .startup h1 {
@@ -76,6 +203,15 @@ export default {
 }
 .startup .grid div:hover {
   transform: translateY(-5px);
+}
+section {
+  background-color: #f9f9f9;
+}
+label {
+  font-size: 0.875rem;
+}
+button {
+  transition: background-color 0.3s ease;
 }
 </style>
   

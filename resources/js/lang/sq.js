@@ -53,6 +53,19 @@ export default {
                 "Merrni mbështetje nga ekspertët tanë të AI dhe biznesit.",
         },
         cta: "Filloni Sot",
+        registrationTitle: "Regjistro Startup-in Tuaj",
+        registrationSubtitle:
+            "Bashkohuni në platformën IPKO.ai dhe zhvilloni biznesin tuaj.",
+        form: {
+            name: "Emri i Startup-it",
+            email: "Adresa e Email-it",
+            website: "Uebfaqja (opsionale)",
+            industry: "Industria",
+            selectIndustry: "Zgjidhni industrinë tuaj",
+            description: "Përshkrim i Shkurtër",
+            submit: "Dërgo",
+            successMessage: "Startup-i juaj u regjistrua me sukses!",
+        },
     },
     myBusiness: {
         title: "Fuqizoni Biznesin tuaj me IPKO.ai",
