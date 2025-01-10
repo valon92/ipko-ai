@@ -32,8 +32,8 @@
       </div>
     </section>
 
-    <!-- News Section -->
-    <News />
+    <!-- Blog Section -->
+    <Blog />
 
     <!-- Idea Section -->
     <section class="idea-section bg-gray-100 py-12">
@@ -303,11 +303,13 @@
 </template>
 <script>
 import Solutions from "./Solutions.vue";
+import Blog from "./Blog.vue";
 
 export default {
   name: "Home",
   components: {
     Solutions,
+    Blog,
   },
 };
 </script>

@@ -114,24 +114,21 @@ export default {
                 "Përmirësoni përvojat e të nxënit me mjete të drejtuara nga AI.",
         },
     },
-    news: {
-        title: "Lajmet Teknologjike",
-        subtitle:
-            "Qëndroni të informuar me trendet dhe inovacionet më të fundit.",
+    blog: {
+        title: "Blogu Ynë",
+        subtitle: "Njohuri, trende, dhe përditësime mbi AI dhe teknologjinë.",
         readMore: "Lexo më shumë",
-        article1: {
-            title: "Revolucioni i AI në Telekomunikacion",
-            summary: "Zbuloni si AI po transformon industrinë e telekomit.",
+        post1: {
+            title: "E ardhmja e AI në jetën e përditshme",
+            summary: "Zbuloni si AI po formëson përvojat tona të përditshme.",
         },
-        article2: {
-            title: "10 Teknologjitë e Reja të Vitit 2025",
-            summary:
-                "Një vështrim në teknologjitë që po formësojnë të ardhmen tonë.",
+        post2: {
+            title: "5 Mjetet më të mira të AI për Bizneset",
+            summary: "Eksploroni mjetet që po revolucionarizojnë industritë.",
         },
-        article3: {
-            title: "Roli i Machine Learning në Shëndetësi",
-            summary:
-                "Si machine learning po revolucionarizon kujdesin për pacientët.",
+        post3: {
+            title: "Si funksionon Machine Learning",
+            summary: "Kuptoni bazat e të nxënit të makinerive.",
         },
     },
 

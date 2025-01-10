@@ -104,22 +104,21 @@ export default {
             description: "Enhance learning experiences with AI-driven tools.",
         },
     },
-    news: {
-        title: "Technology News",
-        subtitle:
-            "Stay updated with the latest trends and innovations in tech.",
+    blog: {
+        title: "Our Blog",
+        subtitle: "Insights, trends, and updates on AI and technology.",
         readMore: "Read More",
-        article1: {
-            title: "AI Revolution in Telecommunications",
-            summary: "Discover how AI is transforming the telecom industry.",
+        post1: {
+            title: "The Future of AI in Everyday Life",
+            summary: "Discover how AI is shaping our daily experiences.",
         },
-        article2: {
-            title: "Top 10 Emerging Technologies in 2025",
-            summary: "A glimpse into the technologies shaping our future.",
+        post2: {
+            title: "Top 5 AI Tools for Businesses",
+            summary: "Explore the tools that are revolutionizing industries.",
         },
-        article3: {
-            title: "The Role of Machine Learning in Healthcare",
-            summary: "How machine learning is revolutionizing patient care.",
+        post3: {
+            title: "How Machine Learning Works",
+            summary: "Understand the basics of machine learning.",
         },
     },
 
