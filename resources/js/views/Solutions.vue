@@ -2,10 +2,10 @@
   <section class="solutions bg-gray-100 py-12">
     <div class="container mx-auto px-4">
       <h1 class="text-4xl font-bold text-ipkoRed text-center mb-6">
-        {{ getTranslation("solutions.title") }}
+        {{ $translations[$currentLang].solutions.title }}
       </h1>
       <p class="text-lg text-gray-600 text-center mb-8">
-        {{ getTranslation("solutions.subtitle") }}
+        {{ $translations[$currentLang].solutions.subtitle }}
       </p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div
@@ -14,9 +14,11 @@
           class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-ipkoDark mb-2">
-            {{ solution.title }}
+            {{ $translations[$currentLang].solutions.title }}
           </h3>
-          <p class="text-gray-600">{{ solution.description }}</p>
+          <p class="text-gray-600">
+            {{ $translations[$currentLang].solutions.telecom.description }}
+          </p>
         </div>
       </div>
     </div>
