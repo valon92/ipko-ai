@@ -10,7 +10,6 @@ import Login from "../views/Login.vue";
 import Startup from "../views/Startup.vue";
 import MyBusiness from "../views/MyBusiness.vue";
 import Tutorials from "../views/Tutorials.vue";
-import News from "../views/News.vue";
 
 const routes = [
     { path: "/", name: "Home", component: Home },
@@ -24,7 +23,6 @@ const routes = [
     { path: "/startup", component: Startup },
     { path: "/my-business", component: MyBusiness },
     { path: "/tutorials", component: Tutorials },
-    { path: "/news", component: News },
 ];
 
 const router = createRouter({

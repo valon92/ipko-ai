@@ -303,13 +303,11 @@
 </template>
 <script>
 import Solutions from "./Solutions.vue";
-import News from "./News.vue";
 
 export default {
   name: "Home",
   components: {
     Solutions,
-    News,
   },
 };
 </script>
