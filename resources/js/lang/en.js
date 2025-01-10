@@ -104,6 +104,24 @@ export default {
             description: "Enhance learning experiences with AI-driven tools.",
         },
     },
+    news: {
+        title: "Technology News",
+        subtitle:
+            "Stay updated with the latest trends and innovations in tech.",
+        readMore: "Read More",
+        article1: {
+            title: "AI Revolution in Telecommunications",
+            summary: "Discover how AI is transforming the telecom industry.",
+        },
+        article2: {
+            title: "Top 10 Emerging Technologies in 2025",
+            summary: "A glimpse into the technologies shaping our future.",
+        },
+        article3: {
+            title: "The Role of Machine Learning in Healthcare",
+            summary: "How machine learning is revolutionizing patient care.",
+        },
+    },
 
     footer: {
         quickLinks: "Quick Links",

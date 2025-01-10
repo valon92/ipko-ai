@@ -114,6 +114,26 @@ export default {
                 "Përmirësoni përvojat e të nxënit me mjete të drejtuara nga AI.",
         },
     },
+    news: {
+        title: "Lajmet Teknologjike",
+        subtitle:
+            "Qëndroni të informuar me trendet dhe inovacionet më të fundit.",
+        readMore: "Lexo më shumë",
+        article1: {
+            title: "Revolucioni i AI në Telekomunikacion",
+            summary: "Zbuloni si AI po transformon industrinë e telekomit.",
+        },
+        article2: {
+            title: "10 Teknologjitë e Reja të Vitit 2025",
+            summary:
+                "Një vështrim në teknologjitë që po formësojnë të ardhmen tonë.",
+        },
+        article3: {
+            title: "Roli i Machine Learning në Shëndetësi",
+            summary:
+                "Si machine learning po revolucionarizon kujdesin për pacientët.",
+        },
+    },
 
     footer: {
         quickLinks: "Lidhje të Shpejta",

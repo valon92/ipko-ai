@@ -32,6 +32,9 @@
       </div>
     </section>
 
+    <!-- News Section -->
+    <News />
+
     <!-- Idea Section -->
     <section class="idea-section bg-gray-100 py-12">
       <div class="container mx-auto px-4 text-center">
@@ -80,35 +83,6 @@
     </section>
 
     <!-- About Us Section -->
-    <section class="about py-16 bg-white">
-      <div
-        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
-      >
-        <!-- About Image -->
-        <div>
-          <img
-            src="https://via.placeholder.com/500x300"
-            alt="About Us"
-            class="rounded-lg shadow-md"
-          />
-        </div>
-        <!-- About Content -->
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-4">
-            {{ $translations[$currentLang].home.aboutTitle }}
-          </h2>
-          <p class="text-lg text-gray-700 mb-4">
-            {{ $translations[$currentLang].home.aboutDescription }}
-          </p>
-          <router-link
-            to="/about"
-            class="inline-block bg-ipkoRed text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-ipkoDark transition duration-300"
-          >
-            {{ $translations[$currentLang].home.learnMore }}
-          </router-link>
-        </div>
-      </div>
-    </section>
 
     <section class="why-choose-us py-16 bg-gray-50">
       <div class="container mx-auto px-4 text-center">
@@ -329,11 +303,13 @@
 </template>
 <script>
 import Solutions from "./Solutions.vue";
+import News from "./News.vue";
 
 export default {
   name: "Home",
   components: {
     Solutions,
+    News,
   },
 };
 </script>
