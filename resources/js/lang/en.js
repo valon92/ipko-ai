@@ -65,6 +65,7 @@ export default {
         },
     },
     myBusiness: {
+        registerButton: "Register your business",
         title: "Empowering Your Business with IPKO.ai",
         subtitle: "Tailored AI solutions to streamline your operations.",
         feature1: {
@@ -80,6 +81,17 @@ export default {
             description: "Actionable insights to drive business decisions.",
         },
         cta: "Contact Us for Business Solutions",
+    },
+    registerBusiness: {
+        title: "Register Your Business",
+        subtitle: "Provide the details below to join our platform.",
+        form: {
+            name: "Business Name",
+            email: "Contact Email",
+            description: "Business Description",
+            submit: "Submit",
+            successMessage: "Your business has been successfully registered!",
+        },
     },
     tutorials: {
         title: "AI Tutorials",

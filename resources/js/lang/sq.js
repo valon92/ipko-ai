@@ -68,6 +68,8 @@ export default {
         },
     },
     myBusiness: {
+        registerButton: "Regjistro Biznesin",
+
         title: "Fuqizoni Biznesin tuaj me IPKO.ai",
         subtitle:
             "Zgjidhje të personalizuara të AI për të optimizuar operacionet tuaja.",
@@ -86,6 +88,18 @@ export default {
                 "Njohuri të vlefshme për të marrë vendime të drejta për biznesin.",
         },
         cta: "Na Kontaktoni për Zgjidhje të Biznesit",
+    },
+    registerBusiness: {
+        title: "Regjistro Biznesin Tuaj",
+        subtitle:
+            "Plotësoni të dhënat më poshtë për t'u bashkuar me platformën tonë.",
+        form: {
+            name: "Emri i Biznesit",
+            email: "Email Kontakti",
+            description: "Përshkrimi i Biznesit",
+            submit: "Dërgo",
+            successMessage: "Biznesi juaj u regjistrua me sukses!",
+        },
     },
     tutorials: {
         title: "Mësime për Inteligjencën Artificiale",

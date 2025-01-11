@@ -1,4 +1,17 @@
 <template>
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4">
+      <!-- Button për Regjistrimin e Biznesit -->
+      <div class="text-center">
+        <router-link
+          to="/register-business"
+          class="inline-block bg-ipkoRed text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-ipkoLight transition duration-300"
+        >
+          {{ $translations[$currentLang].myBusiness.registerButton }}
+        </router-link>
+      </div>
+    </div>
+  </section>
   <section class="my-business bg-white py-12">
     <div class="container mx-auto px-4 text-center">
       <!-- Titulli Kryesor -->
