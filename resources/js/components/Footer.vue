@@ -73,6 +73,28 @@
 
         <!-- Social Media Links -->
         <div>
+          <!-- Language Selector -->
+          <div class="pb-3">
+            <button
+              @click="changeLanguage('sq')"
+              :class="{
+                'bg-white text-ipkoRed': $root.$currentLang === 'sq',
+              }"
+              class="px-2 py-1 rounded-md"
+            >
+              SQ
+            </button>
+            <button
+              @click="changeLanguage('en')"
+              :class="{
+                'bg-white text-ipkoRed': $root.$currentLang === 'en',
+              }"
+              class="px-2 py-1 rounded-md"
+            >
+              EN
+            </button>
+          </div>
+
           <h3 class="text-lg font-bold mb-2">
             {{
               $translations[$root.$currentLang]?.footer?.followUs ||

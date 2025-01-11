@@ -6,7 +6,7 @@
     <div class="flex justify-between items-center px-4">
       <!-- Logo -->
       <a href="/">
-        <h1 class="text-2xl font-extralight font-bold">Ipko.ai</h1>
+        <h1 class="text-2xl font-extralight">ipko.ai</h1>
       </a>
 
       <!-- Desktop Navigation -->
