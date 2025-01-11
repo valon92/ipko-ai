@@ -1,7 +1,6 @@
 <template>
-  <section class="tutorials bg-white py-12">
+  <section class="bg-gray-100 py-12">
     <div class="container mx-auto px-4">
-      <!-- Titulli Kryesor -->
       <h1 class="text-4xl font-bold text-ipkoRed text-center mb-6">
         {{ $translations[$currentLang].tutorials.title }}
       </h1>
@@ -9,26 +8,24 @@
         {{ $translations[$currentLang].tutorials.subtitle }}
       </p>
 
-      <!-- Lista e Kurseve -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Grid i Kartave -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div
-          v-for="course in courses"
-          :key="course.id"
-          class="p-6 rounded-lg shadow-md bg-gray-100 hover:shadow-lg transition"
+          v-for="tutorial in tutorials"
+          :key="tutorial.id"
+          class="bg-white rounded-lg shadow-md hover:shadow-lg transition p-4"
         >
+          <video
+            :src="tutorial.videoUrl"
+            controls
+            class="w-full rounded-md mb-4"
+          ></video>
           <h3 class="text-xl font-semibold text-ipkoDark mb-2">
-            {{ $translations[$currentLang].tutorials.course1.title }}
+            {{ $translations[$currentLang].tutorials.tutorial1.title }}
           </h3>
-          <p class="text-gray-600 mb-4">
-            {{ $translations[$currentLang].tutorials.course1.description }}
+          <p class="text-gray-600">
+            {{ $translations[$currentLang].tutorials.tutorial1.description }}
           </p>
-          <a
-            :href="course.link"
-            target="_blank"
-            class="text-ipkoRed hover:underline font-semibold"
-          >
-            {{ $translations[$currentLang].tutorials.learnMore }}
-          </a>
         </div>
       </div>
     </div>
@@ -40,24 +37,79 @@ export default {
   name: "Tutorials",
   data() {
     return {
-      courses: [
+      tutorials: [
         {
           id: 1,
-          title: this.getTranslation("tutorials.course1.title"),
-          description: this.getTranslation("tutorials.course1.description"),
-          link: "https://example.com/course1",
+          title: this.getTranslation("tutorials.tutorial1.title"),
+          description: this.getTranslation("tutorials.tutorial1.description"),
+          videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
         },
         {
           id: 2,
-          title: this.getTranslation("tutorials.course2.title"),
-          description: this.getTranslation("tutorials.course2.description"),
-          link: "https://example.com/course2",
+          title: this.getTranslation("tutorials.tutorial2.title"),
+          description: this.getTranslation("tutorials.tutorial2.description"),
+          videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
         },
+        // Shto edhe 10 karta të tjera
         {
           id: 3,
-          title: this.getTranslation("tutorials.course3.title"),
-          description: this.getTranslation("tutorials.course3.description"),
-          link: "https://example.com/course3",
+          title: this.getTranslation("tutorials.tutorial3.title"),
+          description: this.getTranslation("tutorials.tutorial3.description"),
+          videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        },
+        {
+          id: 4,
+          title: this.getTranslation("tutorials.tutorial4.title"),
+          description: this.getTranslation("tutorials.tutorial4.description"),
+          videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        },
+        {
+          id: 5,
+          title: this.getTranslation("tutorials.tutorial5.title"),
+          description: this.getTranslation("tutorials.tutorial5.description"),
+          videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        },
+        {
+          id: 6,
+          title: this.getTranslation("tutorials.tutorial6.title"),
+          description: this.getTranslation("tutorials.tutorial6.description"),
+          videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        },
+        {
+          id: 7,
+          title: this.getTranslation("tutorials.tutorial7.title"),
+          description: this.getTranslation("tutorials.tutorial7.description"),
+          videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        },
+        {
+          id: 8,
+          title: this.getTranslation("tutorials.tutorial8.title"),
+          description: this.getTranslation("tutorials.tutorial8.description"),
+          videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        },
+        {
+          id: 9,
+          title: this.getTranslation("tutorials.tutorial9.title"),
+          description: this.getTranslation("tutorials.tutorial9.description"),
+          videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        },
+        {
+          id: 10,
+          title: this.getTranslation("tutorials.tutorial10.title"),
+          description: this.getTranslation("tutorials.tutorial10.description"),
+          videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        },
+        {
+          id: 11,
+          title: this.getTranslation("tutorials.tutorial11.title"),
+          description: this.getTranslation("tutorials.tutorial11.description"),
+          videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+        },
+        {
+          id: 12,
+          title: this.getTranslation("tutorials.tutorial12.title"),
+          description: this.getTranslation("tutorials.tutorial12.description"),
+          videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
         },
       ],
     };
@@ -74,17 +126,8 @@ export default {
 </script>
   
   <style scoped>
-.tutorials h1 {
-  font-size: 2.5rem;
-}
-.tutorials p {
-  font-size: 1rem;
-}
-.tutorials .grid div {
-  transition: transform 0.3s;
-}
-.tutorials .grid div:hover {
-  transform: translateY(-5px);
+section {
+  background-color: #f9f9f9;
 }
 </style>
   

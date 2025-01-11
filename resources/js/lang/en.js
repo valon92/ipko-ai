@@ -95,24 +95,18 @@ export default {
     },
     tutorials: {
         title: "AI Tutorials",
-        subtitle: "Explore our curated tutorials to master AI concepts.",
-        learnMore: "Learn More",
-        course1: {
+        subtitle: "Learn about AI with our curated video tutorials.",
+        tutorial1: {
             title: "Introduction to AI",
-            description:
-                "Learn the basics of Artificial Intelligence and its applications.",
+            description: "Learn the basics of artificial intelligence.",
         },
-        course2: {
-            title: "Machine Learning Basics",
-            description:
-                "Understand the fundamentals of machine learning techniques.",
+        tutorial2: {
+            title: "Understanding Machine Learning",
+            description: "Explore the fundamentals of machine learning.",
         },
-        course3: {
-            title: "Deep Learning Fundamentals",
-            description:
-                "Dive into neural networks and deep learning algorithms.",
-        },
+        // Shto përkthime për 10 karta të tjera
     },
+
     solutions: {
         title: "Tailored Solutions for Every Sector",
         subtitle: "Explore how IPKO.ai can transform your industry.",

@@ -102,24 +102,17 @@ export default {
         },
     },
     tutorials: {
-        title: "Mësime për Inteligjencën Artificiale",
-        subtitle:
-            "Eksploroni mësimet tona të kuruara për të zotëruar konceptet e AI.",
-        learnMore: "Mëso më shumë",
-        course1: {
+        title: "Mësime për AI",
+        subtitle: "Mësoni rreth AI me mësimet tona me video.",
+        tutorial1: {
             title: "Hyrje në AI",
-            description:
-                "Mësoni bazat e Inteligjencës Artificiale dhe aplikimet e saj.",
+            description: "Mësoni bazat e inteligjencës artificiale.",
         },
-        course2: {
-            title: "Bazat e Mësimit të Makinerive",
-            description: "Kuptoni bazat e teknikave të mësimit të makinerive.",
+        tutorial2: {
+            title: "Të kuptojmë Machine Learning",
+            description: "Eksploroni bazat e machine learning.",
         },
-        course3: {
-            title: "Bazat e Mësimit të Thellë",
-            description:
-                "Zhytuni në rrjetet nervore dhe algoritmet e mësimit të thellë.",
-        },
+        // Shto përkthime për 10 karta të tjera
     },
 
     solutions: {
