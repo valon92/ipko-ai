@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-@vite('resources/css/app.css')
-
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Ipko.ai</title>
-    @vite('resources/js/app.js')
-    <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPKO.ai</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-
-<body>
+<body class="bg-gray-100">
     <div id="app"></div>
 </body>
-
 </html>
