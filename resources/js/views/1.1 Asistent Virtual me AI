@@ -1,0 +1,137 @@
+1.1 Asistent Virtual me AI
+Një platformë e fuqishme për të ofruar një asistent virtual me AI, i cili siguron:
+
+Karakteristikat Kryesore:
+Mbështetje 24/7 për Klientët:
+
+Chatbot-i do të jetë i disponueshëm në çdo kohë për t'iu përgjigjur pyetjeve të klientëve.
+Redukton nevojën për ndërhyrje njerëzore dhe përmirëson shpejtësinë e shërbimeve.
+Menaxhimi i Kërkesave të Zakonshme:
+
+Identifikimi dhe zgjidhja e problemeve të zakonshme si:
+Kontrolli i faturave.
+Ndryshimi i paketave të internetit.
+Zgjidhja e çështjeve të kontratave.
+Personalizim i Shërbimeve:
+
+Analizimi i sjelljes dhe preferencave të klientëve për të ofruar rekomandime të personalizuara.
+Përmirëson përvojën e përdoruesve duke bërë sugjerime të bazuara në historikun e tyre.
+Shembull Përdorimi:
+Klienti:
+"Sa është fatura ime mujore?"
+
+Chatbot-i:
+"Fatura juaj për muajin janar është 29.99€. A dëshironi më shumë detaje për këtë faturë?"
+
+Implementimi Teknik i Asistentit Virtual
+1. Teknologjitë e Përdorura:
+Natural Language Processing (NLP): Për të kuptuar dhe përpunuar kërkesat e klientëve.
+Platforma: OpenAI GPT, Dialogflow, ose IBM Watson.
+Integrimi me Sistemet e Brendshme të IPKO:
+API për të nxjerrë informacione nga databaza për klientët.
+Front-End: Vue.js për ndërfaqen interaktive.
+Back-End: Laravel për menaxhimin e API-ve dhe logjikës së biznesit.
+2. Arkitektura e Sistemit:
+Klienti:
+
+Përdor chatbot-in përmes:
+Uebfaqes së IPKO.ai.
+Aplikacionit mobil.
+Platformave sociale (Messenger, WhatsApp).
+Chatbot-i (AI Engine):
+
+Përdor NLP për të kuptuar kërkesat dhe për t'u përgjigjur në mënyrë të saktë.
+Integrimi me API-të e IPKO:
+
+Akses te:
+Faturat e klientëve.
+Informacioni për paketa dhe kontrata.
+Historiku i ndërveprimeve të klientit.
+Analitika dhe Raportimi:
+
+Regjistrimi i të gjitha kërkesave për analiza të mëtejshme.
+Identifikimi i pyetjeve më të zakonshme për përmirësimin e sistemit.
+3. Shembull Vizual:
+Krijo një ndërfaqe për përdoruesin ku klientët mund të komunikojnë me chatbot-in në kohë reale:
+
+vue
+Copy code
+<template>
+  <div class="chatbot bg-gray-100 py-8">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-ipkoRed text-center mb-6">
+        {{ getTranslation('chatbot.title') }}
+      </h2>
+      <div class="chatbox bg-white rounded-lg shadow-md p-4">
+        <div v-for="message in chatHistory" :key="message.id" class="message">
+          <p :class="{'text-right': message.sender === 'user', 'text-left': message.sender === 'bot'}">
+            {{ message.text }}
+          </p>
+        </div>
+        <input
+          v-model="userMessage"
+          @keyup.enter="sendMessage"
+          type="text"
+          placeholder="Type your message..."
+          class="w-full px-4 py-2 border rounded-lg focus:outline-none"
+        />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Chatbot",
+  data() {
+    return {
+      userMessage: "",
+      chatHistory: [
+        { id: 1, sender: "bot", text: "Welcome! How can I help you today?" },
+      ],
+    };
+  },
+  methods: {
+    sendMessage() {
+      if (this.userMessage.trim()) {
+        this.chatHistory.push({
+          id: Date.now(),
+          sender: "user",
+          text: this.userMessage,
+        });
+
+        // Simulate bot response
+        setTimeout(() => {
+          this.chatHistory.push({
+            id: Date.now() + 1,
+            sender: "bot",
+            text: "Thank you for your message. I am here to assist you.",
+          });
+        }, 1000);
+
+        this.userMessage = "";
+      }
+    },
+  },
+};
+</script>
+
+<style scoped>
+.chatbox {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.message p {
+  margin: 5px 0;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+</style>
+Hapat e Ardhshëm për Implementim:
+Testimi i Chatbot-it në Sisteme të Ndryshme: Sigurohu që funksionon mirë në desktop dhe mobile.
+Optimizimi i Përgjigjeve të Chatbot-it: Përdor NLP për të bërë përgjigjet më të sakta.
+Analitika për Performancën: Monitoro sa pyetje zgjidhen automatikisht dhe ku ka nevojë për ndërhyrje.

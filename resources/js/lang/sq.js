@@ -114,6 +114,9 @@ export default {
         },
         // Shto përkthime për 10 karta të tjera
     },
+    chatbot: {
+        title: "Asistent Virtual me AI",
+    },
 
     solutions: {
         title: "Zgjidhje të Përshtatura për Çdo Sektor",
