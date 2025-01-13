@@ -24,7 +24,7 @@
         <!-- Image Content -->
         <div class="flex justify-center">
           <img
-            src="https://via.placeholder.com/500x300"
+            src="/public/images/ipko.png"
             alt="Hero Image"
             class="rounded-lg shadow-md"
           />
