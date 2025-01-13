@@ -1,10 +1,11 @@
 <template>
-    <div class="relative">
-      <!-- Butoni për Hapjen e Chatbot-it -->
+    <div class="chatbot-container">
+      <!-- Shigjeta për Hapje dhe Mbyllje -->
       <div
         @click="toggleChatbot"
-        class="fixed bottom-36 right-6 bg-ipkoRed text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg cursor-pointer z-50"
+        class="chatbot-toggle bg-ipkoRed text-white fixed top-1/2 right-0 transform -translate-y-1/2 rounded-l-full shadow-lg cursor-pointer z-50 w-12 h-12 flex items-center justify-center"
       >
+        <!-- Shigjeta për Hapje -->
         <svg
           v-if="!isOpen"
           xmlns="http://www.w3.org/2000/svg"
@@ -17,9 +18,10 @@
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
-            d="M10 6h10M10 12h10M10 18h10M4 6h.01M4 12h.01M4 18h.01"
+            d="M15 19l-7-7 7-7"
           />
         </svg>
+        <!-- Shigjeta për Mbyllje -->
         <svg
           v-else
           xmlns="http://www.w3.org/2000/svg"
@@ -32,17 +34,14 @@
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
-            d="M6 18L18 6M6 6l12 12"
+            d="M9 5l7 7-7 7"
           />
         </svg>
       </div>
   
       <!-- Paneli i Chatbot-it -->
       <div
-        :class="{
-          'translate-x-0': isOpen,
-          'translate-x-full': !isOpen,
-        }"
+        :class="['chatbot-panel', isOpen ? 'translate-x-0' : 'translate-x-full']"
         class="fixed top-0 right-0 w-80 h-full bg-white shadow-lg transform transition-transform duration-300 z-40"
       >
         <div class="p-4">
@@ -107,10 +106,9 @@
     },
     methods: {
       toggleChatbot() {
-        this.isOpen = !this.isOpen;
+        this.isOpen = !this.isOpen; // Ndërron gjendjen e hapjes/mbylljes
       },
       submitChat() {
-        console.log("Chat Submitted:", this.chatForm);
         alert(this.getTranslation("chatbot.success"));
         this.chatForm.name = "";
         this.chatForm.message = "";
@@ -127,7 +125,15 @@
   </script>
   
   <style scoped>
-  .fixed {
+  .chatbot-container {
+    z-index: 1000;
+  }
+  
+  .chatbot-toggle {
+    z-index: 1001;
+  }
+  
+  .chatbot-panel {
     z-index: 1000;
   }
   </style>
