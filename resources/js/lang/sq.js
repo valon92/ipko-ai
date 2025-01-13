@@ -136,6 +136,17 @@ export default {
         send: "Dërgo",
         success: "Mesazhi juaj u dërgua me sukses!",
       },
+      dataAnalytics: {
+        title: "Analiza e të Dhënave",
+        description: "Ofrimi i raporteve të personalizuara bazuar në të dhënat e klientëve.",
+        point1: "Dorëzimi i raporteve të personalizuara për bizneset.",
+        point2: "Parashikimi i sjelljeve të përdoruesve përmes algoritmeve të AI.",
+        point3: "Krijimi i raporteve analitike për biznese dhe partnerë.",
+        exampleTitle: "Shembull Përdorimi",
+        exampleDescription:
+          "Bizneset mund të shohin se si përdoruesit përdorin shërbimet dhe të optimizojnë strategjitë.",
+      },
+      
       
 
     solutions: {

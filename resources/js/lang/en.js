@@ -127,6 +127,16 @@ export default {
         send: "Send",
         success: "Your message has been sent successfully!",
       },
+      dataAnalytics: {
+        title: "Data Analytics",
+        description: "Providing personalized reports based on customer data.",
+        point1: "Delivering personalized reports for businesses.",
+        point2: "Predicting user behavior using AI algorithms.",
+        point3: "Creating analytical reports for businesses and partners.",
+        exampleTitle: "Use Case Example",
+        exampleDescription:
+          "Businesses can see how users interact with services and optimize their strategies.",
+      },
       
 
     solutions: {

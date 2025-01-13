@@ -3,6 +3,14 @@
     <div class="mx-auto flex justify-between items-center px-4">
       <!-- Lidhjet Kryesore -->
       <div class="flex space-x-4">
+        <a
+      href="https://www.ipko.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="font-semibold hover:text-ipkoLight "
+    >
+      RC
+    </a>
         <a href="/startup" class="hover:text-gray-300">
           {{ $translations[$currentLang].meta.startup }}
         </a>

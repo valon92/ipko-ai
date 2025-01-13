@@ -125,7 +125,7 @@
         <hr />
         <router-link
           to="signup"
-          class="px-4 py-1 text-white font-bold mx-28 hover:bg-white hover:text-ipkoRed"
+          class=" py-1 text-white font-bold   hover:bg-gray-200 hover:text-ipkoRed"
         >
           {{ $translations[$currentLang].meta.signup }}
         </router-link>

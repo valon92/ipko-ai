@@ -219,13 +219,15 @@
         </div>
       </div>
     </section>
+    <DataAnalytics />
+
 
     <!-- Features Section -->
     <section class="features py-16 bg-white">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-6">
           {{ $translations[$currentLang].home.featuresTitle }}
-        </h2>
+                </h2>
         <p class="text-lg text-gray-700 mb-8">
           {{ $translations[$currentLang].home.featuresDescription }}
         </p>
@@ -310,6 +312,7 @@
 <script>
 import Solutions from "./Solutions.vue";
 import Blog from "./Blog.vue";
+import DataAnalytics from "./DataAnalytics.vue"
 
 
 export default {
@@ -317,6 +320,7 @@ export default {
   components: {
     Solutions,
     Blog,
+    DataAnalytics,
   
   },
 };
