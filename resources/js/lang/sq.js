@@ -146,6 +146,18 @@ export default {
         exampleDescription:
           "Bizneset mund të shohin se si përdoruesit përdorin shërbimet dhe të optimizojnë strategjitë.",
       },
+      automation: {
+        title: "Automatizimi i Proceseve",
+        description:
+          "Implementimi i proceseve të automatizuara për menaxhimin e detyrave administrative dhe optimizimin e kostove.",
+        point1: "Automatizimi i menaxhimit të detyrave administrative.",
+        point2: "Optimizimi i proceseve për të ulur kostot dhe për të rritur efikasitetin.",
+        point3:
+          "Automatizimi i proceseve për monitorimin e cilësisë së rrjetit dhe shërbimeve.",
+        exampleTitle: "Shembull Përdorimi",
+        exampleDescription:
+          "Monitorimi automatik i performancës së rrjetit për të identifikuar problemet para se të ndodhin.",
+      },
       
       
 

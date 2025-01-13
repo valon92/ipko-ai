@@ -137,6 +137,19 @@ export default {
         exampleDescription:
           "Businesses can see how users interact with services and optimize their strategies.",
       },
+      automation: {
+        title: "AI Automation",
+        description:
+          "Implementing automated processes to manage administrative tasks and optimize costs.",
+        point1: "Automating administrative task management.",
+        point2: "Optimizing processes to reduce costs and increase efficiency.",
+        point3: "Automating monitoring for network quality and services.",
+        exampleTitle: "Use Case Example",
+        exampleDescription:
+          "Automatically monitor network performance to identify issues before they occur.",
+      },
+      
+      
       
 
     solutions: {

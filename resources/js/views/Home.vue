@@ -32,11 +32,6 @@
       </div>
     </section>
 
-   
-
-    
-    
-
     <!-- Blog Section -->
     <Blog />
 
@@ -219,7 +214,12 @@
         </div>
       </div>
     </section>
+
+
     <DataAnalytics />
+
+
+    <AutomationSection />
 
 
     <!-- Features Section -->
@@ -313,6 +313,8 @@
 import Solutions from "./Solutions.vue";
 import Blog from "./Blog.vue";
 import DataAnalytics from "./DataAnalytics.vue"
+import AutomationSection from "../components/AutomationSection.vue";
+
 
 
 export default {
@@ -321,6 +323,7 @@ export default {
     Solutions,
     Blog,
     DataAnalytics,
+    AutomationSection,
   
   },
 };
