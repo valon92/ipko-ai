@@ -93,6 +93,19 @@ export default {
             successMessage: "Your business has been successfully registered!",
         },
     },
+    BusinessSupport: {
+        title: "Business Support",
+        invoices: "Invoices",
+        invoiceDate: "Invoice Date",
+        amount: "Amount",
+        action: "Action",
+        download: "Download",
+        packages: "Packages",
+        upgrade: "Upgrade Package",
+        contracts: "Contracts",
+        view: "View Contract",
+      },
+      
     tutorials: {
         title: "AI Tutorials",
         subtitle: "Learn about AI with our curated video tutorials.",

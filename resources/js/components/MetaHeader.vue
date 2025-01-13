@@ -2,13 +2,22 @@
   <div class="meta-header bg-fixed bg-ipkoDark text-white text-sm py-2">
     <div class="mx-auto flex justify-between items-center px-4">
       <!-- Lidhjet Kryesore -->
-      <div class="flex space-x-6">
+      <div class="flex space-x-4">
         <a href="/startup" class="hover:text-gray-300">
           {{ $translations[$currentLang].meta.startup }}
         </a>
         <a href="/my-business" class="hover:text-gray-300">
           {{ $translations[$currentLang].meta.myBusiness }}
         </a>
+
+        <a href="/business-support" class="hidden sm:block hover:text-gray-300">
+          {{ 
+    $translations[$root.$currentLang]?.header?.BusinessSupport || "Business-Support"
+
+}}
+        </a>
+      
+        
         <a href="/tutorials" class="hover:text-gray-300">
           {{ $translations[$currentLang].meta.tutorials }}
         </a>

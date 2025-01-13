@@ -12,6 +12,8 @@ import MyBusiness from "../views/MyBusiness.vue";
 import Tutorials from "../views/Tutorials.vue";
 import Blog from "../views/Blog.vue";
 import RegisterBusiness from "../views/RegisterBusiness.vue";
+import BusinessSupport from "../views/BusinessSupport.vue";
+
 
 const routes = [
     { path: "/", name: "Home", component: Home },
@@ -27,6 +29,9 @@ const routes = [
     { path: "/tutorials", component: Tutorials },
     { path: "/blog", component: Blog },
     { path: "/register-business", component: RegisterBusiness },
+    { path: "/business-support",  component: BusinessSupport },
+
+
 ];
 
 const router = createRouter({

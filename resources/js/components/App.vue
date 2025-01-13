@@ -8,7 +8,6 @@
 
     <div>
     <!-- Përmbajtja Kryesore -->
-    <section class="main-content">...</section>
 
     <!-- Chatbot -->
     <Chatbot />
@@ -27,7 +26,6 @@
     </button>
   </div>
 </template>
-  
   <script>
 import Header from "./Header.vue";
 import Footer from "./Footer.vue";

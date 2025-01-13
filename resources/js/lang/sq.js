@@ -101,6 +101,20 @@ export default {
             successMessage: "Biznesi juaj u regjistrua me sukses!",
         },
     },
+    BusinessSupport: {
+        title: "Mbështetje për Bizneset",
+        invoices: "Faturat",
+        invoiceDate: "Data e Faturës",
+        amount: "Shuma",
+        action: "Veprimi",
+        download: "Shkarko",
+        packages: "Paketat",
+        upgrade: "Përmirëso Paketën",
+        contracts: "Kontratat",
+        view: "Shiko Kontratën",
+      },
+      
+      
     tutorials: {
         title: "Mësime për AI",
         subtitle: "Mësoni rreth AI me mësimet tona me video.",

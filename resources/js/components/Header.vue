@@ -114,6 +114,13 @@
               $translations[$root.$currentLang]?.header?.services || "Services"
             }}
           </router-link>
+          <router-link to="/business-support" class="hover:text-gray-200">
+  {{ 
+    $translations[$root.$currentLang]?.header?.BusinessSupport || "Business-Support"
+
+}}
+</router-link>
+
         </li>
         <hr />
         <router-link
