@@ -32,6 +32,17 @@
       </div>
     </section>
 
+    <div>
+    <!-- Përmbajtja Kryesore -->
+    <section class="main-content">...</section>
+
+    <!-- Chatbot -->
+    <Chatbot />
+  </div>
+
+    
+    
+
     <!-- Blog Section -->
     <Blog />
 
@@ -58,6 +69,7 @@
               {{ $translations[$currentLang].home.ideaPoint1Description }}
             </p>
           </a>
+        
 
           <!-- Column 2 -->
           <div class="bg-white p-6 rounded-lg shadow-md text-center">
@@ -304,12 +316,15 @@
 <script>
 import Solutions from "./Solutions.vue";
 import Blog from "./Blog.vue";
+import Chatbot from "../components/Chatbot.vue";
+
 
 export default {
   name: "Home",
   components: {
     Solutions,
     Blog,
+    Chatbot,
   },
 };
 </script>

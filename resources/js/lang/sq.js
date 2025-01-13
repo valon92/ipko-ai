@@ -115,8 +115,14 @@ export default {
         // Shto përkthime për 10 karta të tjera
     },
     chatbot: {
-        title: "Asistent Virtual me AI",
-    },
+        title: "Asistenti Virtual AI",
+        description: "Bisedoni me asistentin tonë AI për mbështetje të menjëhershme.",
+        name: "Emri",
+        message: "Mesazhi",
+        send: "Dërgo",
+        success: "Mesazhi juaj u dërgua me sukses!",
+      },
+      
 
     solutions: {
         title: "Zgjidhje të Përshtatura për Çdo Sektor",

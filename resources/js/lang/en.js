@@ -108,7 +108,13 @@ export default {
     },
     chatbot: {
         title: "AI Virtual Assistant",
-    },
+        description: "Chat with our AI assistant for instant support.",
+        name: "Name",
+        message: "Message",
+        send: "Send",
+        success: "Your message has been sent successfully!",
+      },
+      
 
     solutions: {
         title: "Tailored Solutions for Every Sector",
