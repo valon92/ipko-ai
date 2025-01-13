@@ -158,7 +158,39 @@ export default {
         exampleDescription:
           "Monitorimi automatik i performancës së rrjetit për të identifikuar problemet para se të ndodhin.",
       },
-      
+      businessPlatform: {
+        title: "Platformë për Biznese",
+        description: "Ofrimi i paketave të personalizuara për bizneset që duan të adoptojnë teknologji AI.",
+        packages: {
+          title: "Paketat e Personalizuara",
+          description: "Zgjidhje të përshtatura për nevojat e biznesit tuaj.",
+        },
+        training: {
+          title: "Trajnimet",
+          description: "Trajnime të avancuara për përdorimin e AI.",
+        },
+        partnership: {
+          title: "Partneritetet",
+          description: "Krijoni produkte inovative me partnerët tanë.",
+        },
+        learnMore: "Mëso më shumë",
+      },
+      business: {
+        title: "AI për Bizneset",
+        description: "Trajnime, zgjidhje dhe partneritete për bizneset që duan të adoptojnë teknologji AI.",
+        packages: {
+          title: "Paketat",
+          description: "Shërbime të personalizuara për të përmirësuar operacionet e biznesit tuaj.",
+        },
+        training: {
+          title: "Trajnime",
+          description: "Trajnime për stafin tuaj në përdorimin e teknologjive të AI.",
+        },
+        partnership: {
+          title: "Partneritetet",
+          description: "Bashkëpunime për të krijuar zgjidhje inovative.",
+        },
+      },
       
 
     solutions: {

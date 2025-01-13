@@ -13,6 +13,8 @@ import Tutorials from "../views/Tutorials.vue";
 import Blog from "../views/Blog.vue";
 import RegisterBusiness from "../views/RegisterBusiness.vue";
 import BusinessSupport from "../views/BusinessSupport.vue";
+import Business from "../views/Business.vue";
+
 
 
 const routes = [
@@ -30,6 +32,8 @@ const routes = [
     { path: "/blog", component: Blog },
     { path: "/register-business", component: RegisterBusiness },
     { path: "/business-support",  component: BusinessSupport },
+    { path: "/business",  component: Business },
+
 
 
 ];

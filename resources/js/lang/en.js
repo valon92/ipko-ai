@@ -148,9 +148,39 @@ export default {
         exampleDescription:
           "Automatically monitor network performance to identify issues before they occur.",
       },
-      
-      
-      
+        businessPlatform: {
+          title: "Platform for Businesses",
+          description: "Offering personalized packages for businesses looking to adopt AI technology.",
+          packages: {
+            title: "Customized Packages",
+            description: "Solutions tailored to meet your business needs.",
+          },
+          training: {
+            title: "Trainings",
+            description: "Advanced trainings on how to utilize AI effectively.",
+          },
+          partnership: {
+            title: "Partnerships",
+            description: "Collaborate with us to create innovative solutions.",
+          },
+          learnMore: "Learn More",
+        },
+        business: {
+          title: "AI for Businesses",
+          description: "Trainings, solutions, and partnerships for businesses adopting AI technologies.",
+          packages: {
+            title: "Packages",
+            description: "Personalized services to enhance your business operations.",
+          },
+          training: {
+            title: "Trainings",
+            description: "Train your team to effectively use AI technologies.",
+          },
+          partnership: {
+            title: "Partnerships",
+            description: "Collaborations to develop innovative solutions.",
+          },
+        },
 
     solutions: {
         title: "Tailored Solutions for Every Sector",
