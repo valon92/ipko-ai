@@ -32,13 +32,7 @@
       </div>
     </section>
 
-    <div>
-    <!-- Përmbajtja Kryesore -->
-    <section class="main-content">...</section>
-
-    <!-- Chatbot -->
-    <Chatbot />
-  </div>
+   
 
     
     
@@ -316,7 +310,6 @@
 <script>
 import Solutions from "./Solutions.vue";
 import Blog from "./Blog.vue";
-import Chatbot from "../components/Chatbot.vue";
 
 
 export default {
@@ -324,7 +317,7 @@ export default {
   components: {
     Solutions,
     Blog,
-    Chatbot,
+  
   },
 };
 </script>

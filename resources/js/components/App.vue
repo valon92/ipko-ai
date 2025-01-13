@@ -6,6 +6,14 @@
     <!-- Main Content -->
     <router-view />
 
+    <div>
+    <!-- Përmbajtja Kryesore -->
+    <section class="main-content">...</section>
+
+    <!-- Chatbot -->
+    <Chatbot />
+  </div>
+
     <!-- Footer -->
     <Footer />
 
@@ -23,12 +31,15 @@
   <script>
 import Header from "./Header.vue";
 import Footer from "./Footer.vue";
+import Chatbot from "../components/Chatbot.vue";
+
 
 export default {
   name: "App",
   components: {
     Header,
     Footer,
+    Chatbot,
   },
   data() {
     return {
