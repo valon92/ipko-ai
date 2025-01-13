@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-ipkoRed text-white text-center py-6">
+  <footer class=" text-ipkoRed text-center py-6">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
         <!-- Quick Links -->
@@ -130,7 +130,10 @@ export default {
 </script>  
   <style scoped>
 footer {
-  background-color: #e30613; /* Ngjyra kryesore e IPKO */
+  background-color: #dcdcdc; 
+  /* Ngjyra kryesore e IPKO */
+  /* background-color: #8C1A1A; */
+
 }
 
 footer a {
@@ -138,7 +141,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #ffd700; /* Ngjyrë e artë për efektin hover */
+  color: #8C1A1A; /* Ngjyrë e artë për efektin hover */
 }
 </style>
   
