@@ -208,6 +208,19 @@ export default {
         },
         learnMore: "Mëso më shumë",
       },
+      userDashboard: {
+        title: "Dashboard i Përdoruesit",
+        description: "Menaxhoni shërbimet tuaja të AI dhe ndiqni performancën lehtësisht.",
+        reports: {
+          title: "Raportet",
+          description: "Krijoni dhe monitoroni raporte të detajuara mbi shërbimet tuaja.",
+        },
+        settings: {
+          title: "Konfigurimet",
+          description: "Përshtatni preferencat tuaja për një përvojë të personalizuar.",
+        },
+        learnMore: "Mëso Më Shumë",
+      },
       
 
     solutions: {

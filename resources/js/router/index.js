@@ -15,6 +15,8 @@ import RegisterBusiness from "../views/RegisterBusiness.vue";
 import BusinessSupport from "../views/BusinessSupport.vue";
 import Business from "../views/Business.vue";
 import AIHub from "../views/AIHub.vue";
+import UserDashboard from "../views/UserDashboard.vue";
+
 
 
 
@@ -36,6 +38,7 @@ const routes = [
     { path: "/business-support",  component: BusinessSupport },
     { path: "/business",  component: Business },
     { path: "/ai-hub",  component: AIHub },
+    {path: "/user-dashboard",component: UserDashboard},
 
 
 

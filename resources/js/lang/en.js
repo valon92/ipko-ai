@@ -199,6 +199,19 @@ export default {
             },
             learnMore: "Learn More",
           },
+          userDashboard: {
+            title: "User Dashboard",
+            description: "Manage your AI services and track performance effortlessly.",
+            reports: {
+              title: "Reports",
+              description: "Create and monitor detailed reports about your services.",
+            },
+            settings: {
+              title: "Settings",
+              description: "Customize your preferences for a personalized experience.",
+            },
+            learnMore: "Learn More",
+          },
 
     solutions: {
         title: "Tailored Solutions for Every Sector",

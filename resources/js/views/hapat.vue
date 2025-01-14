@@ -24,3 +24,16 @@ Implementimi i Autentifikimit të Përdoruesve
 Testimi dhe Optimizimi i Përgjithshëm
 ✅ Testo funksionalitetin në të gjitha pajisjet dhe sigurohu që të gjitha elementet janë responsivë.
 ✅ Optimizimi i kodit për performancë më të mirë.
+
+
+git status
+git add .
+git add resources/js/components/Business.vue
+git commit -m "Added Business.vue and updated routing"
+git push origin development
+
+Nëse Has Probleme
+git pull origin development
+git push origin development
+
+

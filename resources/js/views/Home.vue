@@ -296,6 +296,28 @@
     </div>
   </section>
 
+  <!-- UserDashboard -->
+
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-ipkoRed mb-6">
+        {{ $translations[$currentLang].userDashboard.title }}
+
+      </h2>
+      <p class="text-lg text-gray-700 mb-8">
+      {{ $translations[$currentLang].userDashboard.description }}
+
+      </p>
+      <a
+        href="/user-dashboard"
+        class="inline-block bg-ipkoRed text-white px-6 py-3 rounded-lg shadow hover:bg-ipkoLight transition"
+      >
+         {{ $translations[$currentLang].userDashboard.learnMore }}
+
+      </a>
+    </div>
+  </section>
+
 
     <!-- Features Section -->
     <section class="features py-16 bg-white">
