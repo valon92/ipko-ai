@@ -212,6 +212,22 @@ export default {
             },
             learnMore: "Learn More",
           },
+          revenueModel: {
+            title: "Revenue Model",
+            description: "Explore how IPKO.ai generates revenue through innovative services.",
+            paidServices: {
+              title: "Paid Services",
+              description: "Users can pay for access to advanced AI solutions.",
+            },
+            subscriptions: {
+              title: "Subscriptions",
+              description: "Monthly and yearly subscription models for businesses and individuals.",
+            },
+            partnerPlatform: {
+              title: "Partner Platform & AI APIs",
+              description: "Businesses can purchase access to IPKO.ai APIs for their projects.",
+            },
+          },
 
     solutions: {
         title: "Tailored Solutions for Every Sector",

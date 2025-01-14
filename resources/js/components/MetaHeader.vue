@@ -18,9 +18,16 @@
           {{ $translations[$currentLang].meta.myBusiness }}
         </a>
 
-        <a href="/business-support" class="hidden sm:block hover:text-gray-300">
+        <a href="/business-support" class="hidden md:block hover:text-gray-300">
           {{ 
     $translations[$root.$currentLang]?.header?.BusinessSupport || "Business-Support"
+
+}}
+        </a>
+
+        <a href="/revenue-model" class="hidden md:block hover:text-gray-300">
+          {{ 
+    $translations[$root.$currentLang]?.header?.RevenueModel || "Revenue-Model"
 
 }}
         </a>
@@ -41,12 +48,12 @@
         </a>
         <a
           href="/signup"
-          class="hidden sm:block px-4 py-1 bg-white text-ipkoDark rounded-md hover:bg-gray-200 transition"
+          class="hidden md:block px-4 py-1 bg-white text-ipkoDark rounded-md hover:bg-gray-200 transition"
         >
           {{ $translations[$currentLang].meta.signup }}
         </a>
 
-        <li class="block sm:hidden">
+        <li class="block md:hidden">
           <button
             @click="changeLanguage('sq')"
             :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'sq' }"

@@ -10,7 +10,7 @@
           ipko.ai
         </h1> -->
         <img src="/public/images/logo.png" alt=""
-        class="flex h-20 w-20"
+        class="flex lg:h-20 w-20"
         >
       </a>
 
@@ -122,6 +122,13 @@
           <router-link to="/business-support" class="hover:text-gray-200">
   {{ 
     $translations[$root.$currentLang]?.header?.BusinessSupport || "Business-Support"
+
+}}
+</router-link>
+
+<router-link to="/revenue-model" class="hover:text-gray-200">
+  {{ 
+    $translations[$root.$currentLang]?.header?.RevenueModel || "Revenue-Model"
 
 }}
 </router-link>

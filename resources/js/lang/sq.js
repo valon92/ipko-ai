@@ -221,6 +221,22 @@ export default {
         },
         learnMore: "Mëso Më Shumë",
       },
+      revenueModel: {
+        title: "Moduli i të Ardhurave",
+        description: "Eksploroni se si IPKO.ai gjeneron të ardhura përmes shërbimeve inovative.",
+        paidServices: {
+          title: "Shërbime me Pagesë",
+          description: "Përdoruesit mund të paguajnë për qasje në zgjidhje të avancuara të AI.",
+        },
+        subscriptions: {
+          title: "Abonime",
+          description: "Modele abonimi mujore dhe vjetore për bizneset dhe përdoruesit individualë.",
+        },
+        partnerPlatform: {
+          title: "Platforma për Partnerë & API-të e AI",
+          description: "Bizneset mund të blejnë qasje në API-të e IPKO.ai për projektet e tyre.",
+        },
+      },
       
 
     solutions: {
