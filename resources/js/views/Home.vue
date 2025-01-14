@@ -176,48 +176,6 @@
       </div>
     </section>
 
-    <!-- Our Partners Section -->
-    <section class="partners py-16 bg-white">
-      <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-6">
-          {{ $translations[$currentLang].home.partnersTitle }}
-        </h2>
-        <p class="text-lg text-gray-700 mb-8">
-          {{ $translations[$currentLang].home.partnersDescription }}
-        </p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
-          <div>
-            <img
-              src="https://via.placeholder.com/150x50"
-              alt="Partner 1"
-              class="mx-auto"
-            />
-          </div>
-          <div>
-            <img
-              src="https://via.placeholder.com/150x50"
-              alt="Partner 2"
-              class="mx-auto"
-            />
-          </div>
-          <div>
-            <img
-              src="https://via.placeholder.com/150x50"
-              alt="Partner 3"
-              class="mx-auto"
-            />
-          </div>
-          <div>
-            <img
-              src="https://via.placeholder.com/150x50"
-              alt="Partner 4"
-              class="mx-auto"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
 
     <DataAnalytics />
 
@@ -276,6 +234,63 @@
         class="mt-6 inline-block bg-ipkoRed text-white px-6 py-3 rounded-lg shadow hover:bg-ipkoLight transition"
       >
         {{ $translations[$currentLang].businessPlatform.learnMore }}
+
+      </a>
+    </div>
+  </section>
+
+
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-ipkoRed mb-6">
+        {{ $translations[$currentLang].aiHub.title }}
+
+        
+      </h2>
+      <p class="text-lg text-gray-700 mb-8">
+        {{ $translations[$currentLang].aiHub.description }}
+
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Hapësirë për zhvillues -->
+        <div class="bg-white p-6 shadow-md rounded-lg">
+          <h3 class="text-xl font-bold mb-2">
+            {{ $translations[$currentLang].aiHub.developerSpace.title }}
+
+          </h3>
+          <p class="text-gray-700">
+            {{ $translations[$currentLang].aiHub.developerSpace.description }}
+
+          </p>
+        </div>
+        <!-- Garat dhe Hackathon-et -->
+        <div class="bg-white p-6 shadow-md rounded-lg">
+          <h3 class="text-xl font-bold mb-2">
+            {{ $translations[$currentLang].aiHub.hackathons.title }}
+
+          </h3>
+          <p class="text-gray-700">
+            {{ $translations[$currentLang].aiHub.hackathons.description }}
+
+          </p>
+        </div>
+        <!-- API-të e AI -->
+        <div class="bg-white p-6 shadow-md rounded-lg">
+          <h3 class="text-xl font-bold mb-2">
+            {{ $translations[$currentLang].aiHub.apiAccess.title }}
+
+          </h3>
+          <p class="text-gray-700">
+            {{ $translations[$currentLang].aiHub.apiAccess.description }}
+
+          </p>
+        </div>
+      </div>
+      <a
+        href="/ai-hub"
+        class="mt-6 inline-block bg-ipkoRed text-white px-6 py-3 rounded-lg shadow hover:bg-ipkoLight transition"
+      >
+        {{ $translations[$currentLang].aiHub.learnMore }}
 
       </a>
     </div>
@@ -367,6 +382,49 @@
 
     <!-- Solution Section  -->
     <Solutions />
+
+     <!-- Our Partners Section -->
+     <section class="partners py-16 bg-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-6">
+          {{ $translations[$currentLang].home.partnersTitle }}
+        </h2>
+        <p class="text-lg text-gray-700 mb-8">
+          {{ $translations[$currentLang].home.partnersDescription }}
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+          <div>
+            <img
+              src="https://via.placeholder.com/150x50"
+              alt="Partner 1"
+              class="mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/150x50"
+              alt="Partner 2"
+              class="mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/150x50"
+              alt="Partner 3"
+              class="mx-auto"
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/150x50"
+              alt="Partner 4"
+              class="mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 </template>
 <script>

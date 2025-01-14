@@ -1,13 +1,13 @@
 <template>
   <div class="meta-header bg-fixed bg-ipkoDark text-white text-sm py-2">
-    <div class="mx-auto flex justify-between items-center px-4">
+    <div class="mx-auto flex justify-between items-center px-2">
       <!-- Lidhjet Kryesore -->
       <div class="flex space-x-4">
         <a
       href="https://www.ipko.com"
       target="_blank"
       rel="noopener noreferrer"
-      class="font-semibold hover:text-ipkoLight "
+      class="text-white font-semibold hover:text-ipkoLight "
     >
       RC
     </a>

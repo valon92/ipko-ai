@@ -191,6 +191,23 @@ export default {
           description: "Bashkëpunime për të krijuar zgjidhje inovative.",
         },
       },
+      aiHub: {
+        title: "Inovacion me AI",
+        description: "Hapësirë virtuale për të ndërtuar zgjidhje inovative me AI.",
+        developerSpace: {
+          title: "Hapësirë për Zhvillues",
+          description: "Eksperimentoni dhe ndërtoni zgjidhje me AI.",
+        },
+        hackathons: {
+          title: "Gara dhe Hackathon-e",
+          description: "Bashkohuni për të gjetur zgjidhje inovative me AI.",
+        },
+        apiAccess: {
+          title: "API të AI",
+          description: "Integroni zgjidhjet e AI në aplikacionet tuaja.",
+        },
+        learnMore: "Mëso më shumë",
+      },
       
 
     solutions: {

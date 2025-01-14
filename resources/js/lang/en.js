@@ -182,6 +182,24 @@ export default {
           },
         },
 
+        aiHub: {
+            title: "AI Innovation",
+            description: "A virtual space for building innovative AI solutions.",
+            developerSpace: {
+              title: "Developer Space",
+              description: "Experiment and build solutions with AI.",
+            },
+            hackathons: {
+              title: "Hackathons and Challenges",
+              description: "Join to find innovative AI solutions.",
+            },
+            apiAccess: {
+              title: "AI APIs",
+              description: "Integrate AI solutions into your applications.",
+            },
+            learnMore: "Learn More",
+          },
+
     solutions: {
         title: "Tailored Solutions for Every Sector",
         subtitle: "Explore how IPKO.ai can transform your industry.",

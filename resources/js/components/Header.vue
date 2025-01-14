@@ -3,10 +3,12 @@
   <MetaHeader />
 
   <header class="bg-ipkoRed text-white py-4 shadow-md sticky top-0 z-50">
-    <div class="flex justify-between items-center px-4">
+    <div class="flex  justify-between items-center px-2">
       <!-- Logo -->
       <a href="/">
-        <h1 class="text-2xl font-extralight">ipko.ai</h1>
+        <h1 class="flex mx-1 text-2xl font-bold text-white  ">
+          ipko.ai
+        </h1>
       </a>
 
       <!-- Desktop Navigation -->
