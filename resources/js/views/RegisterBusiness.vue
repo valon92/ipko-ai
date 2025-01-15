@@ -1,108 +1,101 @@
 <template>
-  <section class="bg-gray-100 py-12">
-    <div class="container mx-auto px-4">
-      <h1 class="text-4xl font-bold text-ipkoRed text-center mb-6">
+  <div class="container mx-auto px-4 py-12">
+    <div class="max-w-md mx-auto bg-white shadow-md rounded-lg p-6">
+      <h1 class="text-2xl font-bold text-center text-ipkoRed mb-6">
         {{ $translations[$currentLang].registerBusiness.title }}
-      </h1>
-      <p class="text-lg text-gray-600 text-center mb-8">
-        {{ $translations[$currentLang].registerBusiness.subtitle }}
-      </p>
 
-      <!-- Form për Regjistrimin e Biznesit -->
-      <form
-        @submit.prevent="submitForm"
-        class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md"
-      >
-        <!-- Business Name -->
+      </h1>
+
+      <form @submit.prevent="submitForm">
+        <!-- Business Number -->
         <div class="mb-4">
-          <label for="name" class="block text-gray-700 font-semibold mb-2">
-            {{ $translations[$currentLang].registerBusiness.form.name }}
+          <label
+            for="businessNumber"
+            class="block text-gray-700 font-semibold mb-2"
+          >
+            {{ $translations[$currentLang].registerBusiness.businessNumber }}
           </label>
           <input
-            v-model="form.name"
+            v-model="form.businessNumber"
             type="text"
-            id="name"
-            placeholder="Business Name"
+            id="businessNumber"
+            placeholder="123456789"
             class="w-full px-4 py-2 border rounded-lg focus:outline-none"
             required
           />
         </div>
 
-        <!-- Contact Email -->
+        <!-- Email -->
         <div class="mb-4">
           <label for="email" class="block text-gray-700 font-semibold mb-2">
-            {{ $translations[$currentLang].registerBusiness.form.email }}
+            {{ $translations[$currentLang].registerBusiness.email }}
+
           </label>
           <input
             v-model="form.email"
             type="email"
             id="email"
-            placeholder="Contact Email"
+            placeholder="example@business.com"
             class="w-full px-4 py-2 border rounded-lg focus:outline-none"
             required
           />
         </div>
 
-        <!-- Description -->
+        <!-- Password -->
         <div class="mb-4">
-          <label
-            for="description"
-            class="block text-gray-700 font-semibold mb-2"
-          >
-            {{ $translations[$currentLang].registerBusiness.form.description }}
+          <label for="password" class="block text-gray-700 font-semibold mb-2">
+            {{ $translations[$currentLang].registerBusiness.password }}
+
           </label>
-          <textarea
-            v-model="form.description"
-            id="description"
-            rows="4"
-            placeholder="Business Description"
+          <input
+            v-model="form.password"
+            type="password"
+            id="password"
+            placeholder="********"
             class="w-full px-4 py-2 border rounded-lg focus:outline-none"
             required
-          ></textarea>
+          />
         </div>
 
         <!-- Submit Button -->
         <button
           type="submit"
-          class="w-full bg-ipkoRed text-white font-semibold py-2 px-4 rounded-lg hover:bg-ipkoLight transition"
+          class="w-full bg-ipkoRed text-white py-2 px-4 rounded-lg font-semibold hover:bg-ipkoLight transition"
         >
-          {{ $translations[$currentLang].registerBusiness.form.submit }}
+          {{ $translations[$currentLang].registerBusiness.submit }}
+
         </button>
       </form>
     </div>
-  </section>
+  </div>
 </template>
-  
-  <script>
+
+<script>
 export default {
   name: "RegisterBusiness",
   data() {
     return {
       form: {
-        name: "",
+        businessNumber: "",
         email: "",
-        description: "",
+        password: "",
       },
     };
   },
   methods: {
-    getTranslation(key) {
-      return (
-        this.$translations[this.$root.$currentLang]?.[key] ||
-        `Missing Translation: ${key}`
-      );
-    },
     submitForm() {
-      console.log("Business Registered", this.form);
-      alert(this.getTranslation("registerBusiness.form.successMessage"));
+      console.log("Form Data:", this.form);
+      alert(
+        `${this.form.businessNumber} registered successfully with email: ${this.form.email}`
+      );
+      // You can replace this with an API call for actual registration
     },
   },
 };
 </script>
-  
-  <style scoped>
-section {
-  background-color: #f9f9f9;
+
+<style scoped>
+h1 {
+  color: #e30613;
 }
 </style>
-  

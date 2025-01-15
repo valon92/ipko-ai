@@ -84,15 +84,11 @@ export default {
     },
     registerBusiness: {
         title: "Register Your Business",
-        subtitle: "Provide the details below to join our platform.",
-        form: {
-            name: "Business Name",
-            email: "Contact Email",
-            description: "Business Description",
-            submit: "Submit",
-            successMessage: "Your business has been successfully registered!",
-        },
-    },
+        businessNumber: "Business Number",
+        email: "Email Address",
+        password: "Password",
+        submit: "Register",
+      },
     BusinessSupport: {
         title: "Business Support",
         invoices: "Invoices",

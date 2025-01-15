@@ -91,16 +91,11 @@ export default {
     },
     registerBusiness: {
         title: "Regjistro Biznesin Tuaj",
-        subtitle:
-            "Plotësoni të dhënat më poshtë për t'u bashkuar me platformën tonë.",
-        form: {
-            name: "Emri i Biznesit",
-            email: "Email Kontakti",
-            description: "Përshkrimi i Biznesit",
-            submit: "Dërgo",
-            successMessage: "Biznesi juaj u regjistrua me sukses!",
-        },
-    },
+        businessNumber: "Numri i Biznesit",
+        email: "Adresa e Email-it",
+        password: "Fjalëkalimi",
+        submit: "Regjistrohu",
+      },
     BusinessSupport: {
         title: "Mbështetje për Bizneset",
         invoices: "Faturat",
