@@ -70,6 +70,7 @@
               <label class="block text-gray-600 mb-1">
                 {{ $translations[$currentLang].chatbot.message }}
 
+                
               </label>
               <textarea
                 v-model="chatForm.message"

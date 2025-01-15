@@ -17,6 +17,9 @@ import Business from "../views/Business.vue";
 import AIHub from "../views/AIHub.vue";
 import UserDashboard from "../views/UserDashboard.vue";
 import RevenueModel from "../views/RevenueModel.vue";
+// import ChatbotWidget from "../views/ChatbotWidget.vue";
+
+
 
 
 
@@ -41,6 +44,8 @@ const routes = [
     { path: "/ai-hub",  component: AIHub },
     {path: "/user-dashboard",component: UserDashboard},
     {path: "/revenue-model",component: RevenueModel},
+    // { path: "/chatbot", component: ChatbotWidget },
+
 
 
 

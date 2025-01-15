@@ -1,0 +1,103 @@
+IPKO.ai synon të shërbejë si një platformë e fuqishme për bizneset vendore, duke automatizuar kërkesat dhe proceset e tyre përmes inteligjencës artificiale (AI). Më poshtë paraqitet një rast konkret për të ilustruar se si IPKO.ai ndihmon bizneset e vogla dhe të mëdha në mënyrë efektive.
+
+Qëllimi Kryesor:
+Ofrimi i një Chatbot Inteligjent për të lehtësuar menaxhimin dhe kërkesat administrative të bizneseve.
+
+Si Ndihmon IPKO.ai:
+Akses 24/7 – Bizneset kanë mundësi të kërkojnë informacione në çdo kohë, kudo që janë.
+Automatizim i Kërkesave – Kërkesa për të dhëna dhe dokumente realizohet automatikisht dhe në kohë reale.
+Menaxhim i Thjeshtë – Pronari ose stafi menaxhues mund të ketë qasje në informacionet e biznesit përmes një ndërfaqeje të thjeshtë dhe intuitive.
+Rasti Konkret:
+Shembull Përdorimi:
+Pronari i Interex-it përdor chatbot-in e IPKO.ai dhe pyet:
+
+"Kërkoj faturën e muajit tetor 2024 për pagesat ndaj KEDS."
+
+Përgjigjja nga IPKO.ai:
+
+Dokumenti i Kërkuar: Sistemi shfaq faturën e kërkuar në format PDF, të cilën pronari mund ta shkarkojë menjëherë ose ta dërgojë me email.
+Përshkrimi i Përmbledhur: “Fatura për pagesat ndaj KEDS në tetor 2024 është përfunduar me sukses. Klikoni më poshtë për të parë detajet.”
+Veprimet e Disponueshme:
+Shkarko Faturën.
+Dërgo në Email.
+Kërko Ndihmë për Detaje Shtesë.
+Përfitime për Bizneset:
+Kursim kohe – Nuk është nevoja të kontaktohet manualisht departamenti i financave.
+Efikasitet – Informacionet janë të disponueshme në kohë reale.
+Siguri – Të dhënat e biznesit janë të sigurta dhe të mbrojtura.
+Përshkrimi i Zgjidhjes Teknologjike:
+Chatbot i Integruar:
+
+Teknologjia: Platforma përdor modele të avancuara të AI (p.sh. GPT) për të kuptuar kërkesat komplekse.
+Ndërveprimi i Natyrshëm: Përdorimi i gjuhës së përditshme për të bërë kërkesa dhe për të marrë përgjigje të sakta.
+Menaxhimi i Dokumenteve:
+
+Ruajtje dhe Arkivim: Faturat dhe dokumentet janë të ruajtura në mënyrë të sigurtë.
+Akses i Personalizuar: Çdo biznes ka një panel të veçantë për menaxhimin e dokumenteve të tij.
+Paneli i Administrimit:
+
+Analitika: Ofron raporte të detajuara për pagesat, faturat, dhe performancën financiare.
+Kontroll i Personalizuar: Përdoruesit mund të rregullojnë cilësimet sipas nevojave të tyre.
+Si Do Të Zbatohet Kjo Zgjidhje:
+Faqja BusinessSupport.vue:
+
+Do të shtohet një Chatbot Panel në të djathtë të faqes për ndërveprim në kohë reale.
+Do të paraqitet lista e faturave dhe një buton për kërkesa të personalizuara.
+Chatbot-i:
+
+Funksionon si një komponent modular në Vue.js dhe është i lidhur me backend-in e Laravel-it për të kërkuar të dhëna nga baza e të dhënave.
+Kod Shembull për Integrim të Chatbot-it:
+Vue Component: ChatbotPanel.vue
+vue
+Copy code
+<template>
+  <div class="fixed bottom-4 right-4 bg-white shadow-lg rounded-lg p-4">
+    <h3 class="text-lg font-semibold text-ipkoRed">IPKO.ai Chatbot</h3>
+    <textarea
+      v-model="query"
+      placeholder="Type your question here..."
+      class="w-full border rounded-lg p-2 mt-2"
+    ></textarea>
+    <button
+      @click="sendQuery"
+      class="bg-ipkoRed text-white py-2 px-4 rounded-lg mt-2"
+    >
+      Send
+    </button>
+    <div v-if="response" class="mt-4 bg-gray-100 p-2 rounded-lg">
+      <p>{{ response }}</p>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      query: "",
+      response: "",
+    };
+  },
+  methods: {
+    sendQuery() {
+      // Simulated API Response
+      if (this.query.toLowerCase().includes("faturën e tetor 2024")) {
+        this.response = "Fatura për tetor 2024 është gati. Kliko për ta shkarkuar.";
+      } else {
+        this.response = "Na vjen keq, nuk gjetëm informacion për këtë kërkesë.";
+      }
+    },
+  },
+};
+</script>
+
+<style scoped>
+div {
+  width: 300px;
+  height: auto;
+}
+</style>
+Përmbledhje e Përfitimeve të IPKO.ai për Bizneset:
+Efikasitet i Rritur: Proceset administrative automatizohen për të kursyer kohë dhe resurse.
+Personalizim i Lartë: Çdo biznes ka qasje të plotë në të dhënat e tij.
+Inovacion Teknologjik: Përdorimi i AI për të përmirësuar menaxhimin dhe ndërveprimin.

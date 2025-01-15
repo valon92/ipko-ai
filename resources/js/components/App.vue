@@ -9,9 +9,16 @@
     <div>
     <!-- Përmbajtja Kryesore -->
 
+     <!-- Chatbot -->
+     <ChatbotWidget />
+     
+
     <!-- Chatbot -->
     <Chatbot />
   </div>
+
+  
+  
 
     <!-- Footer -->
     <Footer />
@@ -20,7 +27,7 @@
     <button
       v-show="showScrollButton"
       @click="scrollToTop"
-      class="fixed bottom-8 right-8 bg-ipkoRed text-white p-3 rounded-full shadow-lg hover:bg-ipkoDark transition duration-300"
+      class="fixed bottom-4 right-1 bg-ipkoRed text-white p-3 rounded-full shadow-lg hover:bg-ipkoDark transition duration-300"
     >
       ↑
     </button>
@@ -29,7 +36,11 @@
   <script>
 import Header from "./Header.vue";
 import Footer from "./Footer.vue";
-import Chatbot from "../components/Chatbot.vue";
+import Chatbot from "../views/Chatbot.vue";
+import ChatbotWidget from "../views/ChatbotWidget.vue";
+
+
+
 
 
 export default {
@@ -38,6 +49,9 @@ export default {
     Header,
     Footer,
     Chatbot,
+    ChatbotWidget,
+    
+
   },
   data() {
     return {
