@@ -40,18 +40,18 @@
       </div>
 
       <!-- Language Selector -->
-      <div class="hidden md:flex space-x-2">
+      <div class="hidden md:flex md:space-x-0">
         <button
           @click="changeLanguage('sq')"
           :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'sq' }"
-          class="px-2 py-1 rounded-md"
+          class="px-1 py-1 rounded-md"
         >
           SQ
         </button>
         <button
           @click="changeLanguage('en')"
           :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'en' }"
-          class="px-2 py-1 rounded-md"
+          class="px-1 py-0 rounded-md"
         >
           EN
         </button>

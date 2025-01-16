@@ -93,6 +93,7 @@
 
           </h2>
           <canvas id="analyticsChart"></canvas>
+          <h1>dddkd</h1>
         </div>
       </section>
     </div>
@@ -109,9 +110,16 @@
       };
     },
     methods: {
-      scrollToFeatures() {
-        document.getElementById("features").scrollIntoView({ behavior: "smooth" });
-      },
+        scrollToFeatures() {
+  const target = document.getElementById("features");
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+  if (this.$route.name === "DataAnalyticsPage") {
+    this.initChart();
+  }
+},
+
       initChart() {
         const ctx = document.getElementById("analyticsChart").getContext("2d");
         this.chartInstance = new Chart(ctx, {
@@ -132,7 +140,7 @@
       },
     },
     mounted() {
-      this.initChart();
+    //   this.initChart();
     },
   };
   </script>
