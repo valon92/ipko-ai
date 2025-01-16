@@ -6,20 +6,17 @@
     <div class="flex  justify-between items-center px-2">
       <!-- Logo -->
       <a href="/">
-        <!-- <h1 class="flex mx-1 text-2xl font-bold text-white  ">
-          ipko.ai
-        </h1> -->
         <img src="/public/images/logo.png" alt=""
         class="flex lg:h-20 w-20"
         >
       </a>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex md:space-x-6">
-        <router-link to="/" class="hover:text-ipkoRed">
+      <nav class="hidden md:flex md:space-x-4 md:text-sm lg:text-base  ">
+        <router-link to="/" class="hover:text-ipkoRed  md:px-3">
           {{ $translations[$root.$currentLang]?.header?.home || "Home" }}
         </router-link>
-        <router-link to="/about" class="hover:text-ipkoRed">
+        <router-link to="/about" class="hover:text-ipkoRed" >
           {{ $translations[$root.$currentLang]?.header?.about || "About" }}
         </router-link>
         <router-link to="/contact" class="hover:text-ipkoRed">

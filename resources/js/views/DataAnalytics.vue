@@ -3,14 +3,19 @@
       <div class="container mx-auto px-4">
         <!-- Titulli -->
         <h2 class="text-3xl font-bold text-ipkoRed mb-6">
-          {{ $translations[$currentLang].dataAnalytics.title }}
-        </h2>
+
+<a href="/data-analytics">
+  {{ $translations[$currentLang].dataAnalytics.title }}
+
+</a>        </h2>
   
         <!-- Përshkrimi -->
         <p class="text-lg text-gray-700 mb-8">
           {{ $translations[$currentLang].dataAnalytics.description }}
 
         </p>
+
+        
   
         <!-- Lista e Përfitimeve -->
         <ul class="space-y-4 mb-8">
@@ -69,10 +74,8 @@
                 d="M5 13l4 4L19 7"
               ></path>
             </svg>
-<a href="/">
-  {{ $translations[$currentLang].dataAnalytics.point3 }}
+            {{ $translations[$currentLang].dataAnalytics.point3 }}
 
-</a>
           </li>
         </ul>
   
@@ -94,7 +97,9 @@
   </template>
   
   <script>
+  
   export default {
+
     name: "DataAnalytics",
     methods: {
       getTranslation(key) {

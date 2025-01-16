@@ -1,7 +1,7 @@
 export default {
     header: {
         home: "Ballina",
-        about: "Rreth Nesh",
+        about: "PërNe",
         contact: "Kontakt",
         services: "Shërbimet",
     },
@@ -140,6 +140,21 @@ export default {
         exampleTitle: "Shembull Përdorimi",
         exampleDescription:
           "Bizneset mund të shohin se si përdoruesit përdorin shërbimet dhe të optimizojnë strategjitë.",
+      },
+      dataAnalyticsPage: {
+        heroTitle: "Analiza e të Dhënave",
+        heroSubtitle: "Ofrimi i raporteve të personalizuara bazuar në të dhënat e klientëve.",
+        getStarted: "Fillo Tani",
+        featuresTitle: "Pikat Kryesore",
+        featuresPoint1: "Raporte të Personalizuara",
+        featuresDesc1: "Ofrimi i raporteve të personalizuara për bizneset.",
+        featuresPoint2: "Parashikimi i Sjelljeve",
+        featuresDesc2: "Përdorimi i algoritmeve për të parashikuar sjelljet.",
+        featuresPoint3: "Analitikë për Partnerë",
+        featuresDesc3: "Krijimi i raporteve analitike për partnerët.",
+        useCaseTitle: "Shembull Përdorimi",
+        useCaseDesc: "Bizneset mund të shohin se si përdoruesit ndërveprojnë me shërbimet.",
+        graphTitle: "Grafiku i Performancës",
       },
       automation: {
         title: "Automatizimi i Proceseve",
@@ -310,7 +325,7 @@ export default {
         service3Title: "Analiza të Dhënash",
         service3Description:
             "Fitoni njohuri përmes mjeteve të avancuara analitike.",
-        aboutTitle: "Rreth Nesh",
+        aboutTitle: "Rreth-Nesh",
         aboutDescription:
             "Mësoni më shumë rreth mënyrës se si IPKO.ai po sjell inovacion përmes teknologjisë AI.",
         learnMore: "Mëso Më Shumë",

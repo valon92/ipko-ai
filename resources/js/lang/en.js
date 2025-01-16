@@ -133,6 +133,21 @@ export default {
         exampleDescription:
           "Businesses can see how users interact with services and optimize their strategies.",
       },
+      dataAnalyticsPage: {
+        heroTitle: "Data Analytics",
+        heroSubtitle: "Providing personalized reports based on customer data.",
+        getStarted: "Get Started",
+        featuresTitle: "Key Features",
+        featuresPoint1: "Personalized Reports",
+        featuresDesc1: "Delivering personalized reports for businesses.",
+        featuresPoint2: "User Behavior Prediction",
+        featuresDesc2: "Using algorithms to predict user behavior.",
+        featuresPoint3: "Analytics for Partners",
+        featuresDesc3: "Creating analytical reports for partners.",
+        useCaseTitle: "Use Case Example",
+        useCaseDesc: "Businesses can see how users interact with services.",
+        graphTitle: "Performance Graph",
+      },
       automation: {
         title: "AI Automation",
         description:
