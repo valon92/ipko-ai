@@ -24,9 +24,9 @@
         <!-- Image Content -->
         <div class="flex justify-center">
           <img
-            src="/public/images/ipko.png"
+            src="/public/images/logo.png"
             alt="Hero Image"
-            class="rounded-lg shadow-md"
+            class="rounded-lg shadow-md w-28 h-28"
           />
         </div>
       </div>

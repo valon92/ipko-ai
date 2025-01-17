@@ -29,9 +29,9 @@
         <!-- Image -->
         <div class="mission">
           <img
-            src="https://via.placeholder.com/500x300"
+            src="/public/images/logo.png"
             alt="Mission"
-            class="rounded-lg shadow-md"
+            class="flex size-24 items-center"
           />
         </div>
       </div>
@@ -50,8 +50,8 @@
           <!-- Team Members 1 -->
           <div>
             <img
-              src="https://via.placeholder.com/150"
-              alt="Team Member"
+            src="/public/images/logo.png"
+            alt="Team Member"
               class="w-24 h-24 mx-auto rounded-full mb-4"
             />
             <h3 class="font-bold text-xl">Emri Mbiemri</h3>
@@ -59,7 +59,7 @@
           </div>
           <div>
             <img
-              src="https://via.placeholder.com/150"
+              src="/public/images/logo.png"
               alt="Team Member 2"
               class="w-24 h-24 mx-auto rounded-full mb-4"
             />
@@ -68,8 +68,8 @@
           </div>
           <div>
             <img
-              src="https://via.placeholder.com/150"
-              alt="Team Member 3"
+            src="/public/images/logo.png"
+            alt="Team Member 3"
               class="w-24 h-24 mx-auto rounded-full mb-4"
             />
             <h3 class="font-bold text-xl">Emri Mbiemri</h3>
@@ -106,7 +106,7 @@
   background: linear-gradient(to right, #e30623, #8c1a1a);
 }
 .mission img {
-  border: 3px solid #e60613;
+  border: ;
 }
 .team img {
   border: 3px solid #e30613;

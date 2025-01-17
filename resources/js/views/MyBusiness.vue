@@ -5,6 +5,14 @@
       <div class="text-center">
         <router-link
           to="/register-business"
+          class="inline-block bg-ipkoRed text-white font-semibold py-3 px-6 mx-2  rounded-lg shadow-md hover:bg-ipkoLight transition duration-300"
+        >
+          <!-- {{ $translations[$currentLang].myBusiness.registerButton }} -->
+                 <h1>Log In Your Business</h1>
+        </router-link>
+
+        <router-link
+          to="/register-business"
           class="inline-block bg-ipkoRed text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-ipkoLight transition duration-300"
         >
           {{ $translations[$currentLang].myBusiness.registerButton }}

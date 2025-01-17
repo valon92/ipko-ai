@@ -107,7 +107,10 @@
             <a href="#" class="hover:text-gray-200">LinkedIn</a>
           </div>
         </div>
+       
+
       </div>
+        <hr>
       <p class="text-sm mt-4">
         &copy; {{ new Date().getFullYear() }}
         {{
@@ -144,5 +147,6 @@ footer a:hover {
   color: #8C1A1A; /* Ngjyrë e artë për efektin hover */
 }
 </style>
+
   
 

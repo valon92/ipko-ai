@@ -2,7 +2,7 @@
   <!-- MetaHeader -->
   <MetaHeader />
 
-  <header class="bg-white text-ipkoDark font-bold py-2 shadow-md sticky top-0 z-50">
+  <header class="bg-white text-ipkoDark font-bold  py-2 shadow-md sticky top-0 z-50">
     <div class="flex  justify-between items-center px-2">
       <!-- Logo -->
       <a href="/">
@@ -13,7 +13,7 @@
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex md:space-x-4 md:text-sm lg:text-base  ">
-        <router-link to="/" class="hover:text-ipkoRed  md:px-3">
+        <router-link to="/" class="hover:text-ipkoRed   md:px-3">
           {{ $translations[$root.$currentLang]?.header?.home || "Home" }}
         </router-link>
         <router-link to="/about" class="hover:text-ipkoRed" >
