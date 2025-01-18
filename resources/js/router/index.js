@@ -11,6 +11,7 @@ import Startup from "../views/Startup.vue";
 import MyBusiness from "../views/MyBusiness.vue";
 import Tutorials from "../views/Tutorials.vue";
 import Blog from "../views/Blog.vue";
+import HomeBlogSection from "../views/HomeBlogSection.vue";
 import RegisterBusiness from "../views/RegisterBusiness.vue";
 import BusinessSupport from "../views/BusinessSupport.vue";
 import Business from "../views/Business.vue";
@@ -18,6 +19,7 @@ import AIHub from "../views/AIHub.vue";
 import UserDashboard from "../views/UserDashboard.vue";
 import RevenueModel from "../views/RevenueModel.vue";
 import DataAnalyticsPage from "../views/DataAnalyticsPage.vue";
+
 
 
 
@@ -40,6 +42,7 @@ const routes = [
     { path: "/my-business", component: MyBusiness },
     { path: "/tutorials", component: Tutorials },
     { path: "/blog", component: Blog },
+    { path: "/homeblogsection", component: HomeBlogSection },
     { path: "/register-business", component: RegisterBusiness },
     { path: "/business-support",  component: BusinessSupport },
     { path: "/business",  component: Business },

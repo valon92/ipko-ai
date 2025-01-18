@@ -270,23 +270,13 @@ export default {
                 "Përmirësoni përvojat e të nxënit me mjete të drejtuara nga AI.",
         },
     },
-    blog: {
-        title: "Blogu Ynë",
-        subtitle: "Njohuri, trende, dhe përditësime mbi AI dhe teknologjinë.",
-        readMore: "Lexo më shumë",
-        post1: {
-            title: "E ardhmja e AI në jetën e përditshme",
-            summary: "Zbuloni si AI po formëson përvojat tona të përditshme.",
-        },
-        post2: {
-            title: "5 Mjetet më të mira të AI për Bizneset",
-            summary: "Eksploroni mjetet që po revolucionarizojnë industritë.",
-        },
-        post3: {
-            title: "Si funksionon Machine Learning",
-            summary: "Kuptoni bazat e të nxënit të makinerive.",
-        },
-    },
+    blogSection: {
+        title: "Blog dhe Lajme",
+        button: "Shiko të gjitha postimet",
+      },
+      blogPage: {
+        title: "Blog dhe Lajme",
+      },
 
     footer: {
         quickLinks: "Lidhje të Shpejta",

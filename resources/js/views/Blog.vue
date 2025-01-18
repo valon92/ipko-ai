@@ -1,95 +1,127 @@
 <template>
-  <section class="blog bg-gray-100 py-12">
-    <div class="container mx-auto px-4">
-      <!-- Titulli Kryesor -->
-      <h1 class="text-4xl font-bold text-ipkoRed text-center mb-6">
-        {{ $translations[$currentLang].blog.title }}
-      </h1>
-      <p class="text-lg text-gray-600 text-center mb-8">
-        {{ $translations[$currentLang].blog.subtitle }}
-      </p>
-
-      <!-- Artikujt e Blogut -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div
-          v-for="post in posts"
-          :key="post.id"
-          class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition"
-        >
-          <img
-            :src="post.image"
-            alt="Blog Image"
-            class="rounded-md mb-4 w-full h-48 object-cover"
-          />
-          <h3 class="text-xl font-semibold text-ipkoDark mb-2">
-            {{ $translations[$currentLang].blog.post1.title }}
-          </h3>
-          <p class="text-gray-600 mb-4">
-            {{ $translations[$currentLang].blog.post1.summary }}
-          </p>
-
-          <router-link
-            :to="'/blog/' + post.id"
-            class="text-ipkoRed px-8 hover:underline font-semibold"
+  <div class="bg-gray-100 min-h-screen">
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h1 class="text-4xl font-bold text-center text-ipkoRed mb-8">
+          Blog & News
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            v-for="(post, index) in blogPosts"
+            :key="index"
+            class="bg-white rounded-lg shadow-md p-4"
           >
-            {{ $translations[$currentLang].blog.readMore }}
-          </router-link>
+            <img
+src="/public/images/logo.png"              :alt="post.title"
+              class="w-full h-40 object-cover rounded-md mb-4"
+            />
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              {{ post.title }}
+            </h3>
+            <p class="text-gray-600 text-sm mb-4">
+              {{ post.description }}
+            </p>
+            <a
+              href="#"
+              class="text-ipkoRed font-semibold hover:underline"
+            >
+              Read More
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
-  
-  <script>
+
+<script>
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
+
 export default {
   name: "Blog",
+  components: { Header, Footer },
   data() {
     return {
-      posts: [
+      blogPosts: [
         {
-          id: 1,
-          title: this.getTranslation("blog.post1.title"),
-          summary: this.getTranslation("blog.post1.summary"),
-          image: "https://via.placeholder.com/400x250",
+          title: "AI in Education",
+          description: "How AI is reshaping learning experiences.",
+          image: "/path/to/image1.jpg",
         },
         {
-          id: 2,
-          title: this.getTranslation("blog.post2.title"),
-          summary: this.getTranslation("blog.post2.summary"),
-          image: "https://via.placeholder.com/400x250",
+          title: "5G and AI",
+          description: "What does 5G mean for AI technologies?",
+          image: "/path/to/image2.jpg",
         },
         {
-          id: 3,
-          title: this.getTranslation("blog.post3.title"),
-          summary: this.getTranslation("blog.post3.summary"),
-          image: "https://via.placeholder.com/400x250",
+          title: "Green AI",
+          description: "Making AI sustainable and environmentally friendly.",
+          image: "/path/to/image3.jpg",
         },
+        {
+          title: "AI in Education",
+          description: "How AI is reshaping learning experiences.",
+          image: "/path/to/image1.jpg",
+        },
+        {
+          title: "5G and AI",
+          description: "What does 5G mean for AI technologies?",
+          image: "/path/to/image2.jpg",
+        },
+        {
+          title: "Green AI",
+          description: "Making AI sustainable and environmentally friendly.",
+          image: "/path/to/image3.jpg",
+        },
+        {
+          title: "AI in Education",
+          description: "How AI is reshaping learning experiences.",
+          image: "/path/to/image1.jpg",
+        },
+        {
+          title: "5G and AI",
+          description: "What does 5G mean for AI technologies?",
+          image: "/path/to/image2.jpg",
+        },
+        {
+          title: "Green AI",
+          description: "Making AI sustainable and environmentally friendly.",
+          image: "/path/to/image3.jpg",
+        },
+        {
+          title: "AI in Education",
+          description: "How AI is reshaping learning experiences.",
+          image: "/path/to/image1.jpg",
+        },
+        {
+          title: "5G and AI",
+          description: "What does 5G mean for AI technologies?",
+          image: "/path/to/image2.jpg",
+        },
+        {
+          title: "Green AI",
+          description: "Making AI sustainable and environmentally friendly.",
+          image: "/path/to/image3.jpg",
+        },
+        {
+          title: "AI in Education",
+          description: "How AI is reshaping learning experiences.",
+          image: "/path/to/image1.jpg",
+        },
+        {
+          title: "5G and AI",
+          description: "What does 5G mean for AI technologies?",
+          image: "/path/to/image2.jpg",
+        },
+        {
+          title: "Green AI",
+          description: "Making AI sustainable and environmentally friendly.",
+          image: "/path/to/image3.jpg",
+        },
+        // Shto më shumë lajme...
       ],
     };
   },
-  methods: {
-    getTranslation(key) {
-      return (
-        this.$translations[this.$root.$currentLang]?.[key] ||
-        `Missing Translation: ${key}`
-      );
-    },
-  },
 };
 </script>
-  
-  <style scoped>
-.blog h1 {
-  font-size: 2.5rem;
-}
-.blog p {
-  font-size: 1rem;
-}
-.blog .grid div {
-  transition: transform 0.3s;
-}
-.blog .grid div:hover {
-  transform: translateY(-5px);
-}
-</style>
-  

@@ -36,7 +36,8 @@
     
 
     <!-- Blog Section -->
-    <Blog />
+    <!-- <Blog /> -->
+     <HomeBlogSection />
 
     <!-- Idea Section -->
     <section class="idea-section bg-gray-100 py-12">
@@ -452,9 +453,9 @@
 </template>
 <script>
 import Solutions from "./Solutions.vue";
-import Blog from "./Blog.vue";
+import HomeBlogSection from "./HomeBlogSection.vue";
 import DataAnalytics from "./DataAnalytics.vue"
-import AutomationSection from "../components/AutomationSection.vue";
+import AutomationSection from "./AutomationSection.vue";
 
 
 
@@ -462,7 +463,7 @@ export default {
   name: "Home",
   components: {
     Solutions,
-    Blog,
+    HomeBlogSection,
     DataAnalytics,
     AutomationSection,
   

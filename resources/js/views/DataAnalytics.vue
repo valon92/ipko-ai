@@ -1,6 +1,6 @@
 <template>
     <section class="bg-gray-50 py-12">
-      <div class="container mx-auto px-4">
+      <div class="container  mx-auto px-4 md:px-16">
         <!-- Titulli -->
         <h2 class="text-3xl font-bold text-ipkoRed mb-6">
 

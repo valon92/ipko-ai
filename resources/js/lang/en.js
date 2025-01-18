@@ -258,22 +258,12 @@ export default {
             description: "Enhance learning experiences with AI-driven tools.",
         },
     },
-    blog: {
-        title: "Our Blog",
-        subtitle: "Insights, trends, and updates on AI and technology.",
-        readMore: "Read More",
-        post1: {
-            title: "The Future of AI in Everyday Life",
-            summary: "Discover how AI is shaping our daily experiences.",
-        },
-        post2: {
-            title: "Top 5 AI Tools for Businesses",
-            summary: "Explore the tools that are revolutionizing industries.",
-        },
-        post3: {
-            title: "How Machine Learning Works",
-            summary: "Understand the basics of machine learning.",
-        },
+    blogSection: {
+        title: "Blog & News",
+        button: "See All Posts",
+      },
+    blogPage: {
+      title: "Blog & News",
     },
 
     footer: {
