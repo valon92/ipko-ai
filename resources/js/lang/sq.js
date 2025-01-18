@@ -1,13 +1,15 @@
 export default {
     header: {
         home: "Ballina",
-        about: "PërNe",
+        about: "Rreth Nesh",
         contact: "Kontakt",
         services: "Shërbimet",
     },
     meta: {
         startup: "Startup",
         myBusiness: "Biznesi Im",
+        BusinessSupport:"Mbështetje për Bizneset",
+        RevenueModel:"Moduli i të Ardhurave",
         login: "Hyrje",
         signup: "Regjistrohu",
         tutorials: "Mësime AI",

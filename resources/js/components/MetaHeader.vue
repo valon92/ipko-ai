@@ -19,17 +19,11 @@
         </a>
 
         <a href="/business-support" class="hidden md:block hover:text-gray-300">
-          {{ 
-    $translations[$root.$currentLang]?.header?.BusinessSupport || "Business-Support"
-
-}}
+          {{ $translations[$root.$currentLang].meta.BusinessSupport}}
         </a>
 
         <a href="/revenue-model" class="hidden md:block hover:text-gray-300">
-          {{ 
-    $translations[$root.$currentLang]?.header?.RevenueModel || "Revenue-Model"
-
-}}
+          {{ $translations[$root.$currentLang].meta.RevenueModel}}
         </a>
       
         

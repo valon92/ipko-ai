@@ -8,6 +8,8 @@ export default {
     meta: {
         startup: "Startup",
         myBusiness: "My Business",
+        BusinessSupport:"Business Support",
+        RevenueModel:"Revenue Model",
         login: "Login",
         signup: "Sign Up",
         tutorials: "Tutorials AI",

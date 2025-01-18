@@ -117,17 +117,11 @@
             }}
           </router-link>
           <router-link to="/business-support" class="hover:text-gray-200">
-  {{ 
-    $translations[$root.$currentLang]?.header?.BusinessSupport || "Business-Support"
-
-}}
+  {{ $translations[$root.$currentLang].meta.BusinessSupport}}
 </router-link>
 
 <router-link to="/revenue-model" class="hover:text-gray-200">
-  {{ 
-    $translations[$root.$currentLang]?.header?.RevenueModel || "Revenue-Model"
-
-}}
+  {{ $translations[$root.$currentLang].meta.RevenueModel}}
 </router-link>
 
         </li>
