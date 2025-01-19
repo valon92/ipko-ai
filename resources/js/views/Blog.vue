@@ -12,7 +12,7 @@
             class="bg-white rounded-lg shadow-md p-4"
           >
             <img
-src="/public/images/logo.png"              :alt="post.title"
+src="/public/images/ipko.png"              :alt="post.title"
               class="w-full h-40 object-cover rounded-md mb-4"
             />
             <h3 class="text-lg font-semibold text-gray-800 mb-2">

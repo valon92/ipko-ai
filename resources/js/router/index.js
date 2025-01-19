@@ -19,6 +19,8 @@ import AIHub from "../views/AIHub.vue";
 import UserDashboard from "../views/UserDashboard.vue";
 import RevenueModel from "../views/RevenueModel.vue";
 import DataAnalyticsPage from "../views/DataAnalyticsPage.vue";
+import BusinessPrograms from "../views/BusinessPrograms.vue";
+import ProgramDetails from "../views/ProgramDetails.vue";
 
 
 
@@ -49,7 +51,9 @@ const routes = [
     { path: "/ai-hub",  component: AIHub },
     {path: "/user-dashboard",component: UserDashboard},
     {path: "/revenue-model",component: RevenueModel},
-    { path: "/data-analytics", component: DataAnalyticsPage },
+    {path: "/data-analytics", component: DataAnalyticsPage },
+    {path: "/programs", component: BusinessPrograms },
+    {path: "/programs/:id", component: ProgramDetails },
 
 
 

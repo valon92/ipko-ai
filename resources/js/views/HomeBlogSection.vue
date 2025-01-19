@@ -16,7 +16,7 @@
               class="bg-white shadow-md rounded-lg p-4 w-80 shrink-0"
             >
               <img
-                src="/public/images/logo.png"
+                src="/public/images/ipko.png"
                 :alt="post.title"
                 class="w-full h-40 object-cover rounded-md mb-4"
               />

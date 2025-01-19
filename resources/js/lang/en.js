@@ -265,7 +265,14 @@ export default {
     blogPage: {
       title: "Blog & News",
     },
-
+    businessPrograms: {
+        title: "Business Programs",
+        subtitle: "Personalized solutions for different sectors.",
+        learnMore: "Learn More",
+      },
+      programDetails: {
+        features: "Key Features",
+      },
     footer: {
         quickLinks: "Quick Links",
         home: "Home",

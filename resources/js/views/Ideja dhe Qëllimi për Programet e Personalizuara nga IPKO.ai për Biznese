@@ -1,0 +1,56 @@
+Ideja dhe Qëllimi për Programet e Personalizuara nga IPKO.ai për Biznese
+Vizion:
+IPKO.ai do të ofrojë programe të personalizuara dhe të fuqizuara nga Inteligjenca Artificiale për sektorë të ndryshëm të biznesit, duke adresuar nevoja specifike dhe duke rritur efikasitetin e operacioneve. Këto programe do të ndihmojnë bizneset të përdorin të dhënat dhe teknologjinë për të përmirësuar shërbimet, ulur kostot dhe optimizuar proceset e tyre.
+
+Qëllimi i Programeve
+Përkrahja e Bizneseve Lokale dhe Ndërkombëtare:
+
+Ndihma për tregjet e vogla dhe supermarketet të menaxhojnë stoqet dhe furnizimet.
+Ofrimi i zgjidhjeve për kompanitë e mëdha për të optimizuar rrjetet e furnizimit.
+Përdorimi i Teknologjisë AI për Biznese:
+
+Algoritme për analizën e sjelljes së konsumatorëve.
+Parashikimi i kërkesave për produkte specifike bazuar në sezon apo trend.
+Automatizimi dhe Analiza:
+
+Menaxhimi i faturave dhe pagesave për klientë dhe furnitorë.
+Automatizimi i raporteve mujore për performancën dhe shitjet.
+Zgjidhje të Personalizuara për Sektorë të Ndryshëm:
+
+Markete dhe Supermarkete: Sisteme të menaxhimit të stokut me paralajmërime automatike për mungesat.
+Restorante dhe Bare: Optimizimi i menaxhimit të furnizimeve dhe rezervimeve.
+Kompani Logjistike: Planifikimi i rrjeteve logjistike dhe optimizimi i transportit.
+Sektorë të Tjerë: Edukimi, Shëndetësia, Financa, dhe Telekomunikacioni.
+Karakteristikat e Programeve
+Personalizimi i Plotë:
+
+Çdo program përshtatet sipas kërkesave specifike të biznesit.
+Përfshirja e mjeteve dhe raporteve që lidhen me industrinë përkatëse.
+Modulariteti:
+
+Mundësia për të zgjedhur module të ndryshme (Menaxhimi i Stokut, Analizat e Shitjeve, Raportimi i Performancës).
+Ndërveprim me Chatbot-in:
+
+Pyetjet e drejtpërdrejta nga pronarët si:
+"Cilat janë produktet më të shitura këtë muaj?"
+"Kur duhet të porosis furnizime të reja për produktin X?"
+Përputhshmëri me Pajisje të Ndryshme:
+
+Programe që funksionojnë në desktop, tablet, dhe celular.
+Shembull i Implementimit për një Supermarket
+Ideja: Një supermarket dëshiron të ndjekë stokun dhe performancën e shitjeve. Programi i IPKO.ai mund të:
+
+Gjenerojë raporte për produktet më të shitura.
+Dërgojë njoftime për mungesa në stok.
+Sugjerojë produkte bazuar në trendet e konsumatorëve.
+Modulet e Përfshira:
+
+Stok & Logjistikë: Menaxhimi i produkteve dhe furnitorëve.
+Analiza e Konsumatorëve: Identifikimi i sjelljeve të blerjeve dhe sugjerime për promovime.
+Faturimi & Raportimi: Gjenerimi automatik i faturave dhe raporteve financiare.
+Propozimi i Strukturës për Faqet
+Home.vue: Prezantimi i programeve për sektorë të ndryshëm.
+ProgramDetails.vue: Faqe përshkruese për një program specifik.
+Dashboard.vue: Panel për menaxhimin e moduleve të programeve.
+Reports.vue: Gjenerimi dhe shfaqja e raporteve të personalizuara.
+API.vue: Qasje për integrimin e programeve për partnerë dhe zhvillues.

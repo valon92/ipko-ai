@@ -277,7 +277,14 @@ export default {
       blogPage: {
         title: "Blog dhe Lajme",
       },
-
+      businessPrograms: {
+        title: "Programet për Bizneset",
+        subtitle: "Zgjidhje të personalizuara për sektorë të ndryshëm.",
+        learnMore: "Mëso më shumë",
+      },
+      programDetails: {
+        features: "Karakteristikat Kryesore",
+      },
     footer: {
         quickLinks: "Lidhje të Shpejta",
         home: "Ballina",
