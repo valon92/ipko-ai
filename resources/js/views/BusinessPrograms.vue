@@ -1,6 +1,5 @@
   <template>
     <div class="bg-gray-100 min-h-screen">
-      <!-- Hero Section -->
       <section class="bg-ipkoRed text-white py-16">
         <div class="container mx-auto px-6 text-center">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">
@@ -11,8 +10,6 @@
           </p>
         </div>
       </section>
-  
-      <!-- Program List -->
       <section class="py-16 bg-white">
         <div class="container mx-auto px-6">
           <h2 class="text-3xl font-bold text-center text-ipkoRed mb-10">
