@@ -14,13 +14,12 @@ import Blog from "../views/Blog.vue";
 import HomeBlogSection from "../views/HomeBlogSection.vue";
 import RegisterBusiness from "../views/RegisterBusiness.vue";
 import BusinessSupport from "../views/BusinessSupport.vue";
+import BusinessPrograms from "../views/BusinessPrograms.vue";
 import Business from "../views/Business.vue";
 import AIHub from "../views/AIHub.vue";
 import UserDashboard from "../views/UserDashboard.vue";
 import RevenueModel from "../views/RevenueModel.vue";
 import DataAnalyticsPage from "../views/DataAnalyticsPage.vue";
-import BusinessPrograms from "../views/BusinessPrograms.vue";
-import ProgramDetails from "../views/ProgramDetails.vue";
 
 
 
@@ -47,13 +46,12 @@ const routes = [
     { path: "/homeblogsection", component: HomeBlogSection },
     { path: "/register-business", component: RegisterBusiness },
     { path: "/business-support",  component: BusinessSupport },
+    { path: "/business-programs",  component: BusinessPrograms },
     { path: "/business",  component: Business },
     { path: "/ai-hub",  component: AIHub },
     {path: "/user-dashboard",component: UserDashboard},
     {path: "/revenue-model",component: RevenueModel},
     {path: "/data-analytics", component: DataAnalyticsPage },
-    {path: "/programs", component: BusinessPrograms },
-    {path: "/programs/:id", component: ProgramDetails },
 
 
 

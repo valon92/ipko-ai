@@ -3,17 +3,20 @@
     <div class="mx-auto flex justify-between items-center px-2">
       <!-- Lidhjet Kryesore -->
       <div class="flex space-x-4">
+
         <a
       href="https://www.ipko.com"
       target="_blank"
       rel="noopener noreferrer"
       class="text-white font-semibold hover:text-ipkoLight "
     >
-      RC
+      {{ $translations[$currentLang].meta.RC }}
     </a>
+
         <a href="/startup" class="hover:text-gray-300">
           {{ $translations[$currentLang].meta.startup }}
         </a>
+        
         <a href="/my-business" class="hover:text-gray-300">
           {{ $translations[$currentLang].meta.myBusiness }}
         </a>
@@ -21,6 +24,12 @@
         <a href="/business-support" class="hidden md:block hover:text-gray-300">
           {{ $translations[$root.$currentLang].meta.BusinessSupport}}
         </a>
+
+        <a href="/business-programs" class="hidden md:block hover:text-gray-300">
+          {{ $translations[$root.$currentLang].meta.BusinessPrograms}}
+        </a>
+      
+
 
         <a href="/revenue-model" class="hidden md:block hover:text-gray-300">
           {{ $translations[$root.$currentLang].meta.RevenueModel}}

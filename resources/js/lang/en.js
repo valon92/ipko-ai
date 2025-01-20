@@ -3,12 +3,19 @@ export default {
         home: "Home",
         about: "About",
         contact: "Contact",
+        faq: "FAQ",
         services: "Services",
+        BusinessSupport:"Business Support",
+        BusinessPrograms:"Business Programs",
+        RevenueModel:"Revenue Model",
+
     },
     meta: {
+        RC:"RC",
         startup: "Startup",
         myBusiness: "My Business",
         BusinessSupport:"Business Support",
+        BusinessPrograms:"Business Programs",
         RevenueModel:"Revenue Model",
         login: "Login",
         signup: "Sign Up",
@@ -266,9 +273,9 @@ export default {
       title: "Blog & News",
     },
     businessPrograms: {
-        title: "Business Programs",
-        subtitle: "Personalized solutions for different sectors.",
-        learnMore: "Learn More",
+        heroTitle: "Business Programs",
+        heroSubtitle: "Customized solutions for every type of business.",
+        title: "Available Programs",
       },
       programDetails: {
         features: "Key Features",

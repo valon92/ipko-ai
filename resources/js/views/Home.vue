@@ -97,9 +97,6 @@
 
     <AutomationSection />
 
-
-    <BusinessPrograms />
-
   
 
 
@@ -376,7 +373,6 @@ import HomeBlogSection from "./HomeBlogSection.vue";
 import DataAnalytics from "./DataAnalytics.vue"
 import AutomationSection from "./AutomationSection.vue";
 import WhyChooseUs from "./WhyChooseUs.vue";
-import BusinessPrograms from "./BusinessPrograms.vue";
 
 
 
@@ -391,7 +387,6 @@ export default {
     DataAnalytics,
     AutomationSection,
     WhyChooseUs,
-    BusinessPrograms,
   
   },
 };

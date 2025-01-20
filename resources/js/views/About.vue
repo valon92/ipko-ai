@@ -106,7 +106,6 @@
   background: linear-gradient(to right, #e30623, #8c1a1a);
 }
 .mission img {
-  border: ;
 }
 .team img {
   border: 3px solid #e30613;

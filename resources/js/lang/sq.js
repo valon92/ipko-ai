@@ -3,12 +3,19 @@ export default {
         home: "Ballina",
         about: "Rreth Nesh",
         contact: "Kontakt",
+        faq: "FAQ",
         services: "Shërbimet",
+        BusinessSupport:"Mbështetje për Bizneset",
+        BusinessPrograms:"Programe për Biznes",
+        RevenueModel:"Moduli i të Ardhurave",
+
     },
     meta: {
+        RC:"KV",
         startup: "Startup",
         myBusiness: "Biznesi Im",
         BusinessSupport:"Mbështetje për Bizneset",
+        BusinessPrograms:"Programe për Biznes",
         RevenueModel:"Moduli i të Ardhurave",
         login: "Hyrje",
         signup: "Regjistrohu",
@@ -278,9 +285,9 @@ export default {
         title: "Blog dhe Lajme",
       },
       businessPrograms: {
-        title: "Programet për Bizneset",
-        subtitle: "Zgjidhje të personalizuara për sektorë të ndryshëm.",
-        learnMore: "Mëso më shumë",
+        heroTitle: "Programe për Biznes",
+        heroSubtitle: "Zgjidhje të personalizuara për çdo lloj biznesi.",
+        title: "Programet e Disponueshme",
       },
       programDetails: {
         features: "Karakteristikat Kryesore",
