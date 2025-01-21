@@ -2,32 +2,32 @@
   <!-- MetaHeader -->
   <MetaHeader />
 
-  <header class="bg-white text-ipkoDark font-bold  py-2 shadow-md sticky top-0 z-50">
+  <header class="bg-white text-ipkoRed font-bold  py-2 shadow-md sticky top-0 z-50">
     <div class="flex  justify-between items-center px-2">
       <!-- Logo -->
       <a href="/">
-        <img src="/public/images/logo.png" alt=""
+        <img src="/public/images/ipko3.png" alt=""
         class="flex lg:h-20 w-20"
         >
       </a>
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex md:space-x-4 md:text-sm lg:text-base  ">
-        <router-link to="/" class="hover:text-ipkoRed   md:px-3">
-          {{ $translations[$root.$currentLang]?.header?.home || "Home" }}
+        <router-link to="/" class="hover:text-ipkoDark   md:px-3">
+          {{ $translations[$root.$currentLang].header.home || "Home" }}
         </router-link>
-        <router-link to="/about" class="hover:text-ipkoRed" >
-          {{ $translations[$root.$currentLang]?.header?.about || "About" }}
+        <router-link to="/about" class="hover:text-ipkoDark" >
+          {{ $translations[$root.$currentLang].header.about || "About" }}
         </router-link>
-        <router-link to="/contact" class="hover:text-ipkoRed">
-          {{ $translations[$root.$currentLang]?.header?.contact || "Contact" }}
+        <router-link to="/contact" class="hover:text-ipkoDark">
+          {{ $translations[$root.$currentLang].header.contact || "Contact" }}
         </router-link>
-        <router-link to="/faq" class="hover:text-ipkoRed">
-          {{ $translations[$root.$currentLang]?.header?.faq || "FAQ" }}
+        <router-link to="/faq" class="hover:text-ipkoDark">
+          {{ $translations[$root.$currentLang].header.faq || "FAQ" }}
         </router-link>
-        <router-link to="/services" class="hover:text-ipkoRed">
+        <router-link to="/services" class="hover:text-ipkoDark">
           {{
-            $translations[$root.$currentLang]?.header?.services || "Services"
+            $translations[$root.$currentLang].header?.services || "Services"
           }}
         </router-link>
       </nav>

@@ -1,12 +1,12 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="hero text-white py-20">
+    <section class="hero bg-white text-ipkoRed py-20">
       <div
-        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 items-center gap-8"
+        class="containe mx-auto px-4 grid grid-cols-1 md:grid-cols-2 items-center gap-2"
       >
         <!-- Text Content -->
-        <div class="text-center md:text-left">
+        <div class="text-center md:text-right">
           <h1 class="text-4xl md:text-6xl font-bold mb-4">
             {{ $translations[$currentLang].home.heroTitle }}
           </h1>
@@ -24,9 +24,9 @@
         <!-- Image Content -->
         <div class="flex justify-center">
           <img
-            src="/public/images/logo.png"
+            src="/public/images/ipko1.png"
             alt="Hero Image"
-            class="rounded-lg shadow-md w-28 h-28"
+            class="rounded-lg shadow-md md:w-auto md:h-64 w-full h-full"
           />
         </div>
       </div>
@@ -34,19 +34,17 @@
     
 
 
-    
-
     <!-- Blog Section -->
     <!-- <Blog /> -->
      <HomeBlogSection />
 
     <!-- Idea Section -->
-    <section class="idea-section bg-gray-100 py-12">
+    <section class="idea-section bg-white py-12">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-6">
           {{ $translations[$currentLang].home.ideaTitle }}
         </h2>
-        <p class="text-lg text-gray-700 mb-8">
+        <p class="text-lg text-ipkoDark mb-8">
           {{ $translations[$currentLang].home.ideaDescription }}
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -54,12 +52,12 @@
 
           <a
             href="/innovative-solutions"
-            class="bg-white p-6 rounded-lg shadow-md text-center py-3 px-6 rou nded-lg shadow-md hover:bg-ipkoLight transition duration-300"
+            class=" p-6 rounded-lg shadow-md text-center py-3 px-6 rou nded-lg shadow-md hover:bg-ipkoLight transition duration-300"
           >
-            <h3 class="text-xl font-semibold mb-2">
+            <h3 class="text-xl text-ipkoRed font-semibold mb-2">
               {{ $translations[$currentLang].home.ideaPoint1Title }}
             </h3>
-            <p class="text-gray-700">
+            <p class="text-ipkoDark">
               {{ $translations[$currentLang].home.ideaPoint1Description }}
             </p>
           </a>
@@ -67,20 +65,19 @@
 
           <!-- Column 2 -->
           <div class="bg-white p-6 rounded-lg shadow-md text-center">
-            <h3 class="text-xl font-semibold mb-2">
+            <h3 class="text-xl text-ipkoRed font-semibold mb-2">
               {{ $translations[$currentLang].home.ideaPoint2Title }}
             </h3>
-            <p class="text-gray-700">
+            <p class="text-ipkoDark">
               {{ $translations[$currentLang].home.ideaPoint2Description }}
             </p>
           </div>
           <!-- Column 3 -->
           <div class="bg-white p-6 rounded-lg shadow-md text-center">
-            <h3 class="text-xl font-semibold mb-2">
+            <h3 class="text-xl text-ipkoRed font-semibold mb-2">
               {{ $translations[$currentLang].home.ideaPoint3Title }}
             </h3>
-            <p class="text-gray-700">
-              <!-- {{ getTranslation("home.ideaPoint3Description") }} -->
+            <p class="text-ipkoDark">
               {{ $translations[$currentLang].home.ideaPoint3Description }}
             </p>
           </div>
@@ -111,7 +108,7 @@
     
 
 
-  <section class="bg-gray-100 py-12">
+  <section class="py-12">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-ipkoRed mb-6">
         {{ $translations[$currentLang].aiHub.title }}
@@ -170,7 +167,7 @@
   
 
   <!-- UserDashboard -->
-  <section class="bg-gray-100 py-12">
+  <section class=" py-12">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-ipkoRed mb-6">
         {{ $translations[$currentLang].userDashboard.title }}
@@ -355,52 +352,4 @@ export default {
 
 
 <style scoped>
-.hero {
-  background: linear-gradient(to right, #e30613, #8c1a1a);
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-}
-
-.hero p {
-  font-size: 1.25rem;
-}
-.idea-section {
-  background: #f8fafc;
-}
-
-.idea-section h2 {
-  font-size: 2rem;
-  color: #e30613;
-}
-
-.idea-section p {
-  font-size: 1rem;
-}
-.about h2 {
-  font-size: 2rem;
-}
-
-.about p {
-  font-size: 1rem;
-}
-.partners h2 {
-  font-size: 2rem;
-}
-
-.partners p {
-  font-size: 1rem;
-}
-
-.partners img {
-  max-width: 150px;
-  height: auto;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease-in-out;
-}
-
-.partners img:hover {
-  filter: grayscale(0%);
-}
 </style>

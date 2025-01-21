@@ -1,6 +1,6 @@
   <template>
     <div class="bg-gray-100 ">
-      <section class="bg-ipkoRed text-white py-16">
+      <section class=" text-ipkoRed py-5">
         <div class="container mx-auto px-6 text-center">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">
             {{ $translations[$currentLang].businessPrograms.heroTitle }}
@@ -10,7 +10,7 @@
           </p>
         </div>
       </section>
-      <section class="py-16 bg-white">
+      <section class="py-1">
         <div class="container mx-auto px-6">
           <h2 class="text-3xl font-bold text-center text-ipkoRed mb-10">
             {{ $translations[$currentLang].businessPrograms.title }}
@@ -19,7 +19,7 @@
             <div
               v-for="(program, index) in programs"
               :key="index"
-              class="bg-gray-100 p-6 rounded-lg shadow-md text-center"
+              class="bg-white p-6 rounded-lg shadow-md text-center"
             >
               <h3 class="text-xl font-bold mb-4 text-ipkoRed">
                 {{ program.title }}

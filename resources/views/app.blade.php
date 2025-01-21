@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Data & AI Consulting | Ipko AI </title>
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/ipko2.png') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>

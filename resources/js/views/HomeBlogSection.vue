@@ -1,5 +1,5 @@
 <template>
-    <section class="py-16 bg-gray-100">
+    <section class="py-16 bg-white">
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-3xl font-bold text-ipkoRed mb-8">
           {{ $translations[$currentLang].blogSection.title }}
@@ -16,7 +16,7 @@
               class="bg-white shadow-md rounded-lg p-4 w-80 shrink-0"
             >
               <img
-                src="/public/images/ipko.png"
+                src="/public/images/ipko-ai.png"
                 :alt="post.title"
                 class="w-full h-40 object-cover rounded-md mb-4"
               />
