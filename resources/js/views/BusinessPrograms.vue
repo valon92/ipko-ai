@@ -1,5 +1,5 @@
   <template>
-    <div class="bg-gray-100 min-h-screen">
+    <div class="bg-gray-100 ">
       <section class="bg-ipkoRed text-white py-16">
         <div class="container mx-auto px-6 text-center">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">

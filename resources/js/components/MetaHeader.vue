@@ -16,7 +16,7 @@
         <a href="/startup" class="hover:text-gray-300">
           {{ $translations[$currentLang].meta.startup }}
         </a>
-        
+
         <a href="/my-business" class="hover:text-gray-300">
           {{ $translations[$currentLang].meta.myBusiness }}
         </a>
@@ -28,7 +28,11 @@
         <a href="/business-programs" class="hidden md:block hover:text-gray-300">
           {{ $translations[$root.$currentLang].meta.BusinessPrograms}}
         </a>
+
       
+        <a href="/business-platform" class="hidden md:block hover:text-gray-300">
+          {{ $translations[$root.$currentLang].meta.BusinessPlatform}}
+        </a>
 
 
         <a href="/revenue-model" class="hidden md:block hover:text-gray-300">

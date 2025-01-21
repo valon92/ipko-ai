@@ -94,16 +94,17 @@
     </div>
 
     <!-- Mobile Navigation Menu -->
-    <nav v-if="isMenuOpen" class="md:hidden bg-white text-ipkoDark font-bold py-4">
+    <nav v-if="isMenuOpen" class="md:hidden bg-white text-ipkoDark font-bold
+     py-4">
       <ul class="flex flex-col space-y-2 text-center">
         <li>
 
           <router-link to="/" class="hover:text-gray-200">
-            {{ $translations[$root.$currentLang]?.header?.home || "Home" }}
+            {{ $translations[$root.$currentLang].header.home || "Home" }}
           </router-link>
 
           <router-link to="/about" class="hover:text-gray-200">
-            {{ $translations[$root.$currentLang]?.header?.about || "About" }}
+            {{ $translations[$root.$currentLang].header.about || "About" }}
           </router-link>
 
           <router-link to="/contact" class="hover:text-gray-200">
@@ -124,6 +125,10 @@
 
          <router-link to="/business-programs" class="hover:text-gray-200">
          {{  $translations[$root.$currentLang].header.BusinessPrograms}}
+         </router-link>
+
+         <router-link to="/business-platform" class="hover:text-gray-200">
+         {{  $translations[$root.$currentLang].header.BusinessPlatform}}
          </router-link>
          
 

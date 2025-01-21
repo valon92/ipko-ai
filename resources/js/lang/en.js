@@ -7,6 +7,7 @@ export default {
         services: "Services",
         BusinessSupport:"Business Support",
         BusinessPrograms:"Business Programs",
+        BusinessPlatform:"Business Platform",
         RevenueModel:"Revenue Model",
 
     },
@@ -16,10 +17,11 @@ export default {
         myBusiness: "My Business",
         BusinessSupport:"Business Support",
         BusinessPrograms:"Business Programs",
+        BusinessPlatform:"Business Platform",
         RevenueModel:"Revenue Model",
+        tutorials: "Tutorials AI",
         login: "Login",
         signup: "Sign Up",
-        tutorials: "Tutorials AI",
     },
     signup: {
         title: "Sign Up",

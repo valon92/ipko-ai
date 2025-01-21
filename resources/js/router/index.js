@@ -15,6 +15,7 @@ import HomeBlogSection from "../views/HomeBlogSection.vue";
 import RegisterBusiness from "../views/RegisterBusiness.vue";
 import BusinessSupport from "../views/BusinessSupport.vue";
 import BusinessPrograms from "../views/BusinessPrograms.vue";
+import BusinessPlatform from "../views/BusinessPlatform.vue";
 import Business from "../views/Business.vue";
 import AIHub from "../views/AIHub.vue";
 import UserDashboard from "../views/UserDashboard.vue";
@@ -47,6 +48,7 @@ const routes = [
     { path: "/register-business", component: RegisterBusiness },
     { path: "/business-support",  component: BusinessSupport },
     { path: "/business-programs",  component: BusinessPrograms },
+    { path: "/business-platform",  component: BusinessPlatform },
     { path: "/business",  component: Business },
     { path: "/ai-hub",  component: AIHub },
     {path: "/user-dashboard",component: UserDashboard},

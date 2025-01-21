@@ -7,6 +7,7 @@ export default {
         services: "Shërbimet",
         BusinessSupport:"Mbështetje për Bizneset",
         BusinessPrograms:"Programe për Biznes",
+        BusinessPlatform:"Platform për Biznes",
         RevenueModel:"Moduli i të Ardhurave",
 
     },
@@ -16,10 +17,11 @@ export default {
         myBusiness: "Biznesi Im",
         BusinessSupport:"Mbështetje për Bizneset",
         BusinessPrograms:"Programe për Biznes",
+        BusinessPlatform:"Platform për Biznes",
         RevenueModel:"Moduli i të Ardhurave",
+        tutorials: "Mësime AI",
         login: "Hyrje",
         signup: "Regjistrohu",
-        tutorials: "Mësime AI",
     },
     signup: {
         title: "Regjistrohu",
