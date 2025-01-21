@@ -1,5 +1,5 @@
 <template>
-    <div class="py-12  min-h-screen" >
+    <div class="py-12  bg-white  min-h-screen" >
       <div class="container mx-auto px-4">
         <h1 class="text-4xl font-bold text-ipkoRed mb-6">
           {{ $translations[$currentLang].userDashboard.title }}

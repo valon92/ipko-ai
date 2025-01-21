@@ -3,19 +3,19 @@
     <!-- Hero Section -->
     <section class="hero bg-white text-ipkoRed py-20">
       <div
-        class="containe mx-auto px-4 grid grid-cols-1 md:grid-cols-2 items-center gap-2"
+        class="grid grid-cols-1 md:grid-cols-2 items-center gap-0"
       >
         <!-- Text Content -->
-        <div class="text-center md:text-right">
-          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        <div class="container md:pl-12 text-center ">
+          <h1 class="text-4xl md:text-6xl md:ml-4  font-bold mb-4">
             {{ $translations[$currentLang].home.heroTitle }}
           </h1>
-          <p class="text-lg md:text-xl mb-6">
+          <p class="text-lg text-ipkoDark md:text-sm mb-4">
             {{ $translations[$currentLang].home.heroSubtitle }}
           </p>
           <router-link
             to="/contact"
-            class="inline-block bg-white text-ipkoRed font-semibold md:mx-24 py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
+            class="inline-block bg-ipkoRed text-white font-semibold md:mx-24 py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
           >
             {{ $translations[$currentLang].home.getStarted }}
           </router-link>
@@ -24,9 +24,9 @@
         <!-- Image Content -->
         <div class="flex justify-center">
           <img
-            src="/public/images/ipko1.png"
+            src="/public/images/ipko3.png"
             alt="Hero Image"
-            class="rounded-lg shadow-md md:w-auto md:h-64 w-full h-full"
+            class="md:w-auto md:h-64 w-full h-full"
           />
         </div>
       </div>
@@ -108,47 +108,47 @@
     
 
 
-  <section class="py-12">
+  <section class="py-12 bg-white">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-ipkoRed mb-6">
         {{ $translations[$currentLang].aiHub.title }}
 
         
       </h2>
-      <p class="text-lg text-gray-700 mb-8">
+      <p class="text-lg text-ipkoDark mb-8">
         {{ $translations[$currentLang].aiHub.description }}
 
       </p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Hapësirë për zhvillues -->
-        <div class="bg-white p-6 shadow-md rounded-lg">
+        <div class="bg-white p-6 text-ipkoRed shadow-md rounded-lg">
           <h3 class="text-xl font-bold mb-2">
             {{ $translations[$currentLang].aiHub.developerSpace.title }}
 
           </h3>
-          <p class="text-gray-700">
+          <p class="text-ipkoDark">
             {{ $translations[$currentLang].aiHub.developerSpace.description }}
 
           </p>
         </div>
         <!-- Garat dhe Hackathon-et -->
         <div class="bg-white p-6 shadow-md rounded-lg">
-          <h3 class="text-xl font-bold mb-2">
+          <h3 class="text-xl text-ipkoRed font-bold mb-2">
             {{ $translations[$currentLang].aiHub.hackathons.title }}
 
           </h3>
-          <p class="text-gray-700">
+          <p class="text-ipkoDark">
             {{ $translations[$currentLang].aiHub.hackathons.description }}
 
           </p>
         </div>
         <!-- API-të e AI -->
         <div class="bg-white p-6 shadow-md rounded-lg">
-          <h3 class="text-xl font-bold mb-2">
+          <h3 class="text-xl text-ipkoRed font-bold mb-2">
             {{ $translations[$currentLang].aiHub.apiAccess.title }}
 
           </h3>
-          <p class="text-gray-700">
+          <p class="text-ipkoDark">
             {{ $translations[$currentLang].aiHub.apiAccess.description }}
 
           </p>
@@ -167,13 +167,13 @@
   
 
   <!-- UserDashboard -->
-  <section class=" py-12">
+  <section class=" py-12 bg-white">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-ipkoRed mb-6">
         {{ $translations[$currentLang].userDashboard.title }}
 
       </h2>
-      <p class="text-lg text-gray-700 mb-8">
+      <p class="text-lg text-ipkoDark mb-8">
       {{ $translations[$currentLang].userDashboard.description }}
 
       </p>
@@ -194,12 +194,12 @@
         <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-6">
           {{ $translations[$currentLang].home.featuresTitle }}
                 </h2>
-        <p class="text-lg text-gray-700 mb-8">
+        <p class="text-lg text-ipkoDark mb-8">
           {{ $translations[$currentLang].home.featuresDescription }}
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Feature 1 -->
-          <div class="p-6 rounded-lg shadow-md bg-gray-50 text-center">
+          <div class="p-6 rounded-lg shadow-md bg-white text-center">
             <svg
               class="w-12 h-12 mx-auto mb-4 text-ipkoRed"
               fill="none"
@@ -214,15 +214,15 @@
                 d="M12 8v4l3 3M21 12c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8z"
               />
             </svg>
-            <h3 class="font-bold text-xl mb-2">
+            <h3 class="font-bold text-ipkoRed text-xl mb-2">
               {{ $translations[$currentLang].home.feature1Title }}
             </h3>
-            <p class="text-gray-600">
+            <p class="text-ipkoDark">
               {{ $translations[$currentLang].home.feature1Description }}
             </p>
           </div>
           <!-- Feature 2 -->
-          <div class="p-6 rounded-lg shadow-md bg-gray-50 text-center">
+          <div class="p-6 rounded-lg shadow-md bg-white text-center">
             <svg
               class="w-12 h-12 mx-auto mb-4 text-ipkoRed"
               fill="none"
@@ -237,15 +237,15 @@
                 d="M9.75 9.75L14.25 14.25M9.75 14.25L14.25 9.75M12 2.25v19.5"
               />
             </svg>
-            <h3 class="font-bold text-xl mb-2">
+            <h3 class="font-bold text-ipkoRed text-xl mb-2">
               {{ $translations[$currentLang].home.feature2Title }}
             </h3>
-            <p class="text-gray-600">
+            <p class="text-ipkoDark">
               {{ $translations[$currentLang].home.feature2Description }}
             </p>
           </div>
           <!-- Feature 3 -->
-          <div class="p-6 rounded-lg shadow-md bg-gray-50 text-center">
+          <div class="p-6 rounded-lg shadow-md bg-white text-center">
             <svg
               class="w-12 h-12 mx-auto mb-4 text-ipkoRed"
               fill="none"
@@ -260,10 +260,10 @@
                 d="M7 8h10M7 12h4M7 16h10"
               />
             </svg>
-            <h3 class="font-bold text-xl mb-2">
+            <h3 class="font-bold text-ipkoRed text-xl mb-2">
               {{ $translations[$currentLang].home.feature3Title }}
             </h3>
-            <p class="text-gray-600">
+            <p class="text-ipkoDark">
               {{ $translations[$currentLang].home.feature3Description }}
             </p>
           </div>
@@ -280,36 +280,36 @@
         <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-6">
           {{ $translations[$currentLang].home.partnersTitle }}
         </h2>
-        <p class="text-lg text-gray-700 mb-8">
+        <p class="text-lg text-ipkoDark mb-8">
           {{ $translations[$currentLang].home.partnersDescription }}
         </p>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
           <div>
             <img
-              src="https://via.placeholder.com/150x50"
-              alt="Partner 1"
-              class="mx-auto"
+            src="/public/images/ipko1.png"
+            alt="Partner 1"
+              class="mx-auto h-18 w-36"
             />
           </div>
           <div>
             <img
-              src="https://via.placeholder.com/150x50"
+              src="/public/images/ipko2.png"
               alt="Partner 2"
-              class="mx-auto"
+              class="mx-auto h-18 w-36"
             />
           </div>
           <div>
             <img
-              src="https://via.placeholder.com/150x50"
-              alt="Partner 3"
-              class="mx-auto"
+            src="/public/images/ipko3.png"
+            alt="Partner 3"
+              class="mx-auto h-18 w-36"
             />
           </div>
           <div>
             <img
-              src="https://via.placeholder.com/150x50"
-              alt="Partner 4"
-              class="mx-auto"
+            src="/public/images/ipko5.png"
+            alt="Partner 4"
+              class="mx-auto h-18 w-36"
             />
           </div>
         </div>

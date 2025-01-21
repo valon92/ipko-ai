@@ -3,33 +3,45 @@
   <MetaHeader />
 
   <header class="bg-white text-ipkoRed font-bold  py-2 shadow-md sticky top-0 z-50">
-    <div class="flex  justify-between items-center px-2">
+    <div class="flex  justify-between items-center px-4">
       <!-- Logo -->
       <a href="/">
-        <img src="/public/images/ipko3.png" alt=""
+        <img src="/public/images/ipko1.png" alt=""
         class="flex lg:h-20 w-20"
         >
       </a>
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex md:space-x-4 md:text-sm lg:text-base  ">
-        <router-link to="/" class="hover:text-ipkoDark   md:px-3">
-          {{ $translations[$root.$currentLang].header.home || "Home" }}
+        <router-link to="/" 
+        class="hover:text-ipkoDark hover:font-bold  md:px-3"
+        >
+          {{ $translations[$root.$currentLang].header.home}}
         </router-link>
-        <router-link to="/about" class="hover:text-ipkoDark" >
-          {{ $translations[$root.$currentLang].header.about || "About" }}
+        <router-link to="/about" 
+        class="hover:text-ipkoDark hover:font-bold  md:px-3"
+         >
+          {{ $translations[$root.$currentLang].header.about}}
         </router-link>
-        <router-link to="/contact" class="hover:text-ipkoDark">
-          {{ $translations[$root.$currentLang].header.contact || "Contact" }}
+
+        <router-link to="/contact" 
+        class="hover:text-ipkoDark hover:font-bold  md:px-3"
+        >
+          {{ $translations[$root.$currentLang].header.contact}}
         </router-link>
-        <router-link to="/faq" class="hover:text-ipkoDark">
-          {{ $translations[$root.$currentLang].header.faq || "FAQ" }}
+
+        <router-link to="/faq"
+        class="hover:text-ipkoDark hover:font-bold  md:px-3"
+         >
+          {{ $translations[$root.$currentLang].header.faq }}
         </router-link>
-        <router-link to="/services" class="hover:text-ipkoDark">
-          {{
-            $translations[$root.$currentLang].header?.services || "Services"
-          }}
+
+        <router-link to="/services" 
+        class="hover:text-ipkoDark hover:font-bold  md:px-3"
+        >
+          {{ $translations[$root.$currentLang].header?.services  }}
         </router-link>
+
       </nav>
 
       <!-- Search Component -->

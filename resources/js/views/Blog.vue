@@ -47,7 +47,7 @@ export default {
         {
           title: "AI in Education",
           description: "How AI is reshaping learning experiences.",
-          image: "/path/to/image1.jpg",
+          image: "/public/images/ipko2.png",
         },
         {
           title: "5G and AI",

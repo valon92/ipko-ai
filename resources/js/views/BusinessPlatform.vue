@@ -1,45 +1,45 @@
 <template>
     <!-- "AI for Business" -->
-    <section class="bg-gray-100 py-12">
+    <section class="bg-white py-12 min-h-screen">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-ipkoRed mb-6">
         {{ $translations[$currentLang].businessPlatform.title }}
 
       </h2>
-      <p class="text-lg text-gray-700 mb-8">
+      <p class="text-lg text-ipkoDark mb-8">
         {{ $translations[$currentLang].businessPlatform.description }}
 
       </p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Paketat -->
         <div class="bg-white p-6 shadow-md rounded-lg">
-          <h3 class="text-xl font-bold mb-2">
+          <h3 class="text-xl text-ipkoRed font-bold mb-2">
             {{ $translations[$currentLang].businessPlatform.packages.title }}
 
           </h3>
-          <p class="text-gray-700">
+          <p class="text-ipkoDark">
             {{ $translations[$currentLang].businessPlatform.packages.description }}
 
           </p>
         </div>
         <!-- Trajnimet -->
         <div class="bg-white p-6 shadow-md rounded-lg">
-          <h3 class="text-xl font-bold mb-2">
+          <h3 class="text-xl text-ipkoRed font-bold mb-2">
             {{ $translations[$currentLang].businessPlatform.training.title }}
 
           </h3>
-          <p class="text-gray-700">
+          <p class="text-ipkoDark">
             {{ $translations[$currentLang].businessPlatform.training.description }}
 
           </p>
         </div>
         <!-- Partneritetet -->
         <div class="bg-white p-6 shadow-md rounded-lg">
-          <h3 class="text-xl font-bold mb-2">
+          <h3 class="text-xl text-ipkoRed font-bold mb-2">
             {{ $translations[$currentLang].businessPlatform.partnership.title }}
 
           </h3>
-          <p class="text-gray-700">
+          <p class="text-ipkoDark">
             {{ $translations[$currentLang].businessPlatform.partnership.description }}
 
           </p>

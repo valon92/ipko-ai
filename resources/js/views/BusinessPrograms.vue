@@ -1,11 +1,11 @@
   <template>
-    <div class="bg-gray-100 ">
+    <div class="bg-white  min-h-screen">
       <section class=" text-ipkoRed py-5">
         <div class="container mx-auto px-6 text-center">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">
             {{ $translations[$currentLang].businessPrograms.heroTitle }}
           </h1>
-          <p class="text-lg md:text-xl mb-6">
+          <p class="text-lg text-ipkoDark md:text-xl mb-6">
             {{ $translations[$currentLang].businessPrograms.heroSubtitle }}
           </p>
         </div>
@@ -24,7 +24,7 @@
               <h3 class="text-xl font-bold mb-4 text-ipkoRed">
                 {{ program.title }}
               </h3>
-              <p class="text-gray-700">{{ program.description }}</p>
+              <p class="text-ipkoDark">{{ program.description }}</p>
             </div>
           </div>
         </div>

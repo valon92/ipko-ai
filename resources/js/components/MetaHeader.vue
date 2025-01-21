@@ -1,5 +1,5 @@
 <template>
-  <div class="meta-header bg-fixed bg-ipkoDark text-white text-sm py-2">
+  <div class="meta-header bg-fixed bg-ipkoRed text-white text-sm py-2">
     <div class="mx-auto flex justify-between items-center px-2">
       <!-- Lidhjet Kryesore -->
       <div class="flex space-x-4">
@@ -8,39 +8,53 @@
       href="https://www.ipko.com"
       target="_blank"
       rel="noopener noreferrer"
-      class="text-white font-semibold hover:text-ipkoLight "
-    >
+      class=
+      "hover:text-white   hover:font-bold "
+      >
       {{ $translations[$currentLang].meta.RC }}
     </a>
 
-        <a href="/startup" class="hover:text-gray-300">
+        <a href="/startup" 
+        class=
+        "hover:text-white   hover:font-bold "
+        >
           {{ $translations[$currentLang].meta.startup }}
         </a>
 
-        <a href="/my-business" class="hover:text-gray-300">
+        <a href="/my-business" class=
+        "hover:text-white   hover:font-bold "
+        >
           {{ $translations[$currentLang].meta.myBusiness }}
         </a>
 
-        <a href="/business-support" class="hidden md:block hover:text-gray-300">
+        <a href="/business-support" class=
+          "hidden md:block  rounded  hover:font-bold "
+        >
           {{ $translations[$root.$currentLang].meta.BusinessSupport}}
         </a>
 
-        <a href="/business-programs" class="hidden md:block hover:text-gray-300">
+        <a href="/business-programs" class=
+"hidden md:block  rounded  hover:font-bold "        >
           {{ $translations[$root.$currentLang].meta.BusinessPrograms}}
         </a>
 
       
-        <a href="/business-platform" class="hidden md:block hover:text-gray-300">
+        <a href="/business-platform" class=
+"hidden md:block  rounded  hover:font-bold "        >
           {{ $translations[$root.$currentLang].meta.BusinessPlatform}}
         </a>
 
 
-        <a href="/revenue-model" class="hidden md:block hover:text-gray-300">
+        <a href="/revenue-model" 
+        class=
+"hidden md:block  rounded  hover:font-bold "        >
           {{ $translations[$root.$currentLang].meta.RevenueModel}}
         </a>
       
         
-        <a href="/tutorials" class="hover:text-gray-300">
+        <a href="/tutorials" class=
+        "hover:text-white   hover:font-bold "
+        >
           {{ $translations[$currentLang].meta.tutorials }}
         </a>
       </div>

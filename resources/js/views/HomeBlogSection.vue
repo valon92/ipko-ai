@@ -1,5 +1,5 @@
 <template>
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white min-h-screen">
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-3xl font-bold text-ipkoRed mb-8">
           {{ $translations[$currentLang].blogSection.title }}
@@ -20,16 +20,16 @@
                 :alt="post.title"
                 class="w-full h-40 object-cover rounded-md mb-4"
               />
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              <h3 class="text-lg font-semibold text-ipkoRed mb-2">
                 {{ post.title }}
 
               </h3>
-              <p class="text-gray-600 text-sm mb-4">
+              <p class="text-ipkoDark text-sm mb-4">
                 {{ post.description }}
               </p>
               <a
                 href="#"
-                class="text-ipkoRed font-semibold hover:underline"
+                class="text-white text-sm bg-ipkoRed py-1 px-1 rounded   hover:underline"
               >
                 Read More
               </a>
@@ -75,7 +75,7 @@
           {
             title: "AI in Healthcare",
             description: "How AI is transforming the medical field.",
-            image: "/path/to/image1.jpg",
+            image: "/public/images/ipko1.png",
           },
           {
             title: "Tech Trends 2025",

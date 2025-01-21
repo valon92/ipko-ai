@@ -1,53 +1,53 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="contact-hero bg-ipkoRed text-white py-20">
-      <div class="container mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+    <section class="contact-hero bg-white py-20">
+      <div class="container rounded-lg shadow-md mx-auto px-4 py-10 text-center">
+        <h1 class="text-4xl text-ipkoRed  md:text-6xl font-bold mb-4">
           {{ $translations[$currentLang].contact.title }}
         </h1>
-        <p class="text-lg md:text-xl mb-6">
+        <p class="text-lg text-ipkoDark  md:text-xl mb-6">
           {{ $translations[$currentLang].contact.subtitle }}
         </p>
       </div>
     </section>
 
     <!-- Contact Information Section -->
-    <section class="contact-info py-16 bg-gray-100">
+    <section class="contact-info py-16 bg-white">
       <div
         class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
       >
         <!-- Email -->
-        <div class="p-6 bg-white rounded-lg shadow-md">
+        <div class="p-6 bg-gray-100 text-ipkoRed rounded-lg shadow-md">
           <h3 class="text-xl font-bold mb-2">
             {{ $translations[$currentLang].contact.email }}
           </h3>
           <p class="text-gray-700">
             <a
               href="mailto:support@ipko.ai"
-              class="text-ipkoRed hover:underline"
+              class="text-ipkoDark hover:underline"
             >
               support@ipko.ai
             </a>
           </p>
         </div>
         <!-- Phone -->
-        <div class="p-6 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-2">
+        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+          <h3 class="text-xl text-ipkoRed font-bold mb-2">
             {{ $translations[$currentLang].contact.phone }}
           </h3>
           <p class="text-gray-700">
-            <a href="tel:+38344123456" class="text-ipkoRed hover:underline">
+            <a href="tel:+38344123456" class="text-ipkoDark hover:underline">
               +383 44 123 456
             </a>
           </p>
         </div>
         <!-- Address -->
-        <div class="p-6 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-bold mb-2">
+        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+          <h3 class="text-xl text-ipkoRed font-bold mb-2">
             {{ $translations[$currentLang].contact.address }}
           </h3>
-          <p class="text-gray-700">Prishtinë, Kosovë</p>
+          <p class="text-ipkoDark">Prishtinë, Kosovë</p>
         </div>
       </div>
     </section>
@@ -134,9 +134,6 @@ export default {
 </script>
 
 <style scoped>
-.contact-hero {
-  background: linear-gradient(to right, #e30613, #8c1a1a);
-}
 
 .contact-info .rounded-lg {
   border: 1px solid #e2e8f0;

@@ -1,10 +1,10 @@
 <template>
-  <section class="solutions bg-gray-100 py-12">
+  <section class="solutions bg-white py-12">
     <div class="container mx-auto px-4">
       <h1 class="text-4xl font-bold text-ipkoRed text-center mb-6">
         {{ $translations[$currentLang].solutions.title }}
       </h1>
-      <p class="text-lg text-gray-600 text-center mb-8">
+      <p class="text-lg text-ipkoDark text-center mb-8">
         {{ $translations[$currentLang].solutions.subtitle }}
       </p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -13,10 +13,10 @@
           :key="solution.id"
           class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg"
         >
-          <h3 class="text-xl font-semibold text-ipkoDark mb-2">
+          <h3 class="text-xl font-semibold text-ipkoRed mb-2">
             {{ $translations[$currentLang].solutions.title }}
           </h3>
-          <p class="text-gray-600">
+          <p class="text-ipkoDark">
             {{ $translations[$currentLang].solutions.telecom.description }}
           </p>
         </div>

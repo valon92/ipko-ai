@@ -48,13 +48,15 @@
           <h2 class="text-xl font-bold text-ipkoRed mb-4">
             {{ $translations[$currentLang].chatbot.title }}
           </h2>
-          <p class="text-gray-700 mb-6">
+          <p class="text-ipkoDark mb-6">
             {{ $translations[$currentLang].chatbot.description }}
+
+            <img src="/public/images/ipko3.png" alt="">
 
           </p>
           <form @submit.prevent="submitChat" class="space-y-4">
             <div>
-              <label class="block text-gray-600 mb-1">
+              <label class="block text-ipkoRed mb-1">
                 {{ $translations[$currentLang].chatbot.name }}
 
               </label>
@@ -62,12 +64,12 @@
                 v-model="chatForm.name"
                 type="text"
                 placeholder="Your Name"
-                class="w-full px-4 py-2 border rounded-lg"
+                class="w-full px-4 py-2  border rounded-lg"
                 required
               />
             </div>
             <div>
-              <label class="block text-gray-600 mb-1">
+              <label class="block text-ipkoRed mb-1">
                 {{ $translations[$currentLang].chatbot.message }}
 
                 
