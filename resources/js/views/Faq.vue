@@ -1,19 +1,19 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="faq-hero bg-ipkoRed text-white py-20">
+    <section class="faq-hero bg-white text-ipkoRed py-20">
       <div class="container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-4">
           {{ $translations[$currentLang].faq.title }}
         </h1>
-        <p class="text-lg md:text-xl mb-6">
+        <p class="text-lg text-ipkoDark md:text-xl mb-6">
           {{ $translations[$currentLang].faq.subtitle }}
         </p>
       </div>
     </section>
 
     <!-- FAQ List -->
-    <section class="faq-list py-16 bg-gray-100">
+    <section class="faq-list py-16 bg-white">
       <div class="container mx-auto px-4 max-w-4xl">
         <h2
           class="text-3xl md:text-4xl font-bold text-ipkoRed mb-8 text-center"
@@ -72,17 +72,17 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta bg-ipkoRed text-white py-16">
+    <section class="cta bg-white py-16">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        <h2 class="text-3xl text-ipkoRed md:text-4xl font-bold mb-4">
           {{ $translations[$currentLang].faq.ctaTitle }}
         </h2>
-        <p class="text-lg mb-6">
+        <p class="text-lg text-ipkoDark mb-6">
           {{ $translations[$currentLang].faq.ctaDescription }}
         </p>
         <router-link
           to="/contact"
-          class="inline-block bg-white text-ipkoRed font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
+          class="inline-block bg-ipkoRed text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
         >
           {{ $translations[$currentLang].faq.ctaButton }}
         </router-link>
@@ -130,16 +130,5 @@ export default {
 </script>
   
   <style scoped>
-.faq-hero {
-  background: linear-gradient(to right, #e30613, #8c1a1a);
-}
-
-.faq-list .rounded-lg {
-  border: 1px solid #e2e8f0;
-}
-
-.cta {
-  background: linear-gradient(to right, #e30613, #a40808);
-}
 </style>
   

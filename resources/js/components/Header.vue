@@ -2,7 +2,7 @@
   <!-- MetaHeader -->
   <MetaHeader />
 
-  <header class="bg-white text-ipkoRed font-bold  py-2 shadow-md sticky top-0 z-50">
+  <header class="bg-white text-ipkoRed font-bold  py-2 shadow-md sticky top-0 z-50 ">
     <div class="flex  justify-between items-center px-4">
       <!-- Logo -->
       <a href="/">
@@ -14,30 +14,30 @@
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex md:space-x-4 md:text-sm lg:text-base  ">
         <router-link to="/" 
-        class="hover:text-ipkoDark hover:font-bold  md:px-3"
+        class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
         >
           {{ $translations[$root.$currentLang].header.home}}
         </router-link>
         <router-link to="/about" 
-        class="hover:text-ipkoDark hover:font-bold  md:px-3"
+        class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
          >
           {{ $translations[$root.$currentLang].header.about}}
         </router-link>
 
         <router-link to="/contact" 
-        class="hover:text-ipkoDark hover:font-bold  md:px-3"
+        class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
         >
           {{ $translations[$root.$currentLang].header.contact}}
         </router-link>
 
         <router-link to="/faq"
-        class="hover:text-ipkoDark hover:font-bold  md:px-3"
+        class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
          >
           {{ $translations[$root.$currentLang].header.faq }}
         </router-link>
 
         <router-link to="/services" 
-        class="hover:text-ipkoDark hover:font-bold  md:px-3"
+        class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
         >
           {{ $translations[$root.$currentLang].header?.services  }}
         </router-link>
@@ -106,45 +106,63 @@
     </div>
 
     <!-- Mobile Navigation Menu -->
-    <nav v-if="isMenuOpen" class="md:hidden bg-white text-ipkoDark font-bold
+    <nav v-if="isMenuOpen" class="md:hidden bg-white text-ipkoRed font-bold
      py-4">
-      <ul class="flex flex-col space-y-2 text-center">
+      <ul class="flex flex-col space-y-2 text-left pl-12">
         <li>
 
-          <router-link to="/" class="hover:text-gray-200">
+          <router-link to="/" 
+          class="hover:text-white hover:text-lg"
+          >
             {{ $translations[$root.$currentLang].header.home || "Home" }}
           </router-link>
 
-          <router-link to="/about" class="hover:text-gray-200">
+          <router-link to="/about" 
+          class="hover:text-white hover:text-lg"
+          >
             {{ $translations[$root.$currentLang].header.about || "About" }}
           </router-link>
 
-          <router-link to="/contact" class="hover:text-gray-200">
+          <router-link to="/contact"
+          class="hover:text-white hover:text-lg"
+           >
             {{$translations[$root.$currentLang].header.contact || "Contact"}}
           </router-link>
 
-          <router-link to="/faq" class="hover:text-gray-200">
+          <router-link to="/faq"
+          class="hover:text-white hover:text-lg"
+           >
             {{ $translations[$root.$currentLang].header.faq || "FAQ" }}
           </router-link>
 
-          <router-link to="/services" class="hover:text-gray-200">
+          <router-link to="/services" 
+          class="hover:text-white hover:text-lg"
+          >
            {{$translations[$root.$currentLang].header.services || "Services" }}
           </router-link>
 
-          <router-link to="/business-support" class="hover:text-gray-200">
+          <router-link to="/business-support" 
+          class="hover:text-white hover:text-lg"
+          >
          {{  $translations[$root.$currentLang].header.BusinessSupport}}
          </router-link>
 
-         <router-link to="/business-programs" class="hover:text-gray-200">
+         <router-link to="/business-programs" 
+         class="hover:text-white hover:text-lg"
+         >
          {{  $translations[$root.$currentLang].header.BusinessPrograms}}
          </router-link>
 
-         <router-link to="/business-platform" class="hover:text-gray-200">
+         <router-link to="/business-platform" 
+         class="hover:text-white hover:text-lg"
+         >
          {{  $translations[$root.$currentLang].header.BusinessPlatform}}
          </router-link>
          
 
-          <router-link to="/revenue-model" class="hover:text-gray-200">
+          <router-link to="/revenue-model" 
+          class="hover:text-white hover:text-lg"
+          >
           {{ $translations[$root.$currentLang].header.RevenueModel}}
           </router-link>
 
@@ -153,7 +171,8 @@
 
         <router-link 
          to="signup"
-          class=" py-1 text-ipkoDark font-bold hover:bg-gray-200 hover:text-ipkoRed">
+          class=" py-1 pl-4 text-ipkoRed font-bold  hover:text-white hover:bg-ipkoRed hover:py-2"
+          >
           {{ $translations[$currentLang].meta.signup }}
         </router-link>
 

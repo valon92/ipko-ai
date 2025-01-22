@@ -18,7 +18,7 @@
         class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
       >
         <!-- Email -->
-        <div class="p-6 bg-gray-100 text-ipkoRed rounded-lg shadow-md">
+        <div class="p-6 bg-white text-ipkoRed rounded-lg shadow-md">
           <h3 class="text-xl font-bold mb-2">
             {{ $translations[$currentLang].contact.email }}
           </h3>
@@ -32,7 +32,7 @@
           </p>
         </div>
         <!-- Phone -->
-        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+        <div class="p-6 bg-white rounded-lg shadow-md">
           <h3 class="text-xl text-ipkoRed font-bold mb-2">
             {{ $translations[$currentLang].contact.phone }}
           </h3>
@@ -43,7 +43,7 @@
           </p>
         </div>
         <!-- Address -->
-        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+        <div class="p-6 bg-white rounded-lg shadow-md">
           <h3 class="text-xl text-ipkoRed font-bold mb-2">
             {{ $translations[$currentLang].contact.address }}
           </h3>
@@ -54,16 +54,16 @@
 
     <!-- Contact Form Section -->
     <section class="contact-form py-16 bg-white">
-      <div class="container mx-auto px-4 max-w-lg">
+      <div class="container rounded-lg shadow-md bg-white mx-auto px-20  py-20 max-w-lg">
         <h2 class="text-3xl font-bold text-ipkoRed text-center mb-6">
           {{ $translations[$currentLang].contact.formTitle }}
         </h2>
         <form
           @submit.prevent="submitForm"
-          class="bg-gray-100 p-6 rounded-lg shadow-md"
+          class="bg-white p-6 rounded-lg shadow-md"
         >
           <div class="mb-4">
-            <label class="block text-gray-700 mb-2">
+            <label class="block text-ipkoRed mb-2">
               {{ $translations[$currentLang].contact.name }}
             </label>
             <input
@@ -73,7 +73,7 @@
             />
           </div>
           <div class="mb-4">
-            <label class="block text-gray-700 mb-2">
+            <label class="block text-ipkoRed mb-2">
               {{ $translations[$currentLang].contact.email }}
             </label>
             <input
@@ -83,7 +83,7 @@
             />
           </div>
           <div class="mb-4">
-            <label class="block text-gray-700 mb-2">
+            <label class="block text-ipkoRed mb-2">
               {{ $translations[$currentLang].contact.message }}
             </label>
             <textarea

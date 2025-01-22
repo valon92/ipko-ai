@@ -1,6 +1,6 @@
 <template>
     <!-- "AI for Business" -->
-    <section class="bg-white py-12 min-h-screen">
+    <section class="bg-white py-12 ">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-ipkoRed mb-6">
         {{ $translations[$currentLang].businessPlatform.title }}

@@ -1,16 +1,11 @@
 <template>
-  <footer class=" text-ipkoRed text-center py-6">
+  <hr>
+  <footer class=" text-ipkoRed text-left font-bold pl-8 py-6 rounded shadow">
     <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-4">
         <!-- Quick Links -->
         <div>
-          <h3 class="text-lg font-bold mb-2">
-            {{
-              $translations[$root.$currentLang]?.footer?.quickLinks ||
-              "Quick Links"
-            }}
-          </h3>
-          <ul>
+          <ul class="text-left md:pl-10 ">
             <li>
               <router-link to="/" class="hover:underline">
                 {{ $translations[$root.$currentLang]?.footer?.home || "Home" }}
@@ -47,7 +42,42 @@
           </ul>
         </div>
 
-        <!-- Contact Information -->
+        <div>
+          <ul class="md:text-left md:pl-10 ">
+            <li>
+              <router-link to="/startup" class="hover:underline">
+                {{ $translations[$root.$currentLang]?.footer?.meta || "Startup" }}
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/about" class="hover:underline">
+                {{
+                  $translations[$root.$currentLang]?.footer?.business || "My Business"
+                }}
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/contact" class="hover:underline">
+                {{
+                  $translations[$root.$currentLang]?.footer?.tutorials ||
+                  "Tutorials AI"
+                }}
+              </router-link>
+            </li>
+
+            <li>
+              <router-link to="/faq" class="hover:underline">
+                {{
+                  $translations[$root.$currentLang]?.footer?.login ||
+                  "LogIn"
+                }}
+              </router-link>
+            </li>
+          </ul>
+        </div>
+
+               <!-- Contact Information -->
+
         <div>
           <h3 class="text-lg font-bold mb-2">
             {{
@@ -70,11 +100,13 @@
             </a>
           </p>
         </div>
+     
 
-        <!-- Social Media Links -->
-        <div>
-          <!-- Language Selector -->
-          <div class="pb-3">
+
+         <!-- Social Media Links -->
+        <div class="grid ">
+                    <!-- Language Selector -->
+          <div class="pb-3 md:text-center">
             <button
               @click="changeLanguage('sq')"
               :class="{
@@ -94,8 +126,7 @@
               EN
             </button>
           </div>
-
-          <h3 class="text-lg font-bold mb-2">
+          <h3 class="text-lg text-center font-bold mb-2">
             {{
               $translations[$root.$currentLang]?.footer?.followUs ||
               "Follow Us"
@@ -106,12 +137,12 @@
             <a href="#" class="hover:text-gray-200">Twitter</a>
             <a href="#" class="hover:text-gray-200">LinkedIn</a>
           </div>
-        </div>
+          </div>
        
 
       </div>
         <hr>
-      <p class="text-sm mt-4">
+      <p class="text-sm mt-4 text-center">
         &copy; {{ new Date().getFullYear() }}
         {{
           $translations[$root.$currentLang]?.footer?.copyright || "copyright"
@@ -133,9 +164,10 @@ export default {
 </script>  
   <style scoped>
 footer {
-  background-color: #dcdcdc; 
+  /* background-color: #dcdcdc;  */
   /* Ngjyra kryesore e IPKO */
   /* background-color: #8C1A1A; */
+  background-color: white;
 
 }
 

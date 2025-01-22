@@ -1,19 +1,19 @@
 <template>
-  <section class="login bg-white py-12">
+  <section class="login bg-white py-12 min-h-screen">
     <div class="container mx-auto px-4 md:w-1/2 lg:w-1/3">
       <h1 class="text-3xl font-bold text-center text-ipkoRed mb-6">
         {{ $translations[$currentLang].login.title }}
       </h1>
-      <p class="text-center text-gray-600 mb-6">
+      <p class="text-center text-ipkoDark mb-6">
         {{ $translations[$currentLang].login.subtitle }}
       </p>
       <form
         @submit.prevent="handleLogin"
-        class="bg-gray-100 p-6 rounded-lg shadow-md"
+        class="bg-white p-10 py-10 rounded-lg shadow-md"
       >
         <!-- Email -->
         <div class="mb-4">
-          <label class="block text-gray-700 mb-2">{{
+          <label class="block text-ipkoRed mb-2">{{
             $translations[$currentLang].login.email
           }}</label>
           <input
@@ -25,7 +25,7 @@
         </div>
         <!-- Fjalëkalimi -->
         <div class="mb-6">
-          <label class="block text-gray-700 mb-2">{{
+          <label class="block text-ipkoRed mb-2">{{
             $translations[$currentLang].login.password
           }}</label>
           <input

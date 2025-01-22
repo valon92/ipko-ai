@@ -1,6 +1,5 @@
   <template>
-    <div class="bg-white  min-h-screen">
-      <section class=" text-ipkoRed py-5">
+      <section class="bg-white text-ipkoRed py-10">
         <div class="container mx-auto px-6 text-center">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">
             {{ $translations[$currentLang].businessPrograms.heroTitle }}
@@ -11,7 +10,7 @@
         </div>
       </section>
       <section class="py-1">
-        <div class="container mx-auto px-6">
+        <div class=" bg-white py-10 mx-auto px-6">
           <h2 class="text-3xl font-bold text-center text-ipkoRed mb-10">
             {{ $translations[$currentLang].businessPrograms.title }}
           </h2>
@@ -29,7 +28,6 @@
           </div>
         </div>
       </section>
-    </div>
   </template>
   
   <script>

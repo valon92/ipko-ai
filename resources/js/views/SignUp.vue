@@ -4,16 +4,16 @@
       <h1 class="text-3xl font-bold text-center text-ipkoRed mb-6">
         {{ $translations[$currentLang].signup.title }}
       </h1>
-      <p class="text-center text-gray-600 mb-6">
+      <p class="text-center text-ipkoDark mb-6">
         {{ $translations[$currentLang].signup.subtitle }}
       </p>
       <form
         @submit.prevent="handleSignUp"
-        class="bg-gray-100 p-6 rounded-lg shadow-md"
+        class="bg-white p-6 py-10 rounded-lg shadow-md"
       >
         <!-- Emri i Plotë -->
         <div class="mb-4">
-          <label class="block text-gray-700 mb-2">{{
+          <label class="block text-ipkoRed mb-2">{{
             $translations[$currentLang].signup.fullName
           }}</label>
           <input
@@ -25,7 +25,7 @@
         </div>
         <!-- Email -->
         <div class="mb-4">
-          <label class="block text-gray-700 mb-2">{{
+          <label class="block text-ipkoRed mb-2">{{
             $translations[$currentLang].signup.email
           }}</label>
           <input
@@ -37,7 +37,7 @@
         </div>
         <!-- Fjalëkalimi -->
         <div class="mb-4">
-          <label class="block text-gray-700 mb-2">{{
+          <label class="block text-ipkoRed mb-2">{{
             $translations[$currentLang].signup.password
           }}</label>
           <input
@@ -49,7 +49,7 @@
         </div>
         <!-- Konfirmo Fjalëkalimin -->
         <div class="mb-6">
-          <label class="block text-gray-700 mb-2">{{
+          <label class="block text-ipkoRed mb-2">{{
             $translations[$currentLang].signup.confirmPassword
           }}</label>
           <input
