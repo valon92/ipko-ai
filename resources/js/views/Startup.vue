@@ -1,44 +1,44 @@
 <template>
   <section class="startup bg-white py-12">
-    <div class="container mx-auto px-4 text-center">
+    <div class="container mx-auto px-4 bg-white text-center rounded-lg shadow-md py-10">
       <!-- Titulli Kryesor -->
       <h1 class="text-4xl font-bold text-ipkoRed mb-6">
         {{ $translations[$currentLang].startup.title }}
       </h1>
-      <p class="text-lg text-gray-600 mb-8">
+      <p class="text-lg text-ipkoDark mb-8">
         {{ $translations[$currentLang].startup.subtitle }}
       </p>
 
       <!-- Përfitimet për Startup-et -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-        <div class="p-6 rounded-lg shadow-md bg-gray-100">
-          <h3 class="text-xl font-semibold text-ipkoDark mb-2">
+        <div class="p-6 rounded-lg shadow-md bg-white">
+          <h3 class="text-xl font-semibold text-ipkoRed mb-2">
             {{ $translations[$currentLang].startup.feature1.title }}
           </h3>
-          <p class="text-gray-600">
+          <p class="text-ipkoDark">
             {{ $translations[$currentLang].startup.feature1.description }}
           </p>
         </div>
-        <div class="p-6 rounded-lg shadow-md bg-gray-100">
-          <h3 class="text-xl font-semibold text-ipkoDark mb-2">
+        <div class="p-6 rounded-lg shadow-md bg-white">
+          <h3 class="text-xl font-semibold text-ipkoRed mb-2">
             {{ $translations[$currentLang].startup.feature2.title }}
           </h3>
-          <p class="text-gray-600">
+          <p class="text-ipkoDark">
             {{ $translations[$currentLang].startup.feature2.description }}
           </p>
         </div>
-        <div class="p-6 rounded-lg shadow-md bg-gray-100">
-          <h3 class="text-xl font-semibold text-ipkoDark mb-2">
+        <div class="p-6 rounded-lg shadow-md bg-white">
+          <h3 class="text-xl font-semibold text-ipkoRed mb-2">
             {{ $translations[$currentLang].startup.feature3.title }}
           </h3>
-          <p class="text-gray-600">
+          <p class="text-ipkoDark">
             {{ $translations[$currentLang].startup.feature3.description }}
           </p>
         </div>
       </div>
 
       <!-- CTA (Call to Action) -->
-      <div class="mt-12">
+      <div class="mt-12  py-10">
         <a
           href="#registerstartup"
           class="inline-block bg-ipkoRed text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-ipkoLight transition duration-300"
@@ -48,12 +48,12 @@
       </div>
     </div>
   </section>
-  <section id="registerstartup" class="bg-gray-100 py-12">
+  <section id="registerstartup" class="bg-white py-12">
     <div class="container mx-auto px-4">
       <h1 class="text-4xl font-bold text-ipkoRed text-center mb-6">
         {{ $translations[$currentLang].startup.registrationTitle }}
       </h1>
-      <p class="text-lg text-gray-600 text-center mb-8">
+      <p class="text-lg text-ipkoDark text-center mb-8">
         {{ $translations[$currentLang].startup.registrationSubtitle }}
       </p>
 
@@ -64,7 +64,7 @@
       >
         <!-- Startup Name -->
         <div class="mb-4">
-          <label for="name" class="block text-gray-700 font-semibold mb-2">
+          <label for="name" class="block text-ipkoRed font-semibold mb-2">
             {{ $translations[$currentLang].startup.form.name }}
           </label>
           <input
@@ -79,7 +79,7 @@
 
         <!-- Email -->
         <div class="mb-4">
-          <label for="email" class="block text-gray-700 font-semibold mb-2">
+          <label for="email" class="block text-ipkoRed font-semibold mb-2">
             {{ $translations[$currentLang].startup.form.email }}
           </label>
           <input
@@ -94,7 +94,7 @@
 
         <!-- Website -->
         <div class="mb-4">
-          <label for="website" class="block text-gray-700 font-semibold mb-2">
+          <label for="website" class="block text-ipkoRed font-semibold mb-2">
             {{ $translations[$currentLang].startup.form.website }}
           </label>
           <input
@@ -108,13 +108,13 @@
 
         <!-- Industry -->
         <div class="mb-4">
-          <label for="industry" class="block text-gray-700 font-semibold mb-2">
+          <label for="industry" class="block text-ipkoRed font-semibold mb-2">
             {{ $translations[$currentLang].startup.form.industry }}
           </label>
           <select
             v-model="form.industry"
             id="industry"
-            class="w-full px-4 py-2 border rounded-lg focus:outline-none"
+            class="w-full px-4 py-2 border text-ipkoDark rounded-lg focus:outline-none"
             required
           >
             <option value="" disabled>
@@ -132,7 +132,7 @@
         <div class="mb-4">
           <label
             for="description"
-            class="block text-gray-700 font-semibold mb-2"
+            class="block text-ipkoRed font-semibold mb-2"
           >
             {{ $translations[$currentLang].startup.form.description }}
           </label>
@@ -203,9 +203,6 @@ export default {
 }
 .startup .grid div:hover {
   transform: translateY(-5px);
-}
-section {
-  background-color: #f9f9f9;
 }
 label {
   font-size: 0.875rem;

@@ -1,6 +1,6 @@
-<template>
-  <div class="container mx-auto px-4 py-12">
-    <div class="max-w-md mx-auto bg-white shadow-md rounded-lg p-6">
+<template> 
+  <div class=" mx-auto  bg-white px-4 py-12">
+    <div class="container max-w-md mx-auto bg-white shadow-md rounded-lg px-10 py-10">
       <h1 class="text-2xl font-bold text-center text-ipkoRed mb-6">
         {{ $translations[$currentLang].registerBusiness.title }}
 
@@ -11,7 +11,7 @@
         <div class="mb-4">
           <label
             for="businessNumber"
-            class="block text-gray-700 font-semibold mb-2"
+            class="block text-ipkoRed font-semibold mb-2"
           >
             {{ $translations[$currentLang].registerBusiness.businessNumber }}
           </label>
@@ -27,7 +27,7 @@
 
         <!-- Email -->
         <div class="mb-4">
-          <label for="email" class="block text-gray-700 font-semibold mb-2">
+          <label for="email" class="block text-ipkoRed font-semibold mb-2">
             {{ $translations[$currentLang].registerBusiness.email }}
 
           </label>
@@ -43,7 +43,7 @@
 
         <!-- Password -->
         <div class="mb-4">
-          <label for="password" class="block text-gray-700 font-semibold mb-2">
+          <label for="password" class="block text-ipkoRed font-semibold mb-2">
             {{ $translations[$currentLang].registerBusiness.password }}
 
           </label>

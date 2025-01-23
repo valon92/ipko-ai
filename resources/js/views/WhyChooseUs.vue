@@ -1,10 +1,10 @@
 <template>
      <section class="why-choose-us py-16 bg-white">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-ipkoRed mb-6">
+        <h2 class="text-3xl md:text-4xl font-bold  mb-6">
           {{ $translations[$currentLang].home.whyChooseUsTitle }}
         </h2>
-        <p class="text-lg text-ipkoDark mb-8">
+        <p class="text-lg text-ipkoRed mb-8">
           {{ $translations[$currentLang].home.whyChooseUsDescription }}
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -26,10 +26,10 @@
                 />
               </svg>
             </div>
-            <h3 class="text-xl text-ipkoRed font-semibold mb-2">
+            <h3 class="text-xl text-ipkoDark font-semibold mb-2">
               {{ $translations[$currentLang].home.whyPoint1Title }}
             </h3>
-            <p class="text-ipkoDark">
+            <p>
               {{ $translations[$currentLang].home.whyPoint1Description }}
             </p>
           </div>
@@ -51,10 +51,10 @@
                 />
               </svg>
             </div>
-            <h3 class="text-xl text-ipkoRed font-semibold mb-2">
+            <h3 class="text-xl text-ipkoDark font-semibold mb-2">
               {{ $translations[$currentLang].home.whyPoint2Title }}
             </h3>
-            <p class="text-ipkoDark">
+            <p>
               {{ $translations[$currentLang].home.whyPoint2Description }}
             </p>
           </div>
@@ -76,10 +76,10 @@
                 />
               </svg>
             </div>
-            <h3 class="text-xl text-ipkoRed font-semibold mb-2">
+            <h3 class="text-xl text-ipkoDark font-semibold mb-2">
               {{ $translations[$currentLang].home.whyPoint3Title }}
             </h3>
-            <p class="text-ipkoDark">
+            <p>
               {{ $translations[$currentLang].home.whyPoint3Description }}
             </p>
           </div>

@@ -1,6 +1,6 @@
 <template>
     
-    <div class="container mx-auto px-4 py-8">
+    <div class="container bg-white mx-auto px-4 py-8">
       <!-- Titulli Kryesor -->
       <h1 class="text-3xl font-bold text-ipkoRed mb-6">
         {{ $translations[$currentLang].BusinessSupport.title }}
@@ -8,7 +8,7 @@
   
       <!-- Seksioni i Faturave -->
       <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        <h2 class="text-2xl font-semibold text-ipkoDark mb-4">
           {{ $translations[$currentLang].BusinessSupport.invoices }}
 
         </h2>
@@ -64,13 +64,13 @@
   
       <!-- Seksioni i Paketave -->
       <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        <h2 class="text-2xl font-semibold text-ipkoDark mb-4">
           {{ $translations[$currentLang].BusinessSupport.packages}}
 
         </h2>
         <div v-for="(packageItem, index) in packages" :key="index" class="p-4 mb-4 border rounded-lg">
           <h3 class="text-xl font-bold text-ipkoRed">{{ packageItem.name }}</h3>
-          <p class="text-gray-700">{{ packageItem.description }}</p>
+          <p class="text-ipkoDark">{{ packageItem.description }}</p>
           <button
             @click="upgradePackage(packageItem.id)"
             class="mt-2 bg-ipkoRed text-white px-4 py-2 rounded-md hover:bg-ipkoLight transition"

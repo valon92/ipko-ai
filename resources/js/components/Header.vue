@@ -2,7 +2,7 @@
   <!-- MetaHeader -->
   <MetaHeader />
 
-  <header class="bg-white text-ipkoRed font-bold  py-2 shadow-md sticky top-0 z-50 ">
+  <header class="bg-white text-black font-bold  py-2 shadow-md sticky top-0 z-50 ">
     <div class="flex  justify-between items-center px-4">
       <!-- Logo -->
       <a href="/">

@@ -1,6 +1,6 @@
 <template>
   <hr>
-  <footer class=" text-ipkoRed text-left font-bold pl-8 py-6 rounded shadow">
+  <footer class=" text-black text-left font-bold pl-8 py-6 rounded shadow">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-4">
         <!-- Quick Links -->
@@ -79,21 +79,21 @@
                <!-- Contact Information -->
 
         <div>
-          <h3 class="text-lg font-bold mb-2">
+          <h3 class="text-lg font-bold pl-2 mb-2">
             {{
-              $translations[$root.$currentLang]?.footer?.contactUs ||
+              $translations[$root.$currentLang].footer.contactUs ||
               "Contact Us"
             }}
           </h3>
           <p>
-            {{ $translations[$root.$currentLang]?.footer?.email || "Email" }}:
+            {{ $translations[$root.$currentLang].footer.email || "Email" }}:
 
             <a href="mailto:support@ipko.ai" class="hover:underline">
               support@ipko.ai
             </a>
           </p>
           <p>
-            {{ $translations[$root.$currentLang]?.footer?.phone || "Phone" }}:
+            {{ $translations[$root.$currentLang].footer.phone || "Phone" }}:
 
             <a href="tel:+38344123456" class="hover:underline">
               +383 44 123 456
@@ -106,7 +106,7 @@
          <!-- Social Media Links -->
         <div class="grid ">
                     <!-- Language Selector -->
-          <div class="pb-3 md:text-center">
+          <div class="pb-1 md:text-center">
             <button
               @click="changeLanguage('sq')"
               :class="{
@@ -126,13 +126,13 @@
               EN
             </button>
           </div>
-          <h3 class="text-lg text-center font-bold mb-2">
+          <h3 class="text-lg text-center  font-bold mb-0">
             {{
               $translations[$root.$currentLang]?.footer?.followUs ||
               "Follow Us"
             }}:
           </h3>
-          <div class="flex justify-center space-x-4">
+          <div class="flex justify-center space-x-2">
             <a href="#" class="hover:text-gray-200">Facebook</a>
             <a href="#" class="hover:text-gray-200">Twitter</a>
             <a href="#" class="hover:text-gray-200">LinkedIn</a>

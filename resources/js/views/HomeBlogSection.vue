@@ -1,7 +1,7 @@
 <template>
     <section class="py-16 bg-white">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold text-ipkoRed mb-8">
+        <h2 class="text-3xl font-bold  mb-8">
           {{ $translations[$currentLang].blogSection.title }}
         </h2>
         <div class="relative">
@@ -29,7 +29,7 @@
               </p>
               <a
                 href="#"
-                class="text-white text-sm bg-ipkoRed py-1 px-1 rounded   hover:underline"
+                class="text-white text-sm bg-ipkoRed py-2 px-2 rounded   hover:underline"
               >
                 Read More
               </a>
