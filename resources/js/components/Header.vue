@@ -158,6 +158,12 @@
          >
          {{  $translations[$root.$currentLang].header.BusinessPlatform}}
          </router-link>
+
+         <router-link to="/business-integrations" 
+         class="hover:text-white hover:text-lg"
+         >
+         {{  $translations[$root.$currentLang].header.BusinessIntegrations}}
+         </router-link>
          
 
           <router-link to="/revenue-model" 

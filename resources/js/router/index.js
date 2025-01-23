@@ -21,6 +21,7 @@ import AIHub from "../views/AIHub.vue";
 import UserDashboard from "../views/UserDashboard.vue";
 import RevenueModel from "../views/RevenueModel.vue";
 import DataAnalyticsPage from "../views/DataAnalyticsPage.vue";
+import BusinessIntegrations from "../views/BusinessIntegrations.vue";
 
 
 
@@ -54,6 +55,8 @@ const routes = [
     {path: "/user-dashboard",component: UserDashboard},
     {path: "/revenue-model",component: RevenueModel},
     {path: "/data-analytics", component: DataAnalyticsPage },
+    {path: "/business-integrations", component: BusinessIntegrations },
+
 
 
 

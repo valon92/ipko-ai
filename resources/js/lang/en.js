@@ -9,6 +9,7 @@ export default {
         BusinessPrograms:"Business Programs",
         BusinessPlatform:"Business Platform",
         RevenueModel:"Revenue Model",
+        BusinessIntegrations: "Business Integrations",
 
     },
     meta: {
@@ -22,6 +23,8 @@ export default {
         tutorials: "Tutorials AI",
         login: "Login",
         signup: "Sign Up",
+        BusinessIntegrations: "Business Integrations",
+
     },
     signup: {
         title: "Sign Up",
@@ -282,6 +285,17 @@ export default {
       programDetails: {
         features: "Key Features",
       },
+      businessIntegrations: {
+        title: "Business Integrations",
+        description: "Utilize advanced APIs to optimize your business operations.",
+        apiTitle1: "Analytics API",
+        apiDesc1: "Use our APIs to generate personalized reports.",
+        apiTitle2: "Process Automation",
+        apiDesc2: "Automate your business processes for maximum efficiency.",
+        apiTitle3: "Integration with Existing Systems",
+        apiDesc3: "Seamlessly integrate IPKO.ai into your existing systems.",
+      },
+      
     footer: {
         quickLinks: "Quick Links",
         home: "Home",

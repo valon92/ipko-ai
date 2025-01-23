@@ -9,6 +9,7 @@ export default {
         BusinessPrograms:"Programe për Biznes",
         BusinessPlatform:"Platform për Biznes",
         RevenueModel:"Moduli i të Ardhurave",
+        BusinessIntegrations: "Integrime për Bizneset",
 
     },
     meta: {
@@ -22,6 +23,8 @@ export default {
         tutorials: "Mësime AI",
         login: "Hyrje",
         signup: "Regjistrohu",
+        BusinessIntegrations: "Integrime për Bizneset",
+
     },
     signup: {
         title: "Regjistrohu",
@@ -294,6 +297,17 @@ export default {
       programDetails: {
         features: "Karakteristikat Kryesore",
       },
+      businessIntegrations: {
+        title: "Integrime për Bizneset",
+        description: "Shfrytëzoni API-të e avancuara për të optimizuar biznesin tuaj.",
+        apiTitle1: "API për Analiza",
+        apiDesc1: "Përdorni API-të tona për të gjeneruar raporte të personalizuara.",
+        apiTitle2: "Automatizimi i Proceseve",
+        apiDesc2: "Automatizoni proceset e biznesit tuaj për efikasitet maksimal.",
+        apiTitle3: "Lidhje me Sistemet Eksistuese",
+        apiDesc3: "Integroni IPKO.ai në sistemet tuaja ekzistuese pa ndërprerje.",
+      },
+      
     footer: {
         quickLinks: "Lidhje të Shpejta",
         home: "Ballina",
