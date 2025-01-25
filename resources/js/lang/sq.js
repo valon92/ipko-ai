@@ -3,8 +3,9 @@ export default {
         home: "Ballina",
         about: "Rreth Nesh",
         contact: "Kontakt",
-        faq: "FAQ",
+        shop: "Dyqan",
         services: "Shërbimet",
+        myBusiness: "Biznesi Im",
         BusinessSupport:"Mbështetje për Bizneset",
         BusinessPrograms:"Programe për Biznes",
         BusinessPlatform:"Platform për Biznes",
@@ -15,6 +16,7 @@ export default {
     meta: {
         RC:"KV",
         startup: "Startup",
+        Business: "Biznesi",
         myBusiness: "Biznesi Im",
         BusinessSupport:"Mbështetje për Bizneset",
         BusinessPrograms:"Programe për Biznes",

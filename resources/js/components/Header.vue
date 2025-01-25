@@ -2,12 +2,13 @@
   <!-- MetaHeader -->
   <MetaHeader />
 
-  <header class="bg-white text-black font-bold  py-2 shadow-md sticky top-0 z-50 ">
-    <div class="flex  justify-between items-center px-4">
+  <header class="bg-white bg-fixed text-black font-bold py-2 
+  rounded-lg shadow-md top-0  ">
+    <div class="flex justify-between items-center px-4">
       <!-- Logo -->
       <a href="/">
         <img src="/public/images/ipko1.png" alt=""
-        class="flex lg:h-20 w-20"
+        class="flex lg:h-auto w-10 hover:h-20 hover:w-20 hover:absolute hover:my-10 "
         >
       </a>
 
@@ -24,22 +25,23 @@
           {{ $translations[$root.$currentLang].header.about}}
         </router-link>
 
-        <router-link to="/contact" 
-        class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
-        >
-          {{ $translations[$root.$currentLang].header.contact}}
-        </router-link>
 
-        <router-link to="/faq"
+        <router-link to="/shop"
         class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
          >
-          {{ $translations[$root.$currentLang].header.faq }}
+          {{ $translations[$root.$currentLang].header.shop }}
         </router-link>
 
         <router-link to="/services" 
         class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
         >
           {{ $translations[$root.$currentLang].header?.services  }}
+        </router-link>
+
+        <router-link to="/contact" 
+        class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
+        >
+          {{ $translations[$root.$currentLang].header.contact}}
         </router-link>
 
       </nav>
@@ -106,7 +108,7 @@
     </div>
 
     <!-- Mobile Navigation Menu -->
-    <nav v-if="isMenuOpen" class="md:hidden bg-white text-ipkoRed font-bold
+    <nav v-if="isMenuOpen" class="md:hidden bg-white text-black font-bold
      py-4">
       <ul class="flex flex-col space-y-2 text-left pl-12">
         <li>
@@ -123,16 +125,10 @@
             {{ $translations[$root.$currentLang].header.about || "About" }}
           </router-link>
 
-          <router-link to="/contact"
+          <router-link to="/shop"
           class="hover:text-white hover:text-lg"
            >
-            {{$translations[$root.$currentLang].header.contact || "Contact"}}
-          </router-link>
-
-          <router-link to="/faq"
-          class="hover:text-white hover:text-lg"
-           >
-            {{ $translations[$root.$currentLang].header.faq || "FAQ" }}
+            {{ $translations[$root.$currentLang].header.shop || "Shop" }}
           </router-link>
 
           <router-link to="/services" 
@@ -140,6 +136,18 @@
           >
            {{$translations[$root.$currentLang].header.services || "Services" }}
           </router-link>
+
+          <router-link to="/contact"
+          class="hover:text-white hover:text-lg"
+           >
+            {{$translations[$root.$currentLang].header.contact || "Contact"}}
+          </router-link>
+          
+          <router-link to="/my-business" 
+          class="hover:text-white hover:text-lg"
+          >
+         {{  $translations[$root.$currentLang].header.myBusiness}}
+         </router-link>
 
           <router-link to="/business-support" 
           class="hover:text-white hover:text-lg"
@@ -172,12 +180,18 @@
           {{ $translations[$root.$currentLang].header.RevenueModel}}
           </router-link>
 
+
+
+           
+    
+
+
         </li>
         <hr />
 
         <router-link 
          to="signup"
-          class=" py-1 pl-4 text-ipkoRed font-bold  hover:text-white hover:bg-ipkoRed hover:py-2"
+          class=" py-1 pl-4 text-blck font-bold  hover:text-white hover:bg-ipkoRed hover:py-2"
           >
           {{ $translations[$currentLang].meta.signup }}
         </router-link>
@@ -186,6 +200,7 @@
 
     </nav>
   </header>
+  <hr>
 </template>
   
   <script>
@@ -221,6 +236,7 @@ export default {
   },
 };
 </script>
+
   
   <style scoped>
 header {

@@ -1,5 +1,4 @@
 <template>
-  <div>
     <!-- Hero Section -->
     <section class="contact-hero bg-white py-20">
       <div class="container rounded-lg shadow-md mx-auto px-4 py-10 text-center">
@@ -54,7 +53,14 @@
 
     <!-- Contact Form Section -->
     <section class="contact-form py-16 bg-white">
-      <div class="container rounded-lg shadow-md bg-white mx-auto px-20  py-20 max-w-lg">
+     
+  
+
+
+    <div class="container text-center">
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center ">
+    <div class="col">
+      <div class=" rounded-lg shadow-md bg-white mx-auto px-20  py-20 max-w-lg">
         <h2 class="text-3xl font-bold text-ipkoRed text-center mb-6">
           {{ $translations[$currentLang].contact.formTitle }}
         </h2>
@@ -99,8 +105,13 @@
           </button>
         </form>
       </div>
-    </section>
+    </div>
+    <div class="col hidden md:block ">
+     <img src="/public/images/ipko10.png" alt="">
+    </div>
   </div>
+  </div>
+</section>
 </template>
 
 <script>

@@ -1,7 +1,11 @@
+
+  
+
 <template>
   <section class="login bg-white py-12 min-h-screen">
-    <div class="container mx-auto px-4 md:w-1/2 lg:w-1/3">
-      <h1 class="text-3xl font-bold text-center text-ipkoRed mb-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-0">  
+        <div class="container mx-auto  rounded-lg ml-6 shadow-md lg:px-20 py-10">
+          <h1 class="text-3xl font-bold text-center text-ipkoRed mb-6">
         {{ $translations[$currentLang].login.title }}
       </h1>
       <p class="text-center text-ipkoDark mb-6">
@@ -9,7 +13,7 @@
       </p>
       <form
         @submit.prevent="handleLogin"
-        class="bg-white p-10 py-10 rounded-lg shadow-md"
+        class="bg-white p-10 "
       >
         <!-- Email -->
         <div class="mb-4">
@@ -50,7 +54,24 @@
           $translations[$currentLang].login.signup
         }}</router-link>
       </p>
+    
+
+    
     </div>
+
+      <div class="flex justify-center">
+
+        <img src="/public/images/ipko12.png" alt=""
+        class="hidden md:block md:w-96"
+        >
+      </div>
+    </div>
+
+
+
+
+
+    
   </section>
 </template>
   

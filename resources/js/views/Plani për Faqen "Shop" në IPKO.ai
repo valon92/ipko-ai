@@ -1,0 +1,79 @@
+Plani për Faqen "Shop" në IPKO.ai
+Faqja e "Shop" do të jetë një platformë dedikuar për bizneset ku ato mund të shikojnë dhe porosisin pajisje dhe zgjidhje teknologjike që ndihmojnë në operacionet e tyre të përditshme. Qëllimi kryesor i kësaj faqe është të ofrojë një zgjidhje të thjeshtë dhe efikase për blerjen e produkteve teknologjike nga bizneset.
+
+Qëllimi Kryesor
+Ofrimi i Produkteve Teknologjike për Biznese
+
+Pajisje të dedikuara për bizneset, si PC për biznese, arka fiskale, printerë, touchscreen-et, palmara, dhe më shumë.
+Ofrimi i përshkrimeve të detajuara dhe specifikimeve për çdo produkt.
+Shporta e Blerjeve dhe Porositë
+
+Një shportë blerjesh ku klientët mund të shtojnë produkte dhe të bëjnë porosi.
+Opsioni për të vendosur sasinë e produkteve dhe për të parë totalin përfundimtar.
+Kategori të Ndara për Produkte
+
+Organizimi i produkteve sipas kategorive (IT Equipment, Pajisje Fiskale, Zgjidhje për Shitje, Printerë, etj.).
+Filtër për të kërkuar produkte bazuar në kategori ose emër.
+Pagesat dhe Porositë
+
+Mundësia për të bërë porosi të thjeshtë (pa pagesë online për fillim, me pagesë kur merr produktin).
+Gjurmimi i statusit të porosive nga klienti.
+Struktura e Faqes "Shop"
+Header i Dedikuar për Faqen
+
+Navigim i lehtë mes kategorive të produkteve.
+Opsioni për të kërkuar produkte me një "search bar".
+Hero Section
+
+Një baner që promovon pajisjet më të shitura ose ofertat aktuale.
+Kategoritë Kryesore
+
+Kategori të paraqitura në një "grid" që ndihmojnë përdoruesit të eksplorojnë më shpejt produktet.
+Lista e Produkteve
+
+Çdo produkt përmban:
+Imazhin e produktit.
+Emrin e produktit.
+Specifikime kryesore.
+Çmimin.
+Butonin "Shto në Shportë".
+Shporta e Blerjeve
+
+Një sidebar ose faqe e veçantë që paraqet të gjitha produktet që janë shtuar për blerje.
+Përmban totalin përfundimtar dhe butonin "Bëj Porosi".
+Footer
+
+Informacione për kontakt, lidhje të tjera të rëndësishme, dhe politikën e privatësisë.
+Shembuj Produktesh
+PC për Biznese:
+Dell OptiPlex
+HP EliteDesk
+Arka Fiskale:
+Arka Elzab
+Fiskal Epson Printer
+Palmara për Biznese:
+Zebra TC21
+Honeywell Dolphin
+Printerë dhe Pajisje për Shitje:
+Printerë termikë.
+Pajisje POS me touchscreen.
+Pajisje për Zgjidhje Magazinimi:
+Skanerë barkodesh.
+Etiketa për produkte.
+Hapat për Zhvillim
+1. Krijimi i Faqes Shop
+Vendosja e një rruge (/shop) dhe krijimi i Shop.vue si komponent kryesor.
+Paraqitja e kategorive dhe disa produkteve të para në faqe.
+2. Krijimi i Shportës
+Shto një ShoppingCart.vue komponent për të menaxhuar produktet në shportë.
+Shto një ikonë shporte në header për qasje të shpejtë.
+3. Ndërtimi i Produktit
+Krijimi i një ProductCard.vue për të paraqitur produktet në mënyrë vizuale.
+4. Filtër dhe Kërkim
+Implementimi i një SearchBar.vue për të kërkuar produktet dhe një sistem filtrimi.
+5. Shtimi i Porosive
+Një faqe e dedikuar për përmbledhjen dhe dërgimin e porosive.
+6. Përkthimet
+Përkthimi i faqes në shqip dhe anglisht.
+7. Ruajtja në GitHub
+Ruajtja e ndryshimeve pas çdo hapi në branch development.

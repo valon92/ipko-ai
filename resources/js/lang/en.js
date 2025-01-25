@@ -3,8 +3,9 @@ export default {
         home: "Home",
         about: "About",
         contact: "Contact",
-        faq: "FAQ",
+        shop: "Shop",
         services: "Services",
+        myBusiness: "My Business",
         BusinessSupport:"Business Support",
         BusinessPrograms:"Business Programs",
         BusinessPlatform:"Business Platform",
@@ -15,6 +16,7 @@ export default {
     meta: {
         RC:"RC",
         startup: "Startup",
+        Business: "Business",
         myBusiness: "My Business",
         BusinessSupport:"Business Support",
         BusinessPrograms:"Business Programs",
@@ -309,7 +311,7 @@ export default {
         copyright: "IPKO.ai. All Rights Reserved.",
     },
     home: {
-        heroTitle: "Welcome to IPKO AI",
+        heroTitle: "Welcome to IBKO AI",
         heroSubtitle: "Empowering the future with AI-driven solutions.",
         getStarted: "Get Started",
         ideaTitle: "The Vision Behind IPKO AI",

@@ -1,12 +1,21 @@
 <template>
   <section class="signup bg-white py-12">
-    <div class="container mx-auto px-4 md:w-1/2 lg:w-1/3">
+   
+
+
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-0">  
+      <div class="flex justify-center">
+
+        <div class="container">
+
       <h1 class="text-3xl font-bold text-center text-ipkoRed mb-6">
         {{ $translations[$currentLang].signup.title }}
       </h1>
+
       <p class="text-center text-ipkoDark mb-6">
         {{ $translations[$currentLang].signup.subtitle }}
       </p>
+
       <form
         @submit.prevent="handleSignUp"
         class="bg-white p-6 py-10 rounded-lg shadow-md"
@@ -49,7 +58,7 @@
         </div>
         <!-- Konfirmo Fjalëkalimin -->
         <div class="mb-6">
-          <label class="block text-ipkoRed mb-2">{{
+          <label class="block text-ipko mb-2">{{
             $translations[$currentLang].signup.confirmPassword
           }}</label>
           <input
@@ -59,6 +68,7 @@
             class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-ipkoRed"
           />
         </div>
+
         <!-- Butoni Regjistrohu -->
         <button
           type="submit"
@@ -67,14 +77,25 @@
           {{ $translations[$currentLang].signup.button }}
         </button>
       </form>
+
       <p class="text-center mt-4">
         {{ $translations[$currentLang].signup.haveAccount }}
-
         <router-link to="/login" class="text-ipkoRed hover:underline">{{
           $translations[$currentLang].signup.login
         }}</router-link>
       </p>
     </div>
+    </div>
+
+      <div class="flex justify-center">
+
+        <img src="/public/images/ipko5.png" alt=""
+        class="hidden md:block md:w-96"
+        >
+      </div>
+    </div>
+
+    
   </section>
 </template>
   
