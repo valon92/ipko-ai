@@ -2,70 +2,77 @@
   <!-- MetaHeader -->
   <MetaHeader />
 
-  <header class="bg-white bg-fixed text-black font-bold py-2 
-  rounded-lg shadow-md top-0  ">
-    <div class="flex justify-between items-center px-4">
+  <!-- HEADER KRYESOR: Sticky + z-10 (ose z-50, varësisht nevojës) -->
+  <header
+    class="bg-white sticky top-0 z-10 text-black font-bold py-2 rounded-lg shadow-md"
+  >
+    <div class="flex static justify-between items-center px-4">
       <!-- Logo -->
       <a href="/">
-        <img src="/public/images/ipko1.png" alt=""
-        class="flex lg:h-auto w-10 hover:h-20 hover:w-20 hover:absolute hover:my-10 "
-        >
+        <!-- Shembull i klasave Tailwind për madhësinë/hov. Modifiko sipas dëshirës -->
+        <img
+          src="/public/images/ipko1.png"
+          alt="ipko"
+          class="w-10 hover:w-20 hover:h-20 hover:absolute hover:my-10"
+        />
       </a>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex md:space-x-4 md:text-sm lg:text-base  ">
-        <router-link to="/" 
-        class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
+      <nav class="hidden md:flex md:space-x-4 md:text-sm lg:text-base">
+        <router-link
+          to="/"
+          class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
         >
-          {{ $translations[$root.$currentLang].header.home}}
-        </router-link>
-        <router-link to="/about" 
-        class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
-         >
-          {{ $translations[$root.$currentLang].header.about}}
+          {{ $translations[$root.$currentLang].header.home }}
         </router-link>
 
+        <router-link
+          to="/about"
+          class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
+        >
+          {{ $translations[$root.$currentLang].header.about }}
+        </router-link>
 
-        <router-link to="/shop"
-        class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
-         >
+        <router-link
+          to="/shop"
+          class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
+        >
           {{ $translations[$root.$currentLang].header.shop }}
         </router-link>
 
-        <router-link to="/services" 
-        class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
+        <router-link
+          to="/services"
+          class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
         >
-          {{ $translations[$root.$currentLang].header?.services  }}
+          {{ $translations[$root.$currentLang].header.services }}
         </router-link>
 
-        <router-link to="/contact" 
-        class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
+        <router-link
+          to="/contact"
+          class="hover:text-ipkoRed hover:font-bold hover:text-lg md:px-3"
         >
-          {{ $translations[$root.$currentLang].header.contact}}
+          {{ $translations[$root.$currentLang].header.contact }}
         </router-link>
-
       </nav>
-
-      <!-- Search Component -->
 
       <!-- SearchBar për Mobile -->
       <div class="px-3 mt-1 mb-1 w-full md:w-1/2">
         <SearchBar />
       </div>
 
-      <!-- Language Selector -->
-      <div class="hidden md:flex md:space-x-0">
+      <!-- Language Selector (Desktop) -->
+      <div class="hidden md:flex md:space-x-2 items-center">
         <button
           @click="changeLanguage('sq')"
-          :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'sq' }"
-          class="px-1 py-1 rounded-md"
+          :class="{ 'text-ipkoRed': $root.$currentLang === 'sq' }"
+          class="px-2 py-1 rounded-md"
         >
           SQ
         </button>
         <button
           @click="changeLanguage('en')"
-          :class="{ 'bg-white text-ipkoRed': $root.$currentLang === 'en' }"
-          class="px-1 py-0 rounded-md"
+          :class="{ 'text-ipkoRed': $root.$currentLang === 'en' }"
+          class="px-2 py-1 rounded-md"
         >
           EN
         </button>
@@ -76,6 +83,7 @@
         @click="toggleMenu"
         class="md:hidden text-ipkoRed focus:outline-none"
       >
+        <!-- Ikona e hamburgers ose “X” -->
         <svg
           v-if="!isMenuOpen"
           class="w-6 h-6"
@@ -107,103 +115,101 @@
       </button>
     </div>
 
-    <!-- Mobile Navigation Menu -->
-    <nav v-if="isMenuOpen" class="md:hidden bg-white text-black font-bold
-     py-4">
+    <!-- Mobile Navigation Menu (vetëm kur është hapur) -->
+    <nav v-if="isMenuOpen" class="md:hidden bg-white text-black font-bold py-4">
       <ul class="flex flex-col space-y-2 text-left pl-12">
         <li>
-
-          <router-link to="/" 
-          class="hover:text-white hover:text-lg"
+          <router-link
+            to="/"
+            class="hover:text-white hover:text-lg"
           >
             {{ $translations[$root.$currentLang].header.home || "Home" }}
           </router-link>
-
-          <router-link to="/about" 
-          class="hover:text-white hover:text-lg"
+          <router-link
+            to="/about"
+            class="hover:text-white hover:text-lg"
           >
             {{ $translations[$root.$currentLang].header.about || "About" }}
           </router-link>
-
-          <router-link to="/shop"
-          class="hover:text-white hover:text-lg"
-           >
+          <router-link
+            to="/shop"
+            class="hover:text-white hover:text-lg"
+          >
             {{ $translations[$root.$currentLang].header.shop || "Shop" }}
           </router-link>
-
-          <router-link to="/services" 
-          class="hover:text-white hover:text-lg"
+          <router-link
+            to="/services"
+            class="hover:text-white hover:text-lg"
           >
-           {{$translations[$root.$currentLang].header.services || "Services" }}
+            {{ $translations[$root.$currentLang].header.services || "Services" }}
+          </router-link>
+          <router-link
+            to="/contact"
+            class="hover:text-white hover:text-lg"
+          >
+            {{ $translations[$root.$currentLang].header.contact || "Contact" }}
           </router-link>
 
-          <router-link to="/contact"
-          class="hover:text-white hover:text-lg"
-           >
-            {{$translations[$root.$currentLang].header.contact || "Contact"}}
-          </router-link>
-          
-          <router-link to="/my-business" 
-          class="hover:text-white hover:text-lg"
+          <!-- Shtesa Business -->
+          <router-link
+            to="/my-business"
+            class="hover:text-white hover:text-lg"
           >
-         {{  $translations[$root.$currentLang].header.myBusiness}}
-         </router-link>
-
-          <router-link to="/business-support" 
-          class="hover:text-white hover:text-lg"
-          >
-         {{  $translations[$root.$currentLang].header.BusinessSupport}}
-         </router-link>
-
-         <router-link to="/business-programs" 
-         class="hover:text-white hover:text-lg"
-         >
-         {{  $translations[$root.$currentLang].header.BusinessPrograms}}
-         </router-link>
-
-         <router-link to="/business-platform" 
-         class="hover:text-white hover:text-lg"
-         >
-         {{  $translations[$root.$currentLang].header.BusinessPlatform}}
-         </router-link>
-
-         <router-link to="/business-integrations" 
-         class="hover:text-white hover:text-lg"
-         >
-         {{  $translations[$root.$currentLang].header.BusinessIntegrations}}
-         </router-link>
-         
-
-          <router-link to="/revenue-model" 
-          class="hover:text-white hover:text-lg"
-          >
-          {{ $translations[$root.$currentLang].header.RevenueModel}}
+            {{ $translations[$root.$currentLang].header.myBusiness }}
           </router-link>
 
+          <router-link
+            to="/business-support"
+            class="hover:text-white hover:text-lg"
+          >
+            {{ $translations[$root.$currentLang].header.BusinessSupport }}
+          </router-link>
 
+          <router-link
+            to="/business-programs"
+            class="hover:text-white hover:text-lg"
+          >
+            {{ $translations[$root.$currentLang].header.BusinessPrograms }}
+          </router-link>
 
-           
-    
+          <router-link
+            to="/business-platform"
+            class="hover:text-white hover:text-lg"
+          >
+            {{ $translations[$root.$currentLang].header.BusinessPlatform }}
+          </router-link>
 
+          <router-link
+            to="/business-integrations"
+            class="hover:text-white hover:text-lg"
+          >
+            {{ $translations[$root.$currentLang].header.BusinessIntegrations }}
+          </router-link>
 
+          <router-link
+            to="/revenue-model"
+            class="hover:text-white hover:text-lg"
+          >
+            {{ $translations[$root.$currentLang].header.RevenueModel }}
+          </router-link>
         </li>
+
         <hr />
 
-        <router-link 
-         to="signup"
-          class=" py-1 pl-4 text-blck font-bold  hover:text-white hover:bg-ipkoRed hover:py-2"
-          >
+        <router-link
+          to="signup"
+          class="py-1 pl-4 font-bold hover:text-white hover:bg-ipkoRed hover:py-2"
+        >
           {{ $translations[$currentLang].meta.signup }}
         </router-link>
-
       </ul>
-
     </nav>
   </header>
-  <hr>
+
+  <hr />
 </template>
-  
-  <script>
+
+<script>
 import MetaHeader from "./MetaHeader.vue";
 import SearchBar from "./SearchBar.vue";
 
@@ -222,7 +228,8 @@ export default {
     changeLanguage(lang) {
       this.$root.$currentLang = lang;
       localStorage.setItem("currentLang", lang);
-      window.location.reload();
+      // Opsionale: nëse nuk do refresh:
+      // window.location.reload();
     },
     getTranslation(key) {
       return this.$translations[this.$root.$currentLang]?.[key] || key;
@@ -237,19 +244,21 @@ export default {
 };
 </script>
 
-  
-  <style scoped>
-header {
-  z-index: 1000;
-}
+<style scoped>
+/* Nëse do të përdorësh Tailwind, shpesh s’ke nevojë për shume CSS këtu. */
+/* Mund të ruash disa stile personalizuese. */
 
+/* Për shembull, hiq z-index nga këtu, 
+   sepse po e menaxhon Tailwind me z-10 ose z-50. */
+
+/* Thjesht një shembull: */
 nav ul li a {
   display: block;
   padding: 10px 15px;
 }
 
 nav ul li a:hover {
-  background-color: #e30613;
+  background-color: #e30613; /* Ndoshta ipkoRed? */
+  color: white; /* Që teksti të jetë i dukshëm */
 }
 </style>
-  

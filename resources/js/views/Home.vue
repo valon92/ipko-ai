@@ -44,7 +44,7 @@
         <h2 class="text-3xl md:text-4xl font-bold  mb-6">
           {{ $translations[$currentLang].home.ideaTitle }}
         </h2>
-        <p class="text-lg text-ipkoRed mb-8">
+        <p class="text-lg  mb-8">
           {{ $translations[$currentLang].home.ideaDescription }}
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -52,12 +52,12 @@
 
           <a
             href="/innovative-solutions"
-            class=" p-6 rounded-lg shadow-md text-center py-3 px-6 rou nded-lg shadow-md hover:bg-ipkoLight transition duration-300"
+            class=" p-6 rounded-lg shadow-md text-center py-3 px-6 rou nded-lg hover:bg-ipkoLight transition duration-300"
           >
-            <h3 class="text-xl text-ipkoDark font-semibold mb-2">
+            <h3 class="text-xl text-ipkoRed font-semibold mb-2">
               {{ $translations[$currentLang].home.ideaPoint1Title }}
             </h3>
-            <p>
+            <p class="text-ipkoDark">
               {{ $translations[$currentLang].home.ideaPoint1Description }}
             </p>
           </a>
@@ -65,19 +65,19 @@
 
           <!-- Column 2 -->
           <div class="bg-white p-6 rounded-lg shadow-md text-center">
-            <h3 class="text-xl text-ipkoDark font-semibold mb-2">
+            <h3 class="text-xl text-ipkoRed font-semibold mb-2">
               {{ $translations[$currentLang].home.ideaPoint2Title }}
             </h3>
-            <p>
+            <p class="text-ipkoDark">
               {{ $translations[$currentLang].home.ideaPoint2Description }}
             </p>
           </div>
           <!-- Column 3 -->
           <div class="bg-white p-6 rounded-lg shadow-md text-center">
-            <h3 class="text-xl text-ipkoDark font-semibold mb-2">
+            <h3 class="text-xl text-ipkoRed font-semibold mb-2">
               {{ $translations[$currentLang].home.ideaPoint3Title }}
             </h3>
-            <p>
+            <p class="text-ipkoDark">
               {{ $translations[$currentLang].home.ideaPoint3Description }}
             </p>
           </div>
