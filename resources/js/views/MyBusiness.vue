@@ -1,38 +1,30 @@
 <template>
-  <section class="w-full bg-white py-2 gap-1">
-
-   
-      
-      <!-- Button për Regjistrimin e Biznesit -->
-      <div class="container inline-block text-right">
-
-        <router-link
-          to="/register-business"
-          class="inline-block  bg-ipkoRed text-white font-semibold py-4  px-4 
-            rounded-lg shadow-md hover:bg-ipkoLight transition duration-300"
-        >
-          <!-- {{ $translations[$currentLang].myBusiness.registerButton }} -->
-                 <h1>Log In Your Business</h1>
-        </router-link>
-
-    
-        <router-link
-          to="/register-business"
-          class="inline-block  bg-ipkoRed text-white font-semibold py-4 px-4 
-           mx-2 rounded-lg shadow-md hover:bg-ipkoLight transition duration-300"
-        >
-          {{ $translations[$currentLang].myBusiness.registerButton }}
-        </router-link>
-      </div>
-  
-
+  <section class="w-full bg-white py-2 gap-1 ">
+   <nav id="navbar-example2" class="navbar bg-body-white px-3 mb-3">
+  <a class="navbar-brand" href="#">My Business</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link text-black" href="/register-business">LogIn</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/register-business">SigUp</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menu</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading5">Log Out</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </section>
-
-
-  <section class="my-business bg-white   py-12">
+  <div class="my-business bg-white  py-10 ">
     <div class="container mx-auto px-4 text-center">
       <!-- Titulli Kryesor -->
-      <h1 class="text-4xl font-bold text-ipkoRed mb-6">
+      <h1 class="text-4xl font-bold  mb-4">
         {{ $translations[$currentLang].myBusiness.title }}
       </h1>
       <p class="text-lg text-ipkoDark mb-8">
@@ -79,9 +71,8 @@
         </a>
       </div>
     </div>
-  </section>
+  </div>
 </template>
-  
   <script>
 export default {
   name: "MyBusiness",

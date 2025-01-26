@@ -20,7 +20,7 @@
                 :alt="post.title"
                 class="w-full h-40 object-cover rounded-md mb-4"
               />
-              <h3 class="text-lg font-semibold text-ipkoRed mb-2">
+              <h3 class="text-lg font-semibold  mb-2">
                 {{ post.title }}
 
               </h3>

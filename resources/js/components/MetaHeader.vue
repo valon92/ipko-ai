@@ -1,5 +1,5 @@
 <template>
-  <div class="meta-header bg-white text-black text-sm py-2 z-50">
+  <div class="meta-header bg-white text-black text-sm py-2 z-50 h-12">
     <div class="mx-auto flex justify-between items-center px-2">
       <!-- Lidhjet Kryesore -->
       <div class="flex space-x-4 md:ml-6 items-center">
@@ -83,13 +83,13 @@
       <div class="flex space-x-4">
         <a
           href="/login"
-          class="px-2 py-1 border border-black rounded-md hover:text-lg transition"
+          class="px-2 py-1 border border-black hover:font-bold rounded-md  transition"
         >
           {{ $translations[$currentLang].meta.login }}
         </a>
         <a
           href="/signup"
-          class="hidden md:block px-4 py-1 text-black border border-black hover:text-lg rounded-md transition"
+          class="hidden md:block px-4 py-1 text-black border border-black hover:font-bold  rounded-md transition"
         >
           {{ $translations[$currentLang].meta.signup }}
         </a>

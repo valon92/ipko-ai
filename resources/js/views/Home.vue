@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="hero bg-white text-ipkoRed py-20">
+    <section class="hero bg-white  py-20">
       <div
         class="grid grid-cols-1 md:grid-cols-2 items-center gap-0"
       >

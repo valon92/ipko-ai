@@ -1,6 +1,7 @@
 <template>
   <!-- MetaHeader -->
   <MetaHeader />
+  
 
   <!-- HEADER KRYESOR: Sticky + z-10 (ose z-50, varësisht nevojës) -->
   <header
@@ -8,14 +9,15 @@
   >
     <div class="flex static justify-between items-center px-4">
       <!-- Logo -->
-      <a href="/">
-        <!-- Shembull i klasave Tailwind për madhësinë/hov. Modifiko sipas dëshirës -->
-        <img
-          src="/public/images/ipko1.png"
-          alt="ipko"
-          class="w-10 hover:w-20 hover:h-20 hover:absolute hover:my-10"
-        />
-      </a>
+      <a href="/" class="relative inline-block w-10 h-10">
+  <!-- Imazhi normal -->
+  <img
+    src="/public/images/ipko5.png"
+    alt="ipko"
+    class="absolute top-0 left-0 w-full h-full object-contain"
+  />
+</a>
+
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex md:space-x-4 md:text-sm lg:text-base">
@@ -206,7 +208,6 @@
     </nav>
   </header>
 
-  <hr />
 </template>
 
 <script>
@@ -229,7 +230,7 @@ export default {
       this.$root.$currentLang = lang;
       localStorage.setItem("currentLang", lang);
       // Opsionale: nëse nuk do refresh:
-      // window.location.reload();
+       window.location.reload();
     },
     getTranslation(key) {
       return this.$translations[this.$root.$currentLang]?.[key] || key;
