@@ -99,23 +99,18 @@ export default {
         cta: "Contact Us for Business Solutions",
     },
     registerBusiness: {
-        title: "Register Your Business",
+        registerTitle: "Register Your Business",
+        businessName: "Business Name",
         businessNumber: "Business Number",
         email: "Email Address",
         password: "Password",
-        submit: "Register",
-      },
-    BusinessSupport: {
-        title: "Business Support",
-        invoices: "Invoices",
-        invoiceDate: "Invoice Date",
-        amount: "Amount",
-        action: "Action",
-        download: "Download",
-        packages: "Packages",
-        upgrade: "Upgrade Package",
-        contracts: "Contracts",
-        view: "View Contract",
+        businessType: "Business Type",
+        typeSmall: "Small Business",
+        typeMedium: "Medium Business",
+        typeEnterprise: "Enterprise",
+        location: "Location",
+        industry: "Industry",
+        registerButton: "Register Now",
       },
       
     tutorials: {
@@ -311,8 +306,10 @@ export default {
         copyright: "IPKO.ai. All Rights Reserved.",
     },
     home: {
-        heroTitle: "Welcome to IBKO AI",
-        heroSubtitle: "Empowering the future with AI-driven solutions.",
+        heroTitle: "Welcome to Ibso.ai",
+        // heroSubtitle: "Empowering the future with AI-driven solutions.",
+        heroSubtitle: "International Business Solution Organisation.",
+
         getStarted: "Get Started",
         ideaTitle: "The Vision Behind IPKO AI",
         ideaDescription:

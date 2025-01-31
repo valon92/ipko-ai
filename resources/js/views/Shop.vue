@@ -30,7 +30,7 @@
               <p class="text-gray-700 mb-4">{{ product.description }}</p>
               <p class="text-gray-900 font-bold mb-4">{{ product.price }} €</p>
               <button
-                @click="addToCart(product)"
+                @click="addToCart(product)" 
                 class="bg-ipkoRed text-white px-4 py-2 rounded-md hover:bg-ipkoLight transition"
               >
                 Shto në Shportë
@@ -70,10 +70,13 @@
   </template>
   
   <script>
+  import Cart from "../views/Cart.vue";
+
   
   export default {
     name: "Shop",
     components: {
+        Cart
    
     },
     data() {
@@ -105,6 +108,9 @@
       cartTotal() {
         return this.cart.reduce((total, item) => total + item.price, 0);
       },
+      addToCart(item) {
+      this.$refs.cart.addToCart(item);
+    },
     },
     methods: {
       addToCart(product) {
@@ -113,6 +119,9 @@
       removeFromCart(index) {
         this.cart.splice(index, 1);
       },
+      addToCart(item) {
+      this.$refs.cart.addToCart(item);
+    },
     },
   };
   </script>

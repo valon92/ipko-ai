@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-100 min-h-screen">
-    <section class="py-16 bg-gray-100">
+  <div class="bg-white min-h-screen">
+    <section class="py-16 bg-white">
       <div class="container mx-auto px-6">
         <h1 class="text-4xl font-bold text-center text-ipkoRed mb-8">
           Blog & News

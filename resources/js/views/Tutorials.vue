@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gray-100 py-12">
+  <section class="bg-white py-12">
     <div class="container mx-auto px-4">
       <h1 class="text-4xl font-bold text-ipkoRed text-center mb-6">
         {{ $translations[$currentLang].tutorials.title }}

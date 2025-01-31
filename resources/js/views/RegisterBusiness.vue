@@ -1,68 +1,99 @@
-<template> 
-  <div class=" mx-auto  bg-white px-4 py-12">
-    <div class="container max-w-md mx-auto bg-white shadow-md rounded-lg px-10 py-10">
-      <h1 class="text-2xl font-bold text-center text-ipkoRed mb-6">
-        {{ $translations[$currentLang].registerBusiness.title }}
+<template>
+  <div class="min-h-screen py-10 flex items-center justify-center bg-white">
+    <div class="bg-white p-8 lg:rounded-lg lg:shadow-lg w-full max-w-lg">
+      <h2 class="text-2xl font-bold text-ipkoRed text-center mb-6">
+        {{ $translations[$currentLang].registerBusiness.registerTitle }}
 
-      </h1>
+      </h2>
 
-      <form @submit.prevent="submitForm">
-        <!-- Business Number -->
+      <form @submit.prevent="registerBusiness">
+        <!-- Emri i biznesit -->
         <div class="mb-4">
-          <label
-            for="businessNumber"
-            class="block text-ipkoRed font-semibold mb-2"
-          >
-            {{ $translations[$currentLang].registerBusiness.businessNumber }}
+          <label class="block text-gray-700">
+            {{ $translations[$currentLang].registerBusiness.businessName }}
+
           </label>
-          <input
-            v-model="form.businessNumber"
-            type="text"
-            id="businessNumber"
-            placeholder="123456789"
-            class="w-full px-4 py-2 border rounded-lg focus:outline-none"
-            required
-          />
+          <input v-model="form.business_name" type="text" required
+                 class="w-full px-4 py-2 border rounded-lg focus:outline-none">
+        </div>
+
+        <!-- Numri i biznesit -->
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            {{ $translations[$currentLang].registerBusiness.businessNumber }}
+
+          </label>
+          <input v-model="form.business_number" type="text" required
+                 class="w-full px-4 py-2 border rounded-lg focus:outline-none">
         </div>
 
         <!-- Email -->
         <div class="mb-4">
-          <label for="email" class="block text-ipkoRed font-semibold mb-2">
+          <label class="block text-gray-700">
             {{ $translations[$currentLang].registerBusiness.email }}
 
+            
           </label>
-          <input
-            v-model="form.email"
-            type="email"
-            id="email"
-            placeholder="example@business.com"
-            class="w-full px-4 py-2 border rounded-lg focus:outline-none"
-            required
-          />
+          <input v-model="form.email" type="email" required
+                 class="w-full px-4 py-2 border rounded-lg focus:outline-none">
         </div>
 
-        <!-- Password -->
+        <!-- Fjalëkalimi -->
         <div class="mb-4">
-          <label for="password" class="block text-ipkoRed font-semibold mb-2">
+          <label class="block text-gray-700">
             {{ $translations[$currentLang].registerBusiness.password }}
 
           </label>
-          <input
-            v-model="form.password"
-            type="password"
-            id="password"
-            placeholder="********"
-            class="w-full px-4 py-2 border rounded-lg focus:outline-none"
-            required
-          />
+          <input v-model="form.password" type="password" required
+                 class="w-full px-4 py-2 border rounded-lg focus:outline-none">
         </div>
 
-        <!-- Submit Button -->
-        <button
-          type="submit"
-          class="w-full bg-ipkoRed text-white py-2 px-4 rounded-lg font-semibold hover:bg-ipkoLight transition"
-        >
-          {{ $translations[$currentLang].registerBusiness.submit }}
+        <!-- Lloji i biznesit -->
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            {{ $translations[$currentLang].registerBusiness.businessType }}
+
+          </label>
+          <select v-model="form.business_type"
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none">
+            <option value="Small">
+              {{ $translations[$currentLang].registerBusiness.typeSmall }}
+
+            </option>
+            <option value="Medium">
+              {{ $translations[$currentLang].registerBusiness.typeMedium }}
+
+            </option>
+            <option value="Enterprise">
+              {{ $translations[$currentLang].registerBusiness.typeEnterprise }}
+
+            </option>
+          </select>
+        </div>
+
+        <!-- Vendndodhja -->
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            {{ $translations[$currentLang].registerBusiness.location }}
+          </label>
+          <input v-model="form.location" type="text" required
+                 class="w-full px-4 py-2 border rounded-lg focus:outline-none">
+        </div>
+
+        <!-- Sektori i industrisë -->
+        <div class="mb-4">
+          <label class="block text-gray-700">
+            {{ $translations[$currentLang].registerBusiness.industry }}
+
+          </label>
+          <input v-model="form.industry" type="text" required
+                 class="w-full px-4 py-2 border rounded-lg focus:outline-none">
+        </div>
+
+        <!-- Butoni Regjistrohu -->
+        <button type="submit"
+                class="w-full bg-ipkoRed text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-600 transition">
+          {{ $translations[$currentLang].registerBusiness.registerButton }}
 
         </button>
       </form>
@@ -72,30 +103,30 @@
 
 <script>
 export default {
-  name: "RegisterBusiness",
+  name: "BusinessRegister",
   data() {
     return {
       form: {
-        businessNumber: "",
+        business_name: "",
+        business_number: "",
         email: "",
         password: "",
+        business_type: "Small",
+        location: "",
+        industry: "",
       },
     };
   },
   methods: {
-    submitForm() {
-      console.log("Form Data:", this.form);
-      alert(
-        `${this.form.businessNumber} registered successfully with email: ${this.form.email}`
-      );
-      // You can replace this with an API call for actual registration
+    registerBusiness() {
+      console.log("Business Registered:", this.form);
+      // Këtu do të shtojmë thirrjen API për të regjistruar biznesin në Laravel
+    },
+    getTranslation(key) {
+      return this.$translations[this.$root.$currentLang]?.[key] || key;
     },
   },
 };
 </script>
 
-<style scoped>
-h1 {
-  color: #e30613;
-}
-</style>
+

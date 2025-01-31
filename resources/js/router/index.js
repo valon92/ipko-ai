@@ -3,6 +3,7 @@ import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
 import Contact from "@/views/Contact.vue";
 import Shop from "@/views/Shop.vue";
+import Cart from "../views/Cart.vue";
 import Services from "@/views/Services.vue";
 import InnovativeSolutions from "../views/InnovativeSolutions.vue";
 import SignUp from "../views/SignUp.vue";
@@ -37,6 +38,7 @@ const routes = [
     { path: "/about", name: "About", component: About },
     { path: "/contact", name: "Contact", component: Contact },
     { path: "/shop", name: "Shop", component: Shop },
+    { path: "/cart", name: "Cart", component: Cart },
     { path: "/services", name: "Services", component: Services },
     { path: "/innovative-solutions", component: InnovativeSolutions },
     { path: "/signup", component: SignUp },

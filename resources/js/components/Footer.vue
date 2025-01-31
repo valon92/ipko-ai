@@ -167,7 +167,7 @@ footer {
   /* background-color: #dcdcdc;  */
   /* Ngjyra kryesore e IPKO */
   /* background-color: #8C1A1A; */
-  background-color: white;
+  background-color: F5F5F5;
 
 }
 
