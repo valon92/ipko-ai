@@ -118,13 +118,40 @@ export default {
     };
   },
   methods: {
-    registerBusiness() {
-      console.log("Business Registered:", this.form);
-      // Këtu do të shtojmë thirrjen API për të regjistruar biznesin në Laravel
-    },
-    getTranslation(key) {
-      return this.$translations[this.$root.$currentLang]?.[key] || key;
-    },
+    
+    methods: {
+  async registerBusiness() {
+    try {
+      const response = await fetch("http://localhost:8000/api/register-business", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(this.business),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        alert("Business registered successfully!");
+        this.business = {
+          business_name: "",
+          business_number: "",
+          email: "",
+          password: "",
+          business_type: "",
+          location: "",
+          industry: "",
+        };
+      } else {
+        alert("Error: " + JSON.stringify(data.errors));
+      }
+    } catch (error) {
+      console.error("Error registering business:", error);
+    }
+  },
+}
+
+    
   },
 };
 </script>
