@@ -1,6 +1,5 @@
 <template>
-  <hr>
-  <footer class=" text-black text-left font-bold pl-8 py-6 rounded shadow">
+  <footer class=" text-black text-left font-bold pl-8 py-6">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-4">
         <!-- Quick Links -->

@@ -179,7 +179,7 @@
 
       </p>
       <a
-        href="/user-dashboard"
+        href="/dashboard"
         class="inline-block bg-ipkoRed text-white px-6 py-3 rounded-lg shadow hover:bg-ipkoLight transition"
       >
          {{ $translations[$currentLang].userDashboard.learnMore }}

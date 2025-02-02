@@ -304,7 +304,29 @@ export default {
         financialSupport: "Financial Support",
         financialSupportDesc: "Financial tools to manage payments and budgets.",
       },
-      
+      cart: {
+        title: "Shopping Cart",
+        subtitle: "View and manage the products you have selected.",
+        yourCart: "Your Cart Items",
+        remove: "Remove from Cart",
+        empty: "Your cart is empty.",
+        checkout: "Proceed to Checkout",
+        checkoutMessage: "Your purchase has been successfully completed!",
+      },
+      shop: {
+        viewCart: "View Cart",
+        heroTitle: "Business Store",
+        heroSubtitle: "Buy the necessary equipment and services for your business.",
+        productsTitle: "Our Products",
+        addToCart: "Add to cart",
+        addedToCart: "Product added to cart",
+        pcBusiness: "Business PC",
+        pcBusinessDesc: "Powerful computers for your business needs.",
+        cashRegister: "Cash Register",
+        cashRegisterDesc: "Certified devices for managing transactions.",
+        networking: "Networking Equipment",
+        networkingDesc: "Routers and switches for your business network.",
+      },
     footer: {
         quickLinks: "Quick Links",
         home: "Home",
@@ -318,7 +340,7 @@ export default {
         copyright: "IPKO.ai. All Rights Reserved.",
     },
     home: {
-        heroTitle: "Welcome to Ipko.ai",
+        heroTitle: "Welcome to Ipko AI",
         heroSubtitle: "Empowering the future with AI-driven solutions.",
         // heroSubtitle: "International Business Solution Organisation.",
 

@@ -106,7 +106,7 @@
         </form>
       </div>
     </div>
-    <div class="col hidden md:block ">
+    <div class="col hidden md:block">
      <img src="/public/images/ipko10.png" alt="">
     </div>
   </div>

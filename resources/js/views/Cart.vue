@@ -1,62 +1,88 @@
 <template>
-    <div class="cart-page">
-      <header class="bg-ipkoRed text-white py-6">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-          <h1 class="text-2xl font-bold">Your Cart</h1>
-          <router-link to="/shop" class="bg-white text-ipkoRed px-4 py-2 rounded-md shadow-md">
-            Back to Shop
-          </router-link>
+    <div class="bg-gray-100 min-h-screen">
+      <section class="bg-ipkoRed text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            {{ $translations[$currentLang].cart.title }}
+
+            
+          </h1>
+          <p class="text-lg md:text-xl mb-6">
+            {{ $translations[$currentLang].cart.subtitle }}
+
+            
+
+          </p>
         </div>
-      </header>
+      </section>
   
-      <main class="container mx-auto px-4 py-6">
-        <h2 class="text-3xl font-bold mb-4">Cart Items</h2>
-        <div v-if="cart.length" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div
-            v-for="(item, index) in cart"
-            :key="index"
-            class="bg-white shadow-md rounded-lg p-4"
-          >
-            <img :src="item.image" :alt="item.name" class="mb-4 rounded-lg w-full h-48 object-cover" />
-            <h3 class="text-lg font-semibold">{{ item.name }}</h3>
-            <p class="text-gray-600 mb-4">${{ item.price }}</p>
-            <button
-              @click="removeFromCart(index)"
-              class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-500 transition"
-            >
-              Remove
+      <!-- Cart Items -->
+      <section class="py-12">
+
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-ipkoRed mb-10">
+            {{ $translations[$currentLang].cart.yourCart }}
+
+          </h2>
+          <div v-if="cart.length > 0" 
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div v-for="(item, index) in cart" :key="index" 
+            class="bg-white p-6 shadow-md rounded-lg text-center">
+              <img :src="item.image"
+            class="w-full h-48 object-cover rounded-lg mb-4" />
+
+              <h3 class="text-xl font-bold mb-2">
+                {{ getTranslation(item.title) }}
+            </h3>
+              <p class="text-gray-700 mb-2">
+                {{ getTranslation(item.description) }}
+            </p>
+              <p class="text-lg font-bold text-ipkoRed mb-2">${{ item.price }}</p>
+              <button @click="removeFromCart(index)" class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
+                {{ getTranslation("cart.remove") }}
+              </button>
+            </div>
+          </div>
+          <p v-else class="text-center text-lg text-gray-600">{{ getTranslation("cart.empty") }}</p>
+  
+          <div v-if="cart.length > 0" class="text-center mt-6">
+            <button @click="checkout" class="bg-ipkoRed text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-ipkoLight transition">
+              {{ getTranslation("cart.checkout") }}
             </button>
           </div>
         </div>
-        <div v-else class="text-center">
-          <p class="text-gray-600">Your cart is empty!</p>
-          <router-link to="/shop" class="text-ipkoRed font-semibold hover:underline">
-            Go back to Shop
-          </router-link>
-        </div>
-      </main>
+      </section>
     </div>
   </template>
   
   <script>
   export default {
     name: "Cart",
-    computed: {
-      cart() {
-        return this.$store.state.cart;
-      },
+    data() {
+      return {
+        cart: JSON.parse(localStorage.getItem("cart")) || [],
+      };
     },
     methods: {
+      getTranslation(key) {
+        return this.$translations[this.$root.$currentLang]?.[key] || key;
+      },
       removeFromCart(index) {
-        this.$store.commit("removeFromCart", index);
+        this.cart.splice(index, 1);
+        localStorage.setItem("cart", JSON.stringify(this.cart));
+      },
+      checkout() {
+        alert(this.getTranslation("cart.checkoutMessage"));
+        localStorage.removeItem("cart");
+        this.cart = [];
       },
     },
   };
   </script>
   
   <style scoped>
-  .cart-page {
-    font-family: Arial, sans-serif;
+  .container {
+    max-width: 1200px;
   }
   </style>
   
