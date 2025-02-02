@@ -292,6 +292,18 @@ export default {
         apiTitle3: "Integration with Existing Systems",
         apiDesc3: "Seamlessly integrate IPKO.ai into your existing systems.",
       },
+      businessServices: {
+        heroTitle: "Advanced Business Services",
+        heroSubtitle: "Explore solutions to help grow your business.",
+        servicesTitle: "Our Business Solutions",
+        subscribe: "Subscribe",
+        automation: "Process Automation",
+        automationDesc: "Optimize your business with AI and automation.",
+        dataAnalytics: "Data Analytics",
+        dataAnalyticsDesc: "Reports and analytics for better decision-making.",
+        financialSupport: "Financial Support",
+        financialSupportDesc: "Financial tools to manage payments and budgets.",
+      },
       
     footer: {
         quickLinks: "Quick Links",
@@ -306,9 +318,9 @@ export default {
         copyright: "IPKO.ai. All Rights Reserved.",
     },
     home: {
-        heroTitle: "Welcome to Ibso.ai",
-        // heroSubtitle: "Empowering the future with AI-driven solutions.",
-        heroSubtitle: "International Business Solution Organisation.",
+        heroTitle: "Welcome to Ipko.ai",
+        heroSubtitle: "Empowering the future with AI-driven solutions.",
+        // heroSubtitle: "International Business Solution Organisation.",
 
         getStarted: "Get Started",
         ideaTitle: "The Vision Behind IPKO AI",

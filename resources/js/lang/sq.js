@@ -131,7 +131,18 @@ export default {
         contracts: "Kontratat",
         view: "Shiko Kontratën",
       },
-      
+      businessServices: {
+        heroTitle: "Shërbimet e Avancuara për Biznesin",
+        heroSubtitle: "Eksploroni zgjidhjet që ndihmojnë biznesin tuaj të rritet.",
+        servicesTitle: "Zgjidhjet tona për bizneset",
+        subscribe: "Abonohu",
+        automation: "Automatizimi i Procesit",
+        automationDesc: "Optimizoni biznesin tuaj me AI dhe automatizim.",
+        dataAnalytics: "Analiza e të Dhënave",
+        dataAnalyticsDesc: "Raporte dhe analitika për vendimmarrje më të mirë.",
+        financialSupport: "Mbështetje Financiare",
+        financialSupportDesc: "Mjetet financiare për të menaxhuar pagesat dhe buxhetin tuaj.",
+      },
       
     tutorials: {
         title: "Mësime për AI",
