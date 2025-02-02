@@ -318,6 +318,8 @@ export default {
         heroTitle: "Business Store",
         heroSubtitle: "Buy the necessary equipment and services for your business.",
         productsTitle: "Our Products",
+        category: "Categories",
+        allCategories: "All Categories",
         addToCart: "Add to cart",
         addedToCart: "Product added to cart",
         pcBusiness: "Business PC",

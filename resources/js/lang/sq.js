@@ -157,6 +157,8 @@ export default {
         heroTitle: "Dyqani i Bizneseve",
         heroSubtitle: "Blini pajisjet dhe shërbimet e nevojshme për biznesin tuaj.",
         productsTitle: "Produktet tona",
+        category: "Kategoritë",
+        allCategories: "Të gjitha Kategoritë",
         addToCart: "Shto në shportë",
         addedToCart: "Produkti u shtua në shportë",
         pcBusiness: "PC për Biznese",

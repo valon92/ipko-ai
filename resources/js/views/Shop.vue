@@ -1,14 +1,14 @@
 <template>
-
-<router-link to="/cart" 
-class="bg-ipkoRed float-right text-white px-6 py-3 mt-2 mr-2 rounded-lg font-semibold shadow-md 
-hover:bg-ipkoLight transition">
-
- {{ $translations[$currentLang].shop.viewCart }}
-
-</router-link>
+    
      
  
+    <router-link to="/cart" 
+           class="bg-ipkoRed float-right text-white px-6 py-3 mt-2 mr-2 rounded-lg font-semibold shadow-md 
+           hover:bg-ipkoLight transition">
+
+             {{ $translations[$currentLang].shop.viewCart }}
+
+           </router-link>
  
   <div class="bg-white min-h-screen">
     <!-- Hero Section -->
@@ -21,6 +21,34 @@ hover:bg-ipkoLight transition">
           {{ $translations[$currentLang].shop.heroSubtitle }}
 
         </p>
+      </div>
+    </section>
+
+
+       <!-- Filter Section -->
+       <section class="py-8 bg-white">
+      <div class=" mx-auto px-6">
+        <div 
+        class="flex flex-col md:flex-row md:justify-between md:items-center">
+          <div>
+            <label 
+            class="block text-lg font-semibold">
+            {{ $translations[$currentLang].shop.category }}
+
+        </label>
+            <select v-model="selectedCategory" 
+            class="w-full md:w-64 p-2 border rounded-lg">
+              <option value="all">
+                {{ $translations[$currentLang].shop.allCategories }}
+
+            </option>
+              <option v-for="category in categories" :key="category" :value="category">{{ getTranslation(category) }}</option>
+            </select>
+          </div>
+          <div>
+           
+          </div>
+        </div>
       </div>
     </section>
 
@@ -65,25 +93,38 @@ export default {
   name: "Shop",
   data() {
     return {
+      selectedCategory: "all",
+      searchQuery: "",
+      categories: ["electronics", "business-tools", "software", "accessories"],
       products: [
-        { id: 1,
-         title: "Business",
-         description:"shop.pcBusinessDesc",
-          price: 1200,
-          image: "/public/images/ipko10.png" },
-
-        { id: 2, title: "shop.cashRegister", description: "shop.cashRegisterDesc", price: 800, image: "/images/arka-fiskale.jpg" },
-        { id: 3, title: "shop.networking", description: "shop.networkingDesc", price: 500, image: "/images/network.jpg" },
+        { id: 1, title: "shop.laptop", description: "shop.laptopDesc", price: 1200, category: "electronics", image: "/images/laptop.png" },
+        { id: 2, title: "shop.posSystem", description: "shop.posSystemDesc", price: 800, category: "business-tools", image: "/images/pos.png" },
+        { id: 3, title: "shop.crmSoftware", description: "shop.crmSoftwareDesc", price: 300, category: "software", image: "/images/crm.png" },
+        { id: 4, title: "shop.mouse", description: "shop.mouseDesc", price: 25, category: "accessories", image: "/images/mouse.png" },
       ],
     };
   },
   methods: {
+    methods: {
     getTranslation(key) {
       return this.$translations[this.$root.$currentLang]?.[key] || key;
     },
     addToCart(product) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push(product);
+      localStorage.setItem("cart", JSON.stringify(cart));
       alert(`${this.getTranslation("shop.addedToCart")}: ${this.getTranslation(product.title)}`);
-    },
+    }
+  }
+  },
+  computed: {
+    filteredProducts() {
+      return this.products.filter(product => {
+        const matchesCategory = this.selectedCategory === "all" || product.category === this.selectedCategory;
+        const matchesSearch = product.title.toLowerCase().includes(this.searchQuery.toLowerCase());
+        return matchesCategory && matchesSearch;
+      });
+    }
   },
 };
 </script>
