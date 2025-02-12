@@ -25,6 +25,8 @@ import DataAnalyticsPage from "../views/DataAnalyticsPage.vue";
 import BusinessIntegrations from "../views/BusinessIntegrations.vue";
 import BusinessDashboard from "../views/BusinessDashboard.vue";
 import BusinessServices from "../views/BusinessServices.vue";
+import Checkout from "../views/Checkout.vue";
+
 
 
 
@@ -63,6 +65,7 @@ const routes = [
     { path: "/business-integrations", component: BusinessIntegrations },
     { path: "/dashboard", component: BusinessDashboard },
     { path: "/business-services", component: BusinessServices },
+    { path: "/checkout", component: Checkout },
 
     
 
