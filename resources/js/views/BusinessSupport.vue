@@ -1,4 +1,6 @@
 <template>
+
+
     
     <div class="container bg-white mx-auto px-4 py-8">
       <!-- Titulli Kryesor -->
@@ -12,6 +14,33 @@
           {{ $translations[$currentLang].BusinessSupport.invoices }}
 
         </h2>
+        <table class="w-full border bg-white rounded-lg shadow-md">
+  <thead class="bg-ipkoRed text-white">
+    <tr>
+      <th class="px-4 py-2">#</th>
+      <th class="px-4 py-2">{{ getTranslation("businessSupport.invoiceDate") }}</th>
+      <th class="px-4 py-2">{{ getTranslation("businessSupport.amount") }}</th>
+      <th class="px-4 py-2">{{ getTranslation("businessSupport.action") }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="(invoice, index) in invoices" :key="index" class="border-t hover:bg-gray-100">
+      <td class="px-4 py-2">{{ index + 1 }}</td>
+      <td class="px-4 py-2">{{ invoice.date }}</td>
+      <td class="px-4 py-2">{{ invoice.amount }}</td>
+      <td class="px-4 py-2">
+        <a
+          :href="`/api/invoices/${invoice.id}/download`"
+          class="bg-ipkoRed text-white px-4 py-2 rounded-md hover:bg-ipkoLight transition"
+          download
+        >
+          {{ getTranslation("businessSupport.download") }}
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
      
         <div class="overflow-x-auto">
   <table class="w-full border bg-white rounded-lg shadow-md">
