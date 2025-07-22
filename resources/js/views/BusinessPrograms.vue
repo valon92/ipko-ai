@@ -1,17 +1,17 @@
   <template>
-      <section class="bg-white text-ipkoRed py-10">
+      <section class="bg-white text-black py-10">
         <div class="container mx-auto px-6 text-center">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">
             {{ $translations[$currentLang].businessPrograms.heroTitle }}
           </h1>
-          <p class="text-lg text-ipkoDark md:text-xl mb-6">
+          <p class="text-lg text-black md:text-xl mb-6">
             {{ $translations[$currentLang].businessPrograms.heroSubtitle }}
           </p>
         </div>
       </section>
       <section class="py-1">
         <div class=" bg-white py-10 mx-auto px-6">
-          <h2 class="text-3xl font-bold text-center text-ipkoRed mb-10">
+          <h2 class="text-3xl font-bold text-center text-black mb-10">
             {{ $translations[$currentLang].businessPrograms.title }}
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
