@@ -25,7 +25,7 @@
         <!-- Image Content -->
         <div class="flex justify-center">
           <img
-            src="/public/images/ipko3.png"
+            src="/public/images/ipko5.png"
             alt="Hero Image"
             class="md:w-auto md:h-64 w-full h-full"
           />

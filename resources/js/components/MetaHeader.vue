@@ -4,7 +4,7 @@
       <!-- Lidhjet Kryesore -->
       <div class="flex space-x-4 md:ml-6 items-center">
         <a
-          href="https://www.ipko.com"
+          href="https://www.ipko.ai"
           target="_blank"
           rel=""
           class="hover:font-bold"
